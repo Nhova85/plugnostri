@@ -1,0 +1,582 @@
+FFL1.0
+   20
+BradghMx.8bf
+Andrew's Filters 24
+Bradgham Mixes ...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Threshold Mod
+M Amount
+42
+11
+46
+70
+41
+86
+235
+27
+255%ctl(6)-sin(mix(c,m+ctl(7),ctl(0),ctl(1)))
+ctl(6)%255-sin(mix(c,m+ctl(7),ctl(2),ctl(3)))
+ctl(6)%255-sin(mix(c,m+ctl(7),ctl(4),ctl(5)))
+a
+BrRandm.8bf
+Andrew's Filters 24
+Bright Random...
+AB
+Freeware
+
+
+
+
+Red Factor 1
+Red Factor 2
+Green Factor 1
+Green Factor 2
+Blue Factor 1
+Blue Factor 2
+X
+Y
+136
+16
+27
+40
+39
+65
+43
+106
+mix(src(ctl(6)*rnd(0,x)/x,ctl(7)*rnd(0,y)/y,0),c,ctl(0),ctl(1))
+mix(src(ctl(6)*rnd(0,x)/x,ctl(7)*rnd(0,y),1)/y,c,ctl(2),ctl(3))
+mix(src(ctl(6)*rnd(0,x)/x,ctl(7)*rnd(0,y),2)/y,c,ctl(4),ctl(5))
+a
+CamTwRmp.8bf
+Andrew's Filters 24
+Camera Tripod Rampage...
+AB
+Freeware
+
+
+
+
+Red Min
+Red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+x
+y
+122
+61
+128
+21
+49
+37
+105
+97
+max(min(max(c,src(x+val(6,-50,50),y+val(7,-50,50),z)),ctl(0)),ctl(1))
+max(min(max(c,src(x+val(6,-50,50),y+val(7,-50,50),z)),ctl(2)),ctl(3))
+max(min(max(c,src(x+val(6,-50,50),y+val(7,-50,50),z)),ctl(4)),ctl(5))
+a
+CurBaWsh.8bf
+Andrew's Filters 24
+Curtains After A Bad Wash...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+3
+1
+3
+79
+144
+113
+0
+0
+src(((X-x)*ctl(0)-y)%(y+x+ctl(3)),y,0)
+src(((X-x)*ctl(1)-y)%(y+x+ctl(4)),y,1)
+src(((X-x)*ctl(2)-y)%(y+x+ctl(5)),y,2)
+a
+DarRndm.8bf
+Andrew's Filters 24
+Darkened Random...
+AB
+Freeware
+
+
+
+
+Red x
+Red Amount
+Green x
+Green Amount
+Blue x
+Blue Amount
+
+
+29
+155
+225
+129
+136
+221
+0
+0
+src(x+val(0,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(0,2))-ctl(1):src(x,y,rnd(0,2))
+src(x+val(2,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(0,2))-ctl(3):src(x,y,rnd(0,2))
+src(x+val(4,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(5,2))-ctl(1):src(x,y,rnd(0,2))
+a
+DAsund.8bf
+Andrew's Filters 24
+Diagonally Asunder...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+20
+20
+20
+20
+20
+20
+0
+0
+src((sin(x%y))-val(0,0,x),(sin(y%x))-val(1,0,y),0)
+src((sin(x%y))-val(2,0,x),(sin(y%x))-val(3,0,y),1)
+src((sin(x%y))-val(4,0,x),(sin(y%x))-val(5,0,y),2)
+a
+InBGaps.8bf
+Andrew's Filters 24
+In Between The Gaps...
+AB
+Freeware
+
+
+
+
+Red T.
+Green T.
+Blue T.
+Red Boost
+Green Boost
+Blue Boost
+Mod
+Dividor
+69
+122
+113
+75
+48
+103
+194
+2
+(dif(x,(X/ctl(7)))<val(0,0,x)?r+val(1,-256,256):r-val(3,-256,256))%ctl(6)
+(dif(x,(X/ctl(7)))<val(1,0,x)?g+val(1,-256,256):g-val(4,-256,256))%ctl(6)
+(dif(x,(X/ctl(7)))<val(2,0,x)?b+val(2,-256,256):b-val(5,-256,256))%ctl(6)
+a
+InDrum.8bf
+Andrew's Filters 24
+In A Drum...
+AB
+Freeware
+
+
+
+
+Red
+Green
+Blue
+
+
+
+
+
+56
+50
+43
+0
+0
+0
+0
+0
+src(scl(sqr(x*x+y*y),0,1500,0,4000)%val(0,0,1000),y,0)
+src(scl(sqr(x*x+y*y),0,1500,0,4000)%val(1,0,1000),y,0)
+src(scl(sqr(x*x+y*y),0,1500,0,4000)%val(2,0,1000),y,0)
+a
+MaRaLght.8bf
+Andrew's Filters 24
+Making Random Light Of It...
+AB
+Freeware
+
+
+
+
+Red x
+Red Amount
+Green x
+Green Amount
+Blue x
+Blue Amount
+
+
+131
+51
+189
+45
+220
+221
+0
+0
+src(x+val(0,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(0,2))+ctl(1):src(x,y,rnd(0,2))
+src(x+val(2,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(0,2))+ctl(3):src(x,y,rnd(0,2))
+src(x+val(4,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(5,2))+ctl(1):src(x,y,rnd(0,2))
+a
+MiMxMin.8bf
+Andrew's Filters 24
+Min Mixer Min...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+122
+133
+98
+49
+55
+57
+0
+0
+src(mix(min(c,src(x+val(0,-40,40),y+val(1,-40,40),z)),c,ctl(6),ctl(7)),y,z)
+src(mix(min(c,src(x+val(2,-40,40),y+val(3,-40,40),z)),c,ctl(6),ctl(7)),y,z)
+src(mix(min(c,src(x+val(4,-40,40),y+val(5,-40,40),z)),c,ctl(6),ctl(7)),y,z)
+a
+MorCurt.8bf
+Andrew's Filters 24
+More Curtains...
+AB
+Freeware
+
+
+
+
+Red Factor 1
+Red Factor 2
+Green Factor 1
+Green Factor 2
+Blue Factor 1
+Blue Factor 2
+Intensity
+
+5
+8
+8
+3
+5
+7
+29
+0
+mix(ctl(6)*sin(x*y),c,ctl(0),X-ctl(1))-mix(ctl(6)*sin((X-x)*(Y-y)),src(X-x,Y-y,0),ctl(0),X-ctl(1))
+mix(ctl(6)*sin(x*y),c,ctl(2),X-ctl(3))-mix(ctl(6)*sin((X-x)*(Y-y)),src(X-x,Y-y,1),ctl(2),X-ctl(3))
+mix(ctl(6)*sin(x*y),c,ctl(4),X-ctl(5))-mix(ctl(6)*sin((X-x)*(Y-y)),src(X-x,Y-y,2),ctl(4),X-ctl(5))
+a
+NoSu2Em.8bf
+Andrew's Filters 24
+Not Sure But Two Of Em...
+AB
+Freeware
+
+
+
+
+Red Factor 1
+Red Factor 2
+Green Factor 1
+Green Factor 2
+Blue Factor 1
+Blue Factor 2
+
+
+128
+17
+116
+35
+161
+114
+0
+0
+dif(mix(src(x,y,rnd(0,2)),src(X-x,y,rnd(0,2)),ctl(0),ctl(1)),mix(src(X-x,y,rnd(0,2)),src(X-x,y,rnd(0,2)),ctl(0),ctl(1)))
+dif(mix(src(x,y,rnd(0,2)),src(X-x,y,rnd(0,2)),ctl(2),ctl(3)),mix(src(X-x,y,rnd(0,2)),src(X-x,y,rnd(0,2)),ctl(2),ctl(3)))
+dif(mix(src(x,y,rnd(0,2)),src(X-x,y,rnd(0,2)),ctl(4),ctl(5)),mix(src(X-x,y,rnd(0,2)),src(X-x,y,rnd(0,2)),ctl(4),ctl(5)))
+a
+OddBallJ.8bf
+Andrew's Filters 24
+OddBall Lines Just Inside...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Intensity
+
+59
+16
+7
+6
+4
+6
+5
+0
+ctl(6)*(src(x%sin(y),y%sin(x),rnd(0,2))/sin(x%ctl(0)>>y%ctl(1)))
+ctl(6)*(src(x%sin(y),y%sin(x),rnd(0,2))/sin(x%ctl(2)>>y%ctl(3)))
+ctl(6)*(src(x%sin(y),y%sin(x),rnd(0,2))/sin(x%ctl(4)>>y%ctl(5)))
+a
+PatNot.8bf
+Andrew's Filters 24
+Patterns Not...
+AB
+Freeware
+
+
+
+
+Pattern A
+Pattern B
+Pattern C
+Red
+Green
+Blue
+
+
+88
+11
+5
+47
+42
+65
+0
+0
+((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)!=ctl(2)?c:c%ctl(3)
+((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)!=ctl(2)?c:c%ctl(4)
+((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)!=ctl(2)?c:c%ctl(5)
+a
+PatterUt.8bf
+Andrew's Filters 24
+Patterns United...
+AB
+Freeware
+
+
+
+
+Pattern A
+Pattern B
+Pattern C
+Red
+Green 
+Blue
+
+
+16
+38
+3
+107
+101
+98
+0
+0
+((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)==ctl(2)?c:c%ctl(3)
+((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)==ctl(2)?c:c%ctl(4)
+((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)==ctl(2)?c:c%ctl(5)
+a
+PlaTlng.8bf
+Andrew's Filters 24
+Planed Tilings...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+2
+2
+7
+6
+11
+11
+0
+0
+src(tan(X%(y-ctl(0))-x%(y-ctl(1))),y,0)
+src(tan(X%(y-ctl(2))-x%(y-ctl(3))),y,1)
+src(tan(X%(y-ctl(4))-x%(y-ctl(5))),y,2)
+a
+PopEasl.8bf
+Andrew's Filters 24
+Pop Goes The Easel...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Threshold
+M
+96
+32
+117
+24
+38
+22
+144
+15
+255%ctl(6)-sin(mix(src(x%sin(X-x),y%sin(Y-y),z),m+ctl(7),ctl(0),ctl(1)))
+255%ctl(6)-sin(mix(src(x%sin(X-x),y%sin(Y-y),z),m+ctl(7),ctl(2),ctl(3)))
+255%ctl(6)-sin(mix(src(x%sin(X-x),y%sin(Y-y),z),m+ctl(7),ctl(4),ctl(5)))
+a
+Razback.8bf
+Andrew's Filters 24
+Razor Back In Front...
+AB
+Freeware
+
+
+
+
+Red Mod
+Green Mod
+Blue Mod
+Red M
+Green M
+Blue M
+
+
+5
+6
+10
+176
+71
+90
+0
+0
+rad(d,m+(val(3,0,2)>0?sin((x-y)%ctl(0)):sin(((Y-X)-(x-y))%ctl(0))),0)
+rad(d,m+(val(4,0,2)>0?sin((x-y)%ctl(1)):sin(((Y-X)-(x-y))%ctl(1))),1)
+rad(d,m+(val(5,0,2)>0?sin((x-y)%ctl(2)):sin((Y-X+(x-y))%ctl(2))),2)
+a
+RePrint.8bf
+Andrew's Filters 24
+Ready For A Print...
+AB
+Freeware
+
+
+
+
+Red 1
+Green 1
+Blue 1
+Red 2
+Green 2
+Blue 2
+Factor X
+
+132
+142
+119
+96
+109
+104
+137
+0
+(r^(ctl(3))^r-ctl(0))%ctl(6)
+(g^(ctl(4))^g-ctl(1))%ctl(6)
+(b^(ctl(5))^b-ctl(2))%ctl(6)
+a
+SqDance.8bf
+Andrew's Filters 24
+Square Dance...
+AB
+Freeware
+
+
+
+
+Red Min
+Red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+x
+y
+200
+8
+102
+36
+183
+143
+29
+42
+max(min(max(c,src(x&val(6,-50,50),y&val(7,-50,50),z)),ctl(0)),ctl(1))
+max(min(max(c,src(x&val(6,-50,50),y&val(7,-50,50),z)),ctl(2)),ctl(3))
+max(min(max(c,src(x&val(6,-50,50),y&val(7,-50,50),z)),ctl(4)),ctl(5))
+a

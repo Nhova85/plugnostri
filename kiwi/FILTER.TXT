@@ -1,0 +1,65 @@
+
+
+
+                           °v° Kiwi`s Oelfilter
+                          ----------------------
+
+    Wie immer natürlich umsonst ...
+                                    Also dann, viel Freude damit..
+
+    Natürlich steht es jedem, je nach Gefallen frei, mir eine kleine 
+    Anerkennungsprämie zu senden. Ein Ferrero Küßchen, eine Postkarte,
+    irgendein Ding was keiner vermißt, kleine Münzen (Scheine hab` ich
+    schon genug), ne`Zigarette, oder ... laber ... laber ...laber
+ 
+                           Th-G. v. Kiewski
+                          Hartenholmer-Str. 6
+                            24640 Hasenmoor
+
+   ------------------------------------------------------------------------
+
+   Nach der Installation stehen die folgenden Filter in
+   dem Verzeichniss...
+                             °v° Kiwi`s Oelfilter 
+                                                        ...zur Verfügung.
+
+   Alle Filter beginnen mit kiwiolxx (x steht für Zahl), so daß die nicht 
+   benötigten Filter leicht identifiziert, und bei Bedarf gelöscht werden können.
+     
+
+   kiwiol01 = Zig-Zack       -   Erzeugt Effekte von leichtem Zittern 
+                                 über Kubismus bis zur Totalzerstörung.
+  
+   kiwiol02 = Guck mal...    -   Spiegelfilter. Besonders bei Portraitaufnahmen 
+                                 entstehen amüsante Resultate.
+  
+   kiwiol03 = 3,5 Promille   -   Teilt das Bild horizontal und vertikal auf,
+                                 erhält Ursprungsbild im Hintergrund.
+  
+   kiwiol04 = Neontraum      -   Spiegelfilter mit dem Neoneffekt
+                                 durch Kanalverschiebung simuliert wird.
+   
+   kiwiol05 = Fehlfarben     -   Vertauscht die Farben im Bild 
+  
+   kiwiol06 = 3-D Bildstanze -   Verleiht dem Bild einen plastischen 3-D Effekt. 
+                                 Interessant mit Schriften im Bild.  
+   
+   kiwiol07 = Leinwand       -   Legt das Bild auf eine Leinwand,
+                                 dessen Struktur regelbar ist.      
+   
+   kiwiol08 = Setzboard      -   Läßt das Bild als Hintergrund 
+                                 eines Setzboardes erscheinen.
+   
+   kiwiol09 = Videowand      -   Läßt das Bild auf einer Videowand
+                                 erstrahlen. (Enthält Effekt Jalousiefilter)   
+  
+   kiwiol10 = Augenspiegel   -   Spiegelt und verzerrt das Bild in Augenform.   
+  
+   ------------------------------------------------------------------------
+
+   Die Filter benötigen ein 32-Bit Bildbearbeitungsprogramm, welches Adobe
+   Plugin Filter unterstützt und die Datei "MSVCRT10.dll" im Windows Verzeichnis.
+   (Bei mir funktionieren die Filter auch mit dem Sharewareprogramm Paintshop Pro 4.1 sehr gut.)
+   Die Bilder müssen im RGB Format vorliegen!
+
+   Viel Spass....

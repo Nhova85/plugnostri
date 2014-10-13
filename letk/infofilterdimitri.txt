@@ -1,0 +1,3 @@
+Instuction of filter Dimitri form L&K:
+*this filter will only work on a layer   not on a background
+* Dit filter werkt alleen op een laag    niet op een achtergrond

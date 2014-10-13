@@ -1,0 +1,107 @@
+This Software License Agreement (the "Agreement") is a legal agreement
+between you, the end-user, and New Virtual Research, Inc. In this Agreement
+"Software" shall mean the all machine readable software programs and
+associated files in this distribution of PhotoSwizzle and any modified
+version, upgrades and other copies of such programs and files. By continuing
+installation of the Software, by loading or running the Software, or by
+placing or copying the Software onto your computer hard drive, you are
+agreeing to be bound by the terms of this Agreement.  
+ 
+1. LICENSE. For purposes of this section, "use" means loading the Software
+into RAM, as well as installation on a hard disk or other storage device.
+New Virtual Research, Inc. grants to you the non-exclusive right to use
+the Software on a single central processing unit free of charge for a 30
+day evaluation period. After the evaluation period a permanent license
+must be obtained for a fee from New Virtual Research, Inc. for continued
+use of the Software. Each central processing unit upon which the Software
+is used, whether such central processing unit is a stand-alone computer, a
+networked computer or terminal or a terminal on a multiuser computer must
+have a separately licensed copy of the Software.You may not modify,
+translate, disassemble, decompile, reverse engineer, or create derivative
+works based upon the Software.  You agree that the Software will not be
+shipped, transferred or exported into any country in violation of the U.S.
+Export Administration Act and that you will not utilize, in any other
+manner, the Software in violation of any applicable law.
+
+2. COPYRIGHT.  The Software is owned by New Virtual Research,Inc. and is
+protected by United States copyright laws and international treaty provisions.  You must treat the Software like any other copyrighted material except that
+you may make copies of the Software to give to other persons for evaluation
+subject to the terms and conditions of this Agreement.  You may not charge
+or receive any consideration from any other person for the receipt or use
+of the Software without receiving New Virtual Research, Inc.'s prior written
+consent.  You agree to use your best efforts to see that any user of the
+Software licensed hereunder complies with this Agreement.
+
+3. TRANSFERS.  You may physically transfer the Software from one of your
+computers to another provided that the Software is used on only one computer
+at a time. You may not distribute copies of the Software or accompanying
+written materials to others except for the purposes of evaluation. You may
+not transfer the permanent license number to anyone without the prior
+written consent of New Virtual Research, Inc. In no event may you transfer,
+assign, rent, lease, sell or otherwise dispose of the Software on a
+temporary basis.
+
+4. LIMITED WARRANTY.  New Virtual Research, Inc. warrants that if properly
+installed and operated on a computer for which it is designed, the Software
+will perform substantially in accordance with its designed purpose for an
+indefinite period of time. New Virtual Research Inc.'s entire liability and
+your exclusive remedy shall be to discontinue use of the Software and to
+remove the Software from the computer on which it is installed.
+
+5. NO OTHER WARRANTIES. NEW VIRTUAL RESEARCH, INC. DISCLAIMS ALL OTHER
+WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, IMPLIED
+WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE WITH
+RESPECT TO THE SOFTWARE AND THE ACCOMPANYING WRITTEN MATERIALS, IF ANY.
+THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS.  YOU MAY HAVE OTHERS
+WHICH VARY FROM JURISDICTION TO JURISDICTION.  NEW VIRTUAL RESEARCH, INC.
+DOES NOT WARRANT THAT THE OPERATION  OF THE SOFTWARE WILL BE UNINTERRUPTED,
+ERROR FREE OR MEET LICENSEE'S  SPECIFIC REQUIREMENTS.  THE WARRANTY SET
+FORTH ABOVE IS IN LIEU OF ALL OTHER EXPRESS WARRANTIES WHETHER ORAL OR
+WRITTEN. THE AGENTS, EMPLOYEES, DISTRIBUTORS, AND DEALERS OF NEW VIRTUAL
+RESEARCH, INC. ARE NOT AUTHORIZED TO MAKE MODIFICATIONS TO THIS WARRANTY,
+OR ADDITIONAL WARRANTIES ON BEHALF OF NEW VIRTUAL RESEARCH, INC.  ADDITIONAL
+STATEMENTS SUCH AS DEALER ADVERTISING OR PRESENTATIONS, WHETHER ORAL OR
+WRITTEN, DO NOT CONSTITUTE WARRANTIES BY NEW VIRTUAL RESEARCH, INC. AND
+SHOULD NOT BE RELIED UPON.
+
+6.  EXCLUSIVE REMEDIES.  You agree that your exclusive remedy against New
+Virtual Research, Inc., its affiliates, contractors, suppliers, and agents
+for loss or damage caused by any defect or failure in the Software
+regardless of the form of action, whether in contract, tort, including
+negligence, strict liability or otherwise, shall be to discontinue use of
+the Software.  This Agreement shall be construed in accordance with and
+governed by the laws of the State of California. Copyright and other
+proprietary matters will be governed by United States laws and international
+treaties.  IN ANY CASE, NEW VIRTUAL RESEARCH, INC. SHALL NOT BE LIABLE FOR
+LOSS OF DATA, LOSS OF PROFITS, LOST SAVINGS, SPECIAL, INCIDENTAL,
+CONSEQUENTIAL, INDIRECT OR OTHER SIMILAR DAMAGES ARISING FROM BREACH OF
+WARRANTY, BREACH OF CONTRACT, NEGLIGENCE, OR OTHER LEGAL THEORY EVEN IF
+NEW VIRTUAL RESEARCH, INC. OR ITS AGENT HAS BEEN ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY OTHER PARTY.  Some jurisdictions
+do not allow the exclusion or limitation of incidental or consequential
+damages, so the above limitation or exclusion may not apply to you.
+
+7. GENERAL PROVISIONS.  Neither this Agreement nor any part or portion
+hereof shall be assigned or sublicensed, except as described herein.
+Should any provision of this Agreement be held to be void, invalid,
+unenforceable or illegal by a court, the validity and enforceability of
+the other provisions shall not be affected thereby.  If any provision is
+determined to be unenforceable, you agree to a modification of such
+provision to provide for enforcement of the provision's intent, to the
+extent permitted by applicable law.  Failure of a party to enforce any
+provision of this Agreement shall not constitute or be construed as a
+waiver of such provision or of the right to enforce such provision.  If
+you fail to comply with any terms of this Agreement, YOUR LICENSE IS
+AUTOMATICALLY TERMINATED.
+
+8. ACKNOWLEDGMENT. YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, YOU
+UNDERSTAND THIS AGREEMENT, AND UNDERSTAND THAT BY CONTINUING THE
+INSTALLATION OF THE SOFTWARE, BY LOADING OR RUNNING THE SOFTWARE, OR BY
+PLACING OR COPYING THE SOFTWARE ONTO YOUR COMPUTER HARD DRIVE, YOU AGREE
+TO BE BOUND BY THIS AGREEMENT'S TERMS AND CONDITIONS.  YOU FURTHER AGREE
+THAT, EXCEPT FOR WRITTEN SEPARATE AGREEMENTS BETWEEN NEW VIRTUAL RESEARCH,
+INC. AND YOU, THIS AGREEMENT IS A COMPLETE AND EXCLUSIVE STATEMENT OF THE
+RIGHTS AND LIABILITIES OF THE PARTIES.  THIS AGREEMENT SUPERSEDES ALL PRIOR
+ORAL AGREEMENTS, PROPOSALS OR UNDERSTANDINGS, AND ANY OTHER COMMUNICATIONS
+BETWEEN NEW VIRTUAL RESEARCH AND YOU RELATING TO THE SUBJECT MATTER OF THIS
+AGREEMENT.

@@ -1,0 +1,29 @@
+This is a self-extracing executable
+Move it to the 'Plugins' folder of your
+graphics Program and click on it.
+It will create a folder and put all my
+filters in it.
+You can then delete this file.
+
+These filters represent my
+filter-making progress from
+early to more recent times
+
+The author holds no responisblity
+for any damage that should or
+ should not occur
+
+You're free to redistribute them
+If you plan to include them in a commercial
+product,ask me before doing so.
+
+If you alter or recompile them,you 
+must give the Author the proper credit.
+That's only fair.
+
+Enjoy them and don't whine.......kang
+kangaroo@asan.com
+
+
+
+

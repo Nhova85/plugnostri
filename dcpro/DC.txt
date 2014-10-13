@@ -1,0 +1,45 @@
+>DC Special and DC Layer filter Installation and descriptions
+
+>Installation: You can either unzip this file directly into
+your 'PhotoShop' pluggin directory, or into a temp directory
+and copy or move them to you pluggin directory, you're done!
+
+>Always remember that these filters only work in RGB mode
+
+>These are the pluggin filter files:
+
+DC1969.8BF	= 1969		Psychidelic
+DCBOOK.8BF	= Book		Decorative
+DCBRDRFD.8BF	= BorderFade	ProEdit
+DCBRIX.8BF	= Brix		Decorative
+DCBYNDGE.8BF	= BeyondEdger	ProEdit
+DCCLRFD.8BF	= ColorFade	ProEdit
+DCCRSTL.8BF	= Crystal		Psychidelic
+DCDRKGLS.8BF	= DarkGlass*	ProLayer
+DCDUTRST.8BF	= DuoTrast		Psychidelic
+DCEDGER.8BF	= Edger		ProEdit
+DCICE.8BF	= Ice		ProEdit
+DCLYRBLN.8BF	= LayerBlend*	ProLayer
+DCMELT.8BF	= Melt		ProEdit
+DCMRGNCY.8BF	= DCmergency*	ProLayer
+DCNYLON.8BF	= Nylon		Psychidelic
+DCOUTLIN.8BF	= OutLiner		Psychidelic
+DCPATE~1.8BF	= PatternEditUndo	ProEdit
+DCPATE~2.8BF	= PatternEditDo	ProEdit
+DCPROBLN.8BF	= ProBlend		ProEdit
+DCPRSRUG.8BF	= PerssianRug	Psychidelic
+DCPSYCH.8BF	= Psych		Psychidelic
+DCRAIN.8BF	= Rain		ProEdit
+DCRAISE.8BF	= RaiseIt*		ProLayer
+DCRICHNR.8BF	= Rich-n-r		ProEdit
+DCTLBLND.8BF	= TileBlendRough	ProEdit
+
+* In seperate catagory, "DC Layer" these work on the alpha
+(Opacity) channel of the Layer you are currently working on.
+All others are in the catagory, "DCspecial".
+
+Periodicaly check for new filters at:
+http://www.bmath.net/dc
+e-mail: dc@bmath.net
+
+Thanx, DC

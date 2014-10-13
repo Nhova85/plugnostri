@@ -1,0 +1,582 @@
+FFL1.0
+   20
+BordersOn.8bf
+Andrew's Filters 7
+Borders On...
+AB
+Freeware
+
+
+
+
+Red Duplicate
+Green Duplicate
+Blue Duplicate
+Red Source
+Green Source
+Blue Source
+Intensity
+Drift
+53
+49
+13
+164
+89
+93
+188
+142
+val(6,-5,5)*c+ctl(7)-src(r2x(d+ctl(0),m),y,0)-src(r2x(d+ctl(3),m),y,0)
+val(6,-5,5)*c+ctl(7)-src(r2x(d+ctl(1),m),y,1)-src(r2x(d+ctl(4),m),y,1)
+val(6,-5,5)*c+ctl(7)-src(r2x(d+ctl(2),m),y,2)-src(r2x(d+ctl(5),m),y,2)
+a
+CentrePnt.8bf
+Andrew's Filters 7
+Centre Point...
+Freeware
+AB
+
+
+
+
+Middle
+Red OnOff
+Green OnOff
+BlueOnOff
+
+
+
+
+124
+158
+59
+255
+0
+0
+0
+0
+(ctl(0)+val(1,-1,1)*r)/2
+(ctl(0)+val(2,-1,1)*g)/2
+(ctl(0)+val(3,-1,1)*b)/2
+a
+ClsGrid.8bf
+Andrew's Filters 7
+CloseUp Grid...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+56
+27
+33
+4
+28
+156
+0
+0
+x%ctl(0)!=0&&y%ctl(1)!=0?src((x+ctl(0))/2,(y+ctl(1))/2,0):0
+x%ctl(2)!=0&&y%ctl(3)!=0?src((x+ctl(2))/2,(y+ctl(3))/2,1):0
+x%ctl(4)!=0&&y%ctl(5)!=0?src((x+ctl(4))/2,(y+ctl(5))/2,2):0
+a
+ColJumble.8bf
+Andrew's Filters 7
+Colour Jumble Sale...
+AB
+Freeware
+
+
+
+
+Red X
+Red Y
+Green X
+Green Y
+Blue X
+Blue Y
+Jumble Sale
+
+18
+26
+45
+49
+61
+67
+4
+0
+src(x%ctl(0)>>ctl(6)?x+ctl(0)/2:x-ctl(0)/2,y%ctl(1)>>ctl(6)?y+ctl(1)/2:y-ctl(1)/2,z)
+src(x%ctl(2)>>ctl(6)?x+ctl(2)/2:x-ctl(2)/2,y%ctl(1)>>ctl(3)?y+ctl(3)/2:y-ctl(3)/2,z)
+src(x%ctl(4)>>ctl(6)?x+ctl(4)/2:x-ctl(4)/2,y%ctl(5)>>ctl(6)?y+ctl(5)/2:y-ctl(5)/2,z)
+a
+ColourMss.8bf
+Andrew's Filters 7
+Colour Mess...
+AB
+Freeware
+
+
+
+
+Red 1
+Green 1
+Blue 1
+Red 2
+Green 2
+Blue 2
+Source
+Drift
+158
+32
+59
+20
+124
+55
+164
+13
+val(6,-5,5)*c+ctl(7)-src(r2x(d+ctl(0),m),y,0)^src(r2x(d+ctl(3),m),y,0)
+val(6,-5,5)*c+ctl(7)-src(r2x(d+ctl(1),m),y,1)^src(r2x(d+ctl(4),m),y,1)
+val(6,-5,5)*c+ctl(7)-src(r2x(d+ctl(2),m),y,2)^src(r2x(d+ctl(5),m),y,2)
+a
+ColourRou.8bf
+Andrew's Filters 7
+Colour Round...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Red Cut
+Green Cut
+Blue Cut
+
+
+78
+48
+171
+108
+91
+203
+0
+0
+(c+ctl(0))>ctl(3)?ctl(3)-((c+ctl(0))):c+ctl(0)
+(c+ctl(1))>ctl(4)?ctl(4)-((c+ctl(1))):c+ctl(1)
+(c+ctl(2))>ctl(5)?ctl(5)-((c+ctl(2))):c+ctl(2)
+a
+ColourRse.8bf
+Andrew's Filters 7
+Coloured Rise...
+AB
+Freeware
+
+
+
+
+Red A
+Green A
+Blue A
+Direction 1
+Direction 2
+Red A
+Green A
+Blue A
+21
+95
+227
+9
+15
+255
+170
+36
+(src(x,y,val(0,0,2))+src(x,y+ctl(3),val(1,0,2))+src(x,y-ctl(4),val(5,0,2)))/3
+(src(x,y,val(1,0,2))+src(x,y+ctl(3),val(1,0,2))+src(x,y-ctl(4),val(6,0,2)))/3
+(src(x,y,val(2,0,2))+src(x,y+ctl(3),val(1,0,2))+src(x,y-ctl(4),val(7,0,2)))/3
+a
+CurveIn.8bf
+Andrew's Filters 7
+Curve Inwards...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+In Effect
+Normal
+Red Mover
+Green Mover
+Blue Mover
+71
+164
+107
+153
+112
+164
+95
+174
+(val(3,0,10)*rad(d,M-m,val(5,0,2))+val(4,0,10)*rad(d,m,val(5,0,2)))/val(0,0,10)
+(val(3,0,10)*rad(d,M-m,val(6,0,2))+val(4,0,10)*rad(d,m,val(6,0,2)))/val(1,0,10)
+(val(3,0,10)*rad(d,M-m,val(7,0,2))+val(4,0,10)*rad(d,m,val(7,0,2)))/val(2,0,10)
+a
+EmbBlur.8bf
+Andrew's Filters 7
+Embossy Blurer...
+AB
+Freeware
+
+
+
+
+Red Blur
+Green Blur
+Blue Blur
+Red Channel
+Green Channel
+Blue Channel
+Negative
+Intensity
+2
+10
+15
+75
+186
+29
+209
+2
+ctl(6)-(src(x+ctl(0),y+ctl(0),val(3,0,2))-src(x-ctl(0),y-ctl(0),val(3,0,2))+src(x-ctl(0),y+ctl(0),val(3,0,2))-src(x+ctl(0),y-ctl(0),val(3,0,2)))/ctl(7)
+ctl(6)-(src(x+ctl(1),y+ctl(1),val(5,0,2))-src(x-ctl(1),y-ctl(1),val(5,0,2))+src(x-ctl(1),y+ctl(1),val(5,0,2))-src(x+ctl(1),y-ctl(1),val(5,0,2)))/ctl(7)
+ctl(6)-(src(x+ctl(2),y+ctl(2),val(5,0,2))-src(x-ctl(2),y-ctl(2),val(5,0,2))+src(x-ctl(2),y+ctl(2),val(5,0,2))-src(x+ctl(2),y-ctl(2),val(5,0,2)))/ctl(7)
+a
+FlatFlat.8bf
+Andrew's Filters 7
+Flat, Flat...
+AB
+Freeware
+
+
+
+
+Red Max
+Green Max
+Blue Max
+Red Effect
+Green Effect
+Blue Effect
+
+
+167
+155
+155
+22
+89
+44
+0
+0
+max(ctl(0),src(x,y,val(3,0,2)))
+max(ctl(1),src(x,y,val(4,0,2)))
+max(ctl(2),src(x,y,val(5,0,2)))
+a
+Glass1.8bf
+Andrew's Filters 7
+Glassy Look...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+4
+5
+12
+11
+7
+12
+0
+0
+src(x%ctl(0)==0?x+ctl(0)/2:x-ctl(0)/2,y%ctl(1)==0?y+ctl(1)/2:y-ctl(1)/2,z)
+src(x%ctl(2)==0?x+ctl(2)/2:x-ctl(2)/2,y%ctl(3)==0?y+ctl(3)/2:y-ctl(3)/2,z)
+src(x%ctl(4)==0?x+ctl(4)/2:x-ctl(4)/2,y%ctl(5)==0?y+ctl(5)/2:y-ctl(5)/2,z)
+a
+GlassRt.8bf
+Andrew's Filters 7
+Glass Rotate ...
+AB
+Freeware
+
+
+
+
+Red Angle
+Red Magnitude
+Green Angle
+Green Magnitude
+Blue Angle
+Blue Magnitude
+
+
+17
+10
+10
+13
+13
+10
+0
+0
+rad(d%ctl(0)==0?d+ctl(0)/2:d-ctl(0)/2,m%ctl(1)==0?m+ctl(1)/2:m-ctl(1)/2,z)
+rad(d%ctl(2)==0?d+ctl(2)/2:d-ctl(2)/2,m%ctl(3)==0?m+ctl(3)/2:m-ctl(3)/2,z)
+rad(d%ctl(4)==0?d+ctl(4)/2:d-ctl(4)/2,m%ctl(5)==0?m+ctl(5)/2:m-ctl(5)/2,z)
+a
+KookyGl.8bf
+Andrew's Filters 7
+Kooky Glass...
+AB
+Freeware
+
+
+
+
+Red Angle
+Red magnitude
+Green Angle
+Green Magnitude
+Blue Angle
+Blue Magnitude
+
+
+51
+11
+61
+22
+79
+36
+0
+0
+rad(d%ctl(0)!=0?d+ctl(0)/2:d-ctl(0)/2,m%ctl(1)!=0?m+ctl(1)/2:m-ctl(1)/2,z)
+rad(d%ctl(2)!=0?d+ctl(2)/2:d-ctl(2)/2,m%ctl(3)!=0?m+ctl(3)/2:m-ctl(3)/2,z)
+rad(d%ctl(4)!=0?d+ctl(4)/2:d-ctl(4)/2,m%ctl(5)!=0?m+ctl(5)/2:m-ctl(5)/2,z)
+a
+MovImage.8bf
+Andrew's Filters 7
+Moving Image...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Source
+Move
+246
+235
+222
+73
+87
+95
+178
+9
+val(6,-5,5)*c+ctl(7)-src(r2x(d,m+ctl(0)),y,0)^src(r2x(d,m+ctl(3)),y,0)
+val(6,-5,5)*c+ctl(7)-src(r2x(d,m+ctl(1)),y,1)^src(r2x(d,m+ctl(4)),y,1)
+val(6,-5,5)*c+ctl(7)-src(r2x(d,m+ctl(2)),y,2)^src(r2x(d,m+ctl(5)),y,2)
+a
+NoisLyr.8bf
+Andrew's Filters 7
+Noise Layer...
+AB
+Freeware
+
+
+
+
+Red Min
+Red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+
+
+91
+115
+92
+154
+112
+129
+0
+0
+c+rnd(ctl(0),ctl(1))
+c+rnd(ctl(2),ctl(3))
+c+rnd(ctl(4),ctl(5))
+a
+NoisMax.8bf
+Andrew's Filters 7
+Noise Max...
+AB
+Freeware
+
+
+
+
+Red Min
+Red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+
+
+94
+205
+77
+124
+107
+131
+0
+0
+c-rnd(ctl(0),ctl(1))
+c-rnd(ctl(2),ctl(3))
+c-rnd(ctl(4),ctl(5))
+a
+NoisyBit.8bf
+Andrew's Filters 7
+Noisy Bits...
+AB
+Freeware
+
+
+
+
+Red Min
+Red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+
+
+191
+234
+148
+122
+87
+160
+0
+0
+c^rnd(ctl(0),ctl(1))
+c^rnd(ctl(2),ctl(3))
+c^rnd(ctl(4),ctl(5))
+a
+NotBefore.8bf
+Andrew's Filters 7
+Not Before Time...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Red Effect
+Green Effect
+Blue Effect
+Negative
+
+62
+56
+170
+5
+182
+35
+246
+0
+ctl(6)-ctl(0)^c^ctl(3)
+ctl(6)-ctl(1)^src(x,y,0)^ctl(4)
+ctl(6)-ctl(2)^src(x,y,0)^ctl(5)
+a
+PgComic.8bf
+Andrew's Filters 7
+On The Pages Of An Old Comic...
+AB
+Freeware
+
+
+
+
+Red Blur
+Green Blur
+Blue Blur
+Red Channel
+Green Channel
+Blue Channel
+
+
+16
+16
+16
+93
+180
+229
+0
+0
+(src(x+ctl(0),y+ctl(0),val(3,0,2))-src(x-ctl(0),y-ctl(0),val(3,0,2))+src(x-ctl(0),y+ctl(0),val(3,0,2))-src(x+ctl(0),y-ctl(0),val(3,0,2)))/2
+(src(x+ctl(1),y+ctl(1),val(5,0,2))-src(x-ctl(1),y-ctl(1),val(5,0,2))+src(x-ctl(1),y+ctl(1),val(5,0,2))-src(x+ctl(1),y-ctl(1),val(5,0,2)))/2
+(src(x+ctl(2),y+ctl(2),val(5,0,2))-src(x-ctl(2),y-ctl(2),val(5,0,2))+src(x-ctl(2),y+ctl(2),val(5,0,2))-src(x+ctl(2),y-ctl(2),val(5,0,2)))/2
+a
+YukDist.8bf
+Andrew's Filters 7
+Yukky Distort...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+172
+172
+175
+176
+172
+173
+0
+0
+src(x-sin(d-m)/val(0,-20,20),y-sin(d-m)/val(1,-20,20),0)
+src(x-sin(d-m)/val(2,-20,20),y-sin(d-m)/val(3,-20,20),1)
+src(x-sin(d-m)/val(4,-20,20),y-sin(d-m)/val(5,-20,20),2)
+a

@@ -1,0 +1,582 @@
+FFL1.0
+   20
+PolarBr.8bf
+Andrew's Filters 40
+Polar Bear...
+AB
+Freeware
+
+
+
+
+Red d
+Red m
+Green d
+Green m
+Blue d
+Blue m
+
+
+200
+7
+197
+16
+87
+49
+0
+0
+src(r2x(D-d,M-m)-r2x(d-ctl(0),m-ctl(1)),r2y(D-d,M-m)-r2y(d,m),0)
+src(r2x(D-d,M-m)-r2x(d-ctl(2),m-ctl(3)),r2y(D-d,M-m)-r2y(d,m),1)
+src(r2x(D-d,M-m)-r2x(d-ctl(4),m-ctl(5)),r2y(D-d,M-m)-r2y(d,m),2)
+a
+PopOver.8bf
+Andrew's Filters 40
+Popping Up All Over...
+AB
+Freeware
+
+
+
+
+x & y
+Pattern A
+Pattern B
+Red Factor
+Green Factor
+Blue Factor
+Radius
+
+24
+71
+13
+50
+49
+4
+31
+0
+((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)-ctl(2)>ctl(6)?c:c^ctl(3)
+((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)-ctl(2)>ctl(6)?c:c^ctl(4)
+((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)-ctl(2)>ctl(6)?c:c^ctl(5)
+a
+PostMad.8bf
+Andrew's Filters 40
+Poster Paints Gone Mad...
+AB
+Freeware
+
+
+
+
+Red Angle
+Green Angle
+Blue Angle
+Intensity
+Effect X
+
+
+
+195
+225
+213
+222
+207
+0
+0
+0
+ctl(4)-ctl(3)>>rad(d^ctl(0),m,0)/c
+ctl(4)-ctl(3)>>rad(d^ctl(1),m,1)/c
+ctl(4)-ctl(3)>>rad(d^ctl(2),m,2)/c
+a
+PotterWh.8bf
+Andrew's Filters 40
+On A Pottery Wheel...
+AB
+Freeware
+
+
+
+
+Red d
+Red g
+Green d
+Green m
+Blue d
+Blue m
+
+
+109
+111
+56
+130
+67
+91
+0
+0
+src(abs(d)-D%(abs(d)-val(0,-60,60)),m-M%(m-val(1,-60,60)),0)
+src(abs(d)-D%(abs(d)-val(2,-60,60)),m-M%(m-val(3,-60,60)),2)
+src(abs(d)-D%(abs(d)-val(4,-60,60)),m-M%(m-val(5,-60,60)),2)
+a
+PretInts.8bf
+Andrew's Filters 40
+Pretty Intense...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+237
+245
+241
+0
+0
+0
+0
+0
+scl(c%ctl(0),0,256,0,2000)
+scl(src(x,y,0)%ctl(1),0,256,1,2000)
+scl(src(x,y,0)%ctl(2),0,256,2,2000)
+a
+ProjHayw.8bf
+Andrew's Filters 40
+Projector Gone Haywire...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+35
+71
+47
+115
+131
+89
+0
+0
+mix(c,src(x%val(0,-X,X),y%val(1,-Y,Y),0),d,m)
+mix(c,src(x%val(2,-X,X),y%val(3,-Y,Y),1),d,m)
+mix(c,src(x%val(4,-X,X),y%val(5,-Y,Y),2),d,m)
+a
+Puddle.8bf
+Andrew's Filters 40
+Looking Into A Puddle...
+AB
+Freeware
+
+
+
+
+Red M Up
+Green M Up
+Blue M Up
+Ripple
+Red M Down
+Green M Down
+Blue M Down
+Brightness
+63
+60
+46
+28
+122
+11
+127
+41
+100*rad(d,(m+ctl(0)-ctl(4))%ctl(3),0)/ctl(7)
+100*rad(d,(m+ctl(1)-ctl(5))%ctl(3),1)/ctl(7)
+100*rad(d,(m+ctl(2)-ctl(6))%ctl(3),2)/ctl(7)
+a
+PulBits.8bf
+Andrew's Filters 40
+Pulled All To Bits...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+7
+189
+7
+189
+7
+189
+0
+0
+src(x%mix(tan(x),y,ctl(0),ctl(1)),y%mix(tan(y),x,ctl(0),ctl(1)),0)
+src(x%mix(tan(x),y,ctl(2),ctl(3)),y%mix(tan(y),x,ctl(2),ctl(3)),1)
+src(x%mix(tan(x),y,ctl(4),ctl(5)),y%mix(tan(y),x,ctl(4),ctl(5)),2)
+a
+PutRevrs.8bf
+Andrew's Filters 40
+Put Into Reverse...
+AB
+Freeware
+
+
+
+
+Red Min
+red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+Shift Along
+Shift Back
+14
+66
+60
+156
+10
+70
+166
+53
+c>ctl(0)&&c<ctl(1)?c:src(x+val(6,0,10),y,0)+c+src(x-val(7,0,10),y,0)/3
+c>ctl(2)&&c<ctl(3)?c:src(x+val(6,0,10),y,1)+c+src(x-val(7,0,10),y,1)/3
+c>ctl(4)&&c<ctl(5)?c:src(x+val(6,0,10),y,2)+c+src(x-val(7,0,10),y,2)/3
+a
+QuitFrig.8bf
+Andrew's Filters 40
+Quite, Quite Frightening...
+AB
+Freeware
+
+
+
+
+Red Random
+Green Random
+Blue Random
+Red Background
+Green Background
+Blue Background
+y
+
+151
+65
+159
+162
+108
+152
+48
+0
+mix(rnd(0,ctl(0)),c,ctl(3),src(x,y+val(6,-rnd(0,100),rnd(0,100)),0))
+mix(rnd(0,ctl(1)),c,ctl(4),src(x,y+val(6,-rnd(0,100),rnd(0,100)),1))
+mix(rnd(0,ctl(2)),c,ctl(5),src(x,y+val(6,-rnd(0,100),rnd(0,100)),2))
+a
+QuitRanT.8bf
+Andrew's Filters 40
+Quite A Bit Of Random In This...
+AB
+Freeware
+
+
+
+
+Red Random
+Green random
+Blue Random
+Red Random Move
+Green Random Move
+Blue Random Move
+Random Mix 1
+Random Mix 2
+109
+185
+32
+130
+88
+133
+95
+45
+mix(src(x+rnd(-1,1)*val(3,-100,100),y+rnd(-1,1)*val(3,-100,100),rnd(0,2)),ctl(0),rnd(0,20)*ctl(6),rnd(0,20)*ctl(7))
+mix(src(x+rnd(-1,1)*val(4,-100,100),y+rnd(-1,1)*val(4,-100,100),rnd(0,2)),ctl(1),rnd(0,20)*ctl(6),rnd(0,20)*ctl(7))
+mix(src(x+rnd(-1,1)*val(5,-100,100),y+rnd(-1,1)*val(5,-100,100),rnd(0,2)),ctl(2),rnd(0,20)*ctl(6),rnd(0,20)*ctl(7))
+a
+RanCHair.8bf
+Andrew's Filters 40
+Random Colour In Your Hair...
+AB
+Freeware
+
+
+
+
+Red Min
+Red Max
+Green Min
+Green Max
+Blue Min
+Blue Max
+Random
+Random Factor
+71
+102
+148
+222
+102
+158
+85
+201
+c>ctl(0)&&c<ctl(1)?rnd(0,ctl(6))^ctl(7):c
+c>ctl(2)&&c<ctl(3)?rnd(0,ctl(6))^ctl(7):c
+c>ctl(4)&&c<ctl(5)?rnd(0,ctl(6))^ctl(7):c
+a
+RanCopy.8bf
+Andrew's Filters 40
+Random Copies...
+AB
+Freeware
+
+
+
+
+Red X
+Red Y
+Green X
+Green Y
+Blue X
+Blue Y
+End
+
+99
+79
+66
+115
+131
+75
+58
+0
+rnd(dif(c,src(x+ctl(0),y+ctl(1),0)),ctl(6))
+rnd(dif(c,src(x+ctl(2),y+ctl(3),1)),ctl(6))
+rnd(dif(c,src(x+ctl(4),y+ctl(5),2)),ctl(6))
+a
+RandPoSp.8bf
+Andrew's Filters 40
+Random Poster Splash...
+AB
+Freeware
+
+
+
+
+Red Random
+Green Random
+Blue Random
+Intensity
+Red Effect
+Green Effect
+Blue Effect
+Narrow X
+13
+6
+143
+2
+35
+255
+43
+26
+rad(d,m,val(4,0,2))<<((r*ctl(0))/(rnd(ctl(7),x))+(r*ctl(0))/(rnd(ctl(7),X-x)))/ctl(3)
+rad(d,m,val(5,0,2))<<((g*ctl(1))/(rnd(ctl(7),x))+(g*ctl(1))/(rnd(ctl(7),X-x)))/ctl(3)
+rad(d,m,val(6,0,2))<<((b*ctl(2))/(rnd(ctl(7),x))+(b*ctl(2))/(rnd(ctl(7),X-x)))/ctl(3)
+a
+RanFlat.8bf
+Andrew's Filters 40
+Not Sure Of A Colour...
+AB
+Freeware
+
+
+
+
+Red Factor 1
+Red Factor 2
+Green Factor 1
+Green Factor 2
+Blue Factor 1
+Blue Factor 2
+
+
+93
+137
+50
+11
+89
+125
+0
+0
+mix(src(x,y,rnd(0,2)),val(0,-50,50),c,ctl(3))
+mix(src(x,y,rnd(0,2)),val(1,-50,50),c,ctl(4))
+mix(src(x,y,rnd(0,2)),val(2,-50,50),c,ctl(5))
+a
+RanMRan.8bf
+Andrew's Filters 40
+Random Move Random...
+AB
+Freeware
+
+
+
+
+Red Random x
+Red Random y
+Green Random x
+Green Random y
+Blue Random x
+Blue Random y
+
+
+168
+170
+123
+109
+105
+90
+0
+0
+src(x+rnd(-1,1)*val(0,-100,100),y+rnd(-1,1)*val(1,-100,100),rnd(0,2))
+src(x+rnd(-1,1)*val(2,-100,100),y+rnd(-1,1)*val(3,-100,100),rnd(0,2))
+src(x+rnd(-1,1)*val(4,-100,100),y+rnd(-1,1)*val(5,-100,100),rnd(0,2))
+a
+RanStar.8bf
+Andrew's Filters 40
+Random Star...
+AB
+Freeware
+
+
+
+
+M Bound
+D Bound
+M Modulo
+D Modulo
+Red
+Green
+Blue
+
+11
+4
+62
+67
+201
+171
+247
+0
+rnd(0,m)%ctl(2)>ctl(0)&rnd(0,abs(d%ctl(3)))>ctl(1)?c:ctl(4)
+rnd(0,m)%ctl(2)>ctl(0)&rnd(0,abs(d%ctl(3)))>ctl(1)?c:ctl(5)
+rnd(0,m)%ctl(2)>ctl(0)&rnd(0,abs(d%ctl(3)))>ctl(1)?c:ctl(6)
+a
+RanTotal.8bf
+Andrew's Filters 40
+Random Total...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Factor 1
+Factor 2
+34
+148
+196
+175
+90
+109
+108
+87
+mix(src(x,y,rnd(0,2)),src(rnd(rnd(0,x%ctl(0)),rnd(0,x%ctl(0))),rnd(rnd(0,y%ctl(1)),rnd(0,y%ctl(1))),rnd(0,2)),ctl(6),ctl(7))
+mix(src(x,y,rnd(0,2)),src(rnd(rnd(2,x%ctl(0)),rnd(0,x%ctl(2))),rnd(rnd(0,y%ctl(3)),rnd(0,y%ctl(3))),rnd(0,2)),ctl(6),ctl(7))
+mix(src(x,y,rnd(0,2)),src(rnd(rnd(0,x%ctl(4)),rnd(0,x%ctl(4))),rnd(rnd(0,y%ctl(5)),rnd(0,y%ctl(5))),rnd(0,2)),ctl(6),ctl(7))
+a
+RanWreck.8bf
+Andrew's Filters 40
+Random Wreck...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Use x
+Use y
+5
+1
+6
+16
+127
+234
+74
+255
+src(x+val(6,-1,1)*rnd(0,val(0,0,200)),y+val(7,-1,1)*rnd(0,val(1,0,200)),rnd(0,2))
+src(x+val(6,-1,1)*rnd(0,val(2,0,200)),y+val(7,-1,1)*rnd(0,val(3,0,200)),rnd(0,2))
+src(x+val(6,-1,1)*rnd(0,val(4,0,200)),y+val(7,-1,1)*rnd(0,val(5,0,200)),rnd(0,2))
+a
+RealInIt.8bf
+Andrew's Filters 40
+Really Into Itself...
+AB
+Freeware
+
+
+
+
+Red x
+red y
+Green x
+Green y
+Blue x
+Blue y
+Intensity
+
+23
+33
+38
+21
+21
+22
+3
+0
+(src((50*x/ctl(0))%(X-x),(50*y/ctl(1))%(Y-y),z)+src((50*(X-x)/ctl(0))%(X-x),(50*(Y-y)/ctl(1))%(Y-y),z)+src((50*x/ctl(0))%(x),(50*y/ctl(1))%(Y-y),z)+src((50*x/ctl(0))%(X-x),(50*y/ctl(1))%(y),z))/ctl(6)
+(src((50*x/ctl(2))%(X-x),(50*y/ctl(3))%(Y-y),z)+src((50*(X-x)/ctl(2))%(X-x),(50*(Y-y)/ctl(3))%(Y-y),z)+src((50*x/ctl(2))%(x),(50*y/ctl(3))%(Y-y),z)+src((50*x/ctl(2))%(X-x),(50*y/ctl(3))%(y),z))/ctl(6)
+(src((50*x/ctl(4))%(X-x),(50*y/ctl(5))%(Y-y),z)+src((50*(X-x)/ctl(4))%(X-x),(50*(Y-y)/ctl(5))%(Y-y),z)+src((50*x/ctl(4))%(x),(50*y/ctl(5))%(Y-y),z)+src((50*x/ctl(4))%(X-x),(50*y/ctl(5))%(y),z))/ctl(6)
+a

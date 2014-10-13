@@ -1,0 +1,34 @@
+Version History
+===============
+Andrew's Plugins vol 7
+
+
+7.0.6 
+======
+August 2004
+Increased size of dialog
+Placed all the output modes / color sliders / save / presets and categories along bottom of dialog
+Bigger preview (FM feature http://www.filtermeister.com)
+right click options / preview access
+more dropdown options added
+updated dialog positions
+consistent blend button added
+updated code - quicker hopefully in places
+cleaner code - now fairly uniform for future updates
+bug fixes 
+udated documentation
+
+
+
+7.0.5 
+========
+March 2004
+Added presets
+Increased size of dialogs
+Added new output options
+Uniform size and position of sliders
+New features
+Additional buttons
+Removed defunct plugins
+Uniform plug-in underlying approach
+Improved preview support 

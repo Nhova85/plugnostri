@@ -1,0 +1,582 @@
+FFL1.0
+   20
+RealJung.8bf
+Andrew's Filters 41
+Its A Real Jungle Out There...
+AB
+Freeware
+
+
+
+
+Red x
+Green x
+Blue x
+Red y
+Green y
+Blue y
+Bit x
+Bit y
+122
+128
+159
+122
+143
+128
+138
+159
+dif(src(x^val(6,-50,50),y^val(7,-50,50),0),src(c2d(X%(X-x-ctl(0)),Y%(Y-y-ctl(3))),c2m(X%(X-x-ctl(0)),Y%(Y-y-ctl(3))),0))
+dif(src(c2d(X%(X-x-ctl(1)),Y%(Y-y-ctl(4))),c2m(X%(X-x-ctl(1)),Y%(Y-y-ctl(4))),0),src(x^val(6,-50,50),y^val(7,-50,50),1))
+dif(src(c2d(X%(X-x-ctl(2)),Y%(Y-y-ctl(5))),c2m(X%(X-x-ctl(2)),Y%(Y-y-ctl(5))),0),src(x^val(6,-50,50),y^val(7,-50,50),2))
+a
+RepTV.8bf
+Andrew's Filters 41
+Oh No Repeats on TV...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+120
+23
+195
+81
+198
+218
+0
+0
+src(x-X%(x-val(0,-10,10)),y-Y%(y-val(1,-10,10)),0)
+src(x-X%(x-val(2,-10,10)),y-Y%(y-val(3,-10,10)),1)
+src(x-X%(x-val(4,-10,10)),y-Y%(y-val(5,-10,10)),2)
+a
+RevThoug.8bf
+Andrew's Filters 41
+Revealing Thought...
+AB
+Freeware
+
+
+
+
+Red Random
+Green Random
+Blue Random
+Red Background
+Green Background
+Blue Background
+Y Factor
+
+152
+153
+159
+162
+61
+46
+102
+0
+mix(rnd(0,ctl(0)),sqr(c),ctl(3),src(x,y+val(6,-rnd(0,100),rnd(0,100)),0))
+mix(rnd(0,ctl(1)),sqr(c),ctl(4),src(x,y+val(6,-rnd(0,100),rnd(0,100)),1))
+mix(rnd(0,ctl(2)),sqr(c),ctl(5),src(x,y+val(6,-rnd(0,100),rnd(0,100)),2))
+a
+RMesUp.8bf
+Andrew's Filters 41
+Another Random MessUp...
+AB
+Freeware
+
+
+
+
+Random Red
+Random Green
+Random Blue
+Red Add
+Green Add
+Blue Add
+Additional
+
+195
+219
+251
+15
+26
+66
+202
+0
+add(ctl(3),r^sqr(rnd(-100,ctl(0))),ctl(6))
+add(ctl(4),g^sqr(rnd(-100,ctl(1))),ctl(6))
+add(ctl(5),b^sqr(rnd(-100,ctl(2))),ctl(6))
+a
+RotBits.8bf
+Andrew's Filters 41
+Rotational Bits...
+AB
+Freeware
+
+
+
+
+Red d
+Red m
+Green d
+Green m
+Blue d
+Blue m
+
+
+30
+33
+40
+16
+27
+19
+0
+0
+rad(d|rnd(0,ctl(0)),m|rnd(0,ctl(1)),0)
+rad(d|rnd(0,ctl(2)),m|rnd(0,ctl(3)),1)
+rad(d|rnd(0,ctl(4)),m|rnd(0,ctl(5)),2)
+a
+RouByISf.8bf
+Andrew's Filters 41
+Round By Itself...
+AB
+Freeware
+
+
+
+
+Red d
+red m
+Green d
+Green m
+Blue d
+Blue m
+
+
+60
+83
+39
+159
+216
+255
+0
+0
+rad(d+val(0,-1,1)*rad(d,m,rnd(0,2)),m+val(1,-1,1)*rad(d,m,rnd(0,2)),rnd(0,2))
+rad(d+val(2,-1,1)*rad(d,m,rnd(0,2)),m+val(3,-1,1)*rad(d,m,rnd(0,2)),rnd(0,2))
+rad(d+val(4,-1,1)*rad(d,m,rnd(0,2)),m+val(5,-1,1)*rad(d,m,rnd(0,2)),rnd(0,2))
+a
+RouRemT.8bf
+Andrew's Filters 41
+Round Removal Time...
+AB
+Freeware
+
+
+
+
+Red m
+Green m
+Blue m
+Red New
+Green New
+Blue New
+
+
+64
+70
+65
+186
+173
+147
+0
+0
+(rad(d,m+ctl(0),0)+rad(d,m-ctl(0),0)+c)/3>c?c:ctl(3)
+(rad(d,m+ctl(1),1)+rad(d,m-ctl(1),1)+c)/3>c?c:ctl(4)
+(rad(d,m+ctl(2),2)+rad(d,m-ctl(2),2)+c)/3>c?c:ctl(5)
+a
+RSplit.8bf
+Andrew's Filters 41
+Reality Split...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Factor 1
+Factor 2
+18
+9
+11
+32
+123
+94
+90
+35
+mix(dif(src(x%ctl(0),y,0),dif(c,src(x%ctl(1),y,0))),c,ctl(6),ctl(7))
+mix(dif(src(x%ctl(2),y,1),dif(c,src(x%ctl(3),y,1))),c,ctl(6),ctl(7))
+mix(dif(src(x%ctl(4),y,2),dif(c,src(x%ctl(5),y,2))),c,ctl(6),ctl(7))
+a
+SamMix.8bf
+Andrew's Filters 41
+Same To Same But Mixed...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+197
+36
+226
+138
+161
+95
+0
+0
+mix(src(x,y,rnd(0,2)),src(x,y,rnd(0,2)),ctl(0),ctl(1))
+mix(src(x,y,rnd(0,2)),src(x,y,rnd(0,2)),ctl(2),ctl(3))
+mix(src(x,y,rnd(0,2)),src(x,y,rnd(0,2)),ctl(4),ctl(5))
+a
+SandBlt.8bf
+Andrew's Filters 41
+SandBlasted Wall...
+AB
+Freeware
+
+
+
+
+Red Random
+Green Random
+Blue Random
+Red Difference
+Green Difference
+Blue Difference
+
+
+18
+204
+56
+37
+198
+152
+0
+0
+dif(ctl(3),r*sqr(rnd(0,ctl(0))))
+dif(ctl(4),g*sqr(rnd(0,ctl(1))))
+dif(ctl(5),b*sqr(rnd(0,ctl(2))))
+a
+SatVisio.8bf
+Andrew's Filters 41
+Saturated Vision...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+219
+26
+224
+96
+200
+142
+0
+0
+mix(sin(c),cos(c),ctl(0),ctl(1))
+mix(sin(c),cos(c),ctl(2),ctl(3))
+mix(sin(c),cos(c),ctl(4),ctl(5))
+a
+Scrumple.8bf
+Andrew's Filters 41
+Scrumpled...
+AB
+Freeware
+
+
+
+
+Red Scrump X
+Red Scrump Y
+Green Scrump X
+Green SCrump Y
+Blue Scrump X
+Blue Scrump Y
+
+
+6
+4
+20
+16
+18
+22
+0
+0
+dif(dif(c,rad(d+ctl(0),m+ctl(1),0)),c)
+dif(dif(rad(d,m,0),rad(d+ctl(2),m+ctl(3),0)),rad(d,m,0))
+dif(dif(rad(d,m,0),rad(d+ctl(4),m+ctl(5),0)),rad(d,m,0))
+a
+SelWheel.8bf
+Andrew's Filters 41
+Selby Wheeler Take A Percentage...
+AB
+Freeware
+
+
+
+
+Red x
+Green x
+Blue x
+Red y
+Green y
+Blue y
+Modulo x
+Modulo y
+122
+128
+159
+122
+143
+155
+209
+201
+dif(src(x%val(6,-50,50),y%val(7,-50,50),0),src(c2d(X%(X-x-ctl(0)),Y%(Y-y-ctl(3))),c2m(X%(X-x-ctl(0)),Y%(Y-y-ctl(3))),0))
+dif(src(c2d(X%(X-x-ctl(1)),Y%(Y-y-ctl(4))),c2m(X%(X-x-ctl(1)),Y%(Y-y-ctl(4))),0),src(x%val(6,-50,50),y%val(7,-50,50),1))
+dif(src(c2d(X%(X-x-ctl(2)),Y%(Y-y-ctl(5))),c2m(X%(X-x-ctl(2)),Y%(Y-y-ctl(5))),0),src(x%val(6,-50,50),y%val(7,-50,50),2))
+a
+ShColFl.8bf
+Andrew's Filters 41
+Shovelful Of Colours...
+AB
+Freeware
+
+
+
+
+Red Factor 1
+Green Factor 1
+Blue Factor 1
+Red Factor 2
+Green Factor 2
+Blue Factor 2
+Elsewhere Factor
+Somewhere Factor
+213
+171
+30
+80
+194
+42
+63
+225
+mix(mix(src(x,y,rnd(0,2)),val(0,-50,50),src(x,y,rnd(0,2)),ctl(3)),c,val(6,-50,50),val(7,-50,50))
+mix(mix(src(x,y,rnd(0,2)),val(1,-50,50),src(x,y,rnd(0,2)),ctl(4)),c,val(6,-50,50),val(7,-50,50))
+mix(mix(src(x,y,rnd(0,2)),val(2,-50,50),src(x,y,rnd(0,2)),ctl(5)),c,val(6,-50,50),val(7,-50,50))
+a
+ShovIts.8bf
+Andrew's Filters 41
+Shoved By Itself...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+154
+206
+148
+159
+62
+255
+0
+0
+src(x+val(0,-1,1)*src(x,y,rnd(0,2)),y+val(1,-1,1)*src(x,y,rnd(0,2)),rnd(0,2))
+src(x+val(2,-1,1)*src(x,y,rnd(0,2)),y+val(3,-1,1)*src(x,y,rnd(0,2)),rnd(0,2))
+src(x+val(4,-1,1)*src(x,y,rnd(0,2)),y+val(5,-1,1)*src(x,y,rnd(0,2)),rnd(0,2))
+a
+SideGlow.8bf
+Andrew's Filters 41
+Side Glow...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+99
+89
+30
+27
+6
+39
+0
+0
+src(rnd(c+ctl(0),c+ctl(1))+x,y,0)
+src(rnd(c+ctl(2),c+ctl(3))+x,y,1)
+src(rnd(c+ctl(4),c+ctl(5))+x,y,2)
+a
+SinGdD.8bf
+Andrew's Filters 41
+Different Sin Gradient...
+AB
+Freeware
+
+
+
+
+Red m
+Green m
+Blue m
+Red d
+Green d
+Blue d
+Factor
+Extra
+208
+176
+72
+91
+195
+201
+255
+18
+sin(dif(d+val(6,-1,1)*ctl(3),val(6,-1,1)*ctl(0)+m))%c^ctl(7)
+sin(dif(d+val(6,-1,1)*ctl(4),m+val(6,-1,1)*ctl(1)))%c^ctl(7)
+sin(dif(d+val(6,-1,1)*ctl(5),m+val(6,-1,1)*ctl(2)))%c^ctl(7)
+a
+SlBlur.8bf
+Andrew's Filters 41
+Slight Blur Variation...
+AB
+Freeware
+
+
+
+
+Red x 1
+Red x 2
+Green x 1
+Green x 2
+Blue x 1
+Blue x 2
+
+
+106
+102
+89
+155
+101
+255
+0
+0
+(src(x,y,rnd(0,2))+src(x+val(0,-20,20),y,rnd(0,2))+src(x+val(1,-20,20),y,rnd(0,2)))/3
+(src(x,y,rnd(0,2))+src(x+val(2,-20,20),y,rnd(0,2))+src(x+val(3,-20,20),y,rnd(0,2)))/3
+(src(x,y,rnd(0,2))+src(x+val(4,-20,20),y,rnd(0,2))+src(x+val(5,-20,20),y,rnd(0,2)))/3
+a
+SleeMinm.8bf
+Andrew's Filters 41
+Sleeping On A Mini...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Factor 1
+Factor 2
+178
+189
+98
+35
+182
+106
+155
+10
+min(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),rnd(0,2)),src(x,y,rnd(0,2)))<ctl(3)?src(x,y,rnd(0,2)):ctl(0)
+min(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),rnd(0,2)),src(x,y,rnd(0,2)))<ctl(4)?src(x,y,rnd(0,2)):ctl(1)
+min(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),rnd(0,2)),src(x,y,rnd(0,2)))<ctl(5)?src(x,y,rnd(0,2)):ctl(2)
+a
+SlgJitt.8bf
+Andrew's Filters 41
+Slight Camera Jitter...
+AB
+Freeware
+
+
+
+
+Red x
+Green x
+Blue x
+Red m
+Green m
+Blue m
+
+
+44
+68
+77
+99
+4
+110
+0
+0
+mix(c,src(x+val(0,-20,20),y,0),M>>ctl(3),m)
+mix(c,src(x+val(1,-20,20),y,1),M>>ctl(4),m)
+mix(c,src(x+val(2,-20,20),y,2),M>>ctl(5),m)
+a

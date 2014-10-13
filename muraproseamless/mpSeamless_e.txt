@@ -1,0 +1,31 @@
+                  MuRa's Professional Filter - Seamless 1.0
+                Copyright(c)2000 by MuRa, http://mura.hey.to
+
+This is the high quality filter for Photoshop.
+It makes an image seamless.
+
+This filter is freeware. You can use it freely and distribute it without
+modifying. But it is forbidden to sell it without permission of the author.
+
+Parameters
+
+        Select box      Shape of seams(Normal/Wave/Zigzag/Fractal)
+
+        Overlap X       Horizontal overlap of wrapping edges around
+        Overlap Y       Vertical overlap of wrapping edges around
+        Fade            Fading width in the overlap
+        Thru BG         Range of see-through background color
+        BG Smooth       Smooth see-through range
+        Freq            Frequency of wavy seams
+        Phase X         Phase of horizontal wavy seams
+        Phase Y         Phase of vertical wavy seams
+
+        Fit             Stretch the seamless image to fit on the source size
+        OpaqueOut       Opaque the outer area of the seamless image, if Fit=off
+        Repeat          Repeat the seamless image, if Fit=off
+        Cust.Color      Color of the outer area(click to edit it)
+
+If Fit=off and Repeat=off, you need to crop the outer area
+after applying the filter to get the seamless image.
+If Fit=off and Repeat=on, the output imege will not get seamless.
+If you select a wavy shape, reduce Fade to get the clear shape of seams.

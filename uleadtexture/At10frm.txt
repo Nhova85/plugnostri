@@ -1,0 +1,61 @@
+
+       Welcome to Ulead ArtTexture.Plugin 
+
+This ReadMe First document provides basic information about Ulead
+ArtTexture.Plugin. If you have any questions about how to use this
+product, please refer first to the program's online help. Also, visit
+the Ulead ArtTexture.Plugin pages on our Web site
+(http://www.webutilities.com) for updates, tips and techniques, special
+promotions, free software, and other useful information.
+
+
+Table of contents
+
+1. System requirements
+2. Technical support
+3. Providing feedback and suggestions
+4. Distribution program
+
+
+1. System requirements
+
+* Windows 95 or Windows NT 4.0 or higher
+* 486-DX2/DX4 or Pentium-compatible systems
+* 8MB RAM (16MB recommended)
+* 6MB available hard drive space for program files
+* Windows-compatible pointing device
+* True Color or HiColor display adapter and monitor (recommended)
+* An Adobe Photoshop 32-bit Effect and Import plug-in compatible image
+  editor is required to run Ulead ArtTexture.Plugin. Please visit our
+  Web site for more information about which image editors work with
+  Ulead ArtTexture.Plugin.
+
+
+2. Technical support
+
+Technical support for the purchased retail Full version is available via
+our Web site (http://www.webutilities.com), email (support@ulead.com.tw),
+fax, or through our support centers around the world. Be sure to have
+your Ulead ArtTexture.Plugin Technical Support ID (displayed in the
+program's About box) ready or include it in your email or fax.
+
+
+3. Providing feedback and suggestions
+
+Your comments and suggestions to improve our software are most welcome.
+Please send them to webutilities@ulead.com.tw. Thank you for your time
+and support.
+
+
+4. Distribution program
+
+If you would like to distribute Ulead ArtTexture.Plugin or other Ulead
+Web Utility products, please contact WUsales@ulead.com.tw.
+
+
+Copyright 1998, Ulead Systems, Inc.
+
+All rights reserved. Ulead is a registered trademark of Ulead Systems.
+Some of the product names used are trademarks or registered trademarks
+of their respective holders and are used for identification purposes
+only.

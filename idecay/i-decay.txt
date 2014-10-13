@@ -1,0 +1,50 @@
+I-Decay v1 - Copyright 1997 by Icabod
+=====================================
+
+I really don't think it's worth having a copyright for this little lot,
+but what the hey!  This archive contains some Photoshop filters I've
+created with Filter Factory.  They're not special and produce some
+fairly crap FX.
+
+So why am I releasing them?  Well, these are my first ever filters, and
+I thought maybe people could learn from my mistakes (heh-heh).  Some of
+these filters produce nice FX, some could have been done much simpler,
+and some are just a waste of disk space.  But never mind.
+
+Included in this archive are 20 filters (described below), along with
+their .afs files (so you can compile them in Filter Factory), and one
+.ffl file for use in Plug-in Commander (which you can find at
+http://www.fortunecity.com/lavender/kane/39/
+It's definately worth the download.
+
+Anyway, enough ramblings, here's the files:
+
+accident.8bf - Accident           - A kind of white pastey effect (ahem)
+coffset.8bf  - Colour Offset      - Offsets the colour
+crazspin.8bf - Crazy Spin         - Twisted Spin effect
+csquishy.8bf - Colour Squishy     - Squash RGBA into smaller scale
+ctrigger.8bf - Colour Trigger     - RGB Value Adjust
+cycwarp.8bf  - Cyclic Warp        - Wierd warp of RGBA
+hayze.8bf    - Hayze              - Apply small RGB Haze
+i-decay.txt  - This File          - ...
+jitzoom.8bf  - Jitter Zoom        - Zoom
+raddfuse.8bf - Radial Diffuse     - Simple Diffuse
+radglow.8bf  - Radial Glow        - Apply a glow to picture
+silence.8bf  - Silence is         - Add golden effect (most of the time)
+sinex.8bf    - Sinus-X            - Apply a sine-wave
+sinexy.8bf   - Sinus-XY           - Apply a sine-wave
+siney.8bf    - Sinus-Y            - Apply a sine-wave
+sinspin.8bf  - Sin Spin Sugar     - Spin/twist picture
+spinzoom.8bf - Spin and Zoom      - Similar to Jitter Zoom but with spin
+spiraldf.8bf - Spiral Diffuse     - take a guess
+tranblur.8bf - Transparency Blur  - Useful after a Decay
+trandcay.8bf - Transparency Decay - Eats away transparency
+xydfuse.8bf  - XY-Diffuse         - guess again
+
+Well, that's it.  All filters have corresponding .afs files, and there's
+i-decay.ffl for Plug-In Commander.
+
+Enjoy,
+      'Bod
+
+icabod@innocent.com - http://www.global-sas.co.uk/icabod/

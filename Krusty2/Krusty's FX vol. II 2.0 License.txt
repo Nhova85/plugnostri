@@ -1,0 +1,75 @@
+Krusty's FX vol. II 2.0
+
+(c) 1998-99 KRUST,Inc
+Thomas Robert de Massy
+krustyfx@krust.com
+
+http://www.krust.com/krust.html
+
+
+END-USER LICENSE AGREEMENT
+-------------------------------------------------------
+
+This software is freeware and cannot be sold or distributed in any way. 
+The only legal source of distribution of this software is via KRUST's
+web site (see below)
+
+If you need a copy that you can legally redistribute, please contact 
+Thomas Robert de Massy at krustyfx@krust.com. 
+
+* The following conditions to be able to receive this special version 
+  of Krusty's FX 2.0 are :
+
+   - You will not make any profits from the software
+     if you do, I (KRUST, inc.) will ask a percentage of it.
+   - A copy of the distribution medium (ex : a CD, magazine,etc...)
+   - Proper Credits for my (KRUST, inc.) work(s)
+   - A link to KRUST's web site (see address above)
+   - You must include all the files I have sent you (without any 
+     alterations and including this license agreement.)
+This copy of the filters can only be distribute by you.
+
+You cannot, for any reasons, put this application on a BBS, WEB or FTP site 
+(or any other digital data exchange medium), without the express written 
+consent of KRUST, inc., and/or Thomas Robert de Massy.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+If you think these filters have been illegally distributed, please send
+a notice to krustyfx@krust.com
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-------------------------------------------------------
+                     * NO WARRANTIES *
+-------------------------------------------------------
+
+ Please note that this software does not include any warranties of any kind.
+
+     - KRUST expressly disclaims any responsibility for any damages 
+       done to your hardware, software, or OS configuration. Neither
+       for any lost of data, bussiness interruption or lost of profits        
+       due to the use of said software.
+
+     
+-------------------------------------------------------
+
+The algorithms used in these Photoshop filters are copyrighted, so you 
+can't use them for your own filters. COPYRIGHT (c) 1998-99 KRUST. Graphical 
+user interface and artworks done by Thomas Robert de Massy for KRUST, Inc.
+
+This program is a transformed version (the dialog resources were edited
+with MSVC++) of Adobe's(c) Filter Factory (Adobe is a copyright of Adobe 
+Systems, Inc.) if you believe that by doing so, I'm breaking any copyright 
+laws (witch I strongly doubt),  Please let me know.
+
+MSVCRT10.DLL (c) MICROSOFT Corporation
+
+IMPACT.TTF font (c) 1991-1996 The monotype corp./Microsoft Corp. 
+(not sure of it take a look at the license agreement in the 
+impact32.exe file)
+
+Filter Factory (C) 1994 Adobe Systems, Inc. All Rights Reserved 
+programmed by Joseph Ternasky and Dave Corboy
+ 
+KRUST's logo is a TRADEMARK of KRUST, inc.
+(c) 1998-99 KRUST, All rights reserved.

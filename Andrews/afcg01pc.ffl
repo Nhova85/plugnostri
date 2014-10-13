@@ -1,0 +1,524 @@
+FFL1.0
+   19
+BePlease.8bf
+Andrew's Filters 1
+Pleased To Take Home...
+AB
+Freeware
+
+
+
+
+Red Mix 1
+Red Mix 2
+Green Mix 1
+Green Mix 2
+Blue Mix 1
+Blue Mix 2
+Divide
+Mod
+168
+228
+183
+70
+206
+41
+4
+122
+mix((r%ctl(7))*(g%ctl(7))*(b%ctl(7))/val(6,0,65000),r,ctl(0),ctl(1))
+mix((r%ctl(7))*(g%ctl(7))*(b%ctl(7))/val(6,0,65000),r,ctl(2),ctl(3))
+mix((r%ctl(7))*(g%ctl(7))*(b%ctl(7))/val(6,0,65000),r,ctl(4),ctl(5))
+a
+BghtLght.8bf
+Andrew's Filters 1
+Bright Light...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Intensity
+
+
+
+
+180
+128
+170
+86
+0
+0
+0
+0
+val(0,1,50)*(r+g+b)/30-2*sin(m+ctl(3))+cos(X-x)/2
+val(1,1,50)*(r+b+g)/30-2*sin(m+ctl(3))+cos(X-x)/2
+val(2,1,50)*(r+g+b)/30-2*sin(m+ctl(3))+cos(X-x)/2
+a
+BlurUp.8bf
+Andrew's Filters 1
+Blur Up...
+AB
+Freeware
+
+
+
+
+Blur Curtain
+Up Factor
+
+
+
+
+
+
+135
+61
+0
+0
+0
+0
+0
+0
+X-x>val(0,X/2,X)||x>val(0,0,X)?src(x,y+val(1,-Y,Y),0):(src(x+2,y,0)+c+src(x-2,y,0))/3
+X-x>val(0,X/2,X)||x>val(0,0,X)?src(x,y+val(1,-Y,Y),1):(src(x+2,y,1)+src(x,y,0)+src(x-2,y,1))/3
+X-x>val(0,X/2,X)||x>val(0,0,X)?src(x,y+val(1,-Y,Y),2):(src(x+2,y,2)+c+src(x-2,y,2))/3
+a
+Boxed.8bf
+Andrew's Filters 1
+Boxed...
+AB
+Freeware
+
+
+
+
+Red Border
+Green Border
+Blue Border
+Border Colour
+
+
+
+
+236
+232
+106
+55
+0
+0
+0
+0
+(x<val(0,1,X))&&(X-x)<val(0,1,X)&&(y<val(0,1,Y))&&(Y-y)<val(0,1,Y)?c:ctl(3)
+(x<val(1,1,X))&&(X-x)<val(1,1,X)&&(y<val(1,1,Y))&&(Y-y)<val(1,1,Y)?c:ctl(3)
+(x<val(2,1,X))&&(X-x)<val(2,1,X)&&(y<val(2,1,Y))&&(Y-y)<val(2,1,Y)?src(x,y,2):ctl(3)
+a
+BreakAwy.8bf
+Andrew's Filters 1
+Breaking Away...
+AB
+Freeware
+
+
+
+
+y 1
+x 1
+y 2
+x 2
+Shift x
+Shift y
+
+
+2
+1
+3
+1
+6
+69
+0
+0
+rad(d,c2m(x%(y*ctl(0)-x*ctl(1)-ctl(4)),y%(x*ctl(2)-y*ctl(3)-ctl(5))),z)
+rad(d,c2m(x%(y*ctl(0)-x*ctl(1)-ctl(4)),y%(x*ctl(2)-y*ctl(3)-ctl(5))),z)
+rad(d,c2m(x%(y*ctl(0)-x*ctl(1)-ctl(4)),y%(x*ctl(2)-y*ctl(3)-ctl(5))),z)
+a
+BTargPr.8bf
+Andrew's Filters 1
+Bit Of Target Practise...
+AB
+Freeware
+
+
+
+
+Red Mix 1
+Red Mix 2
+Green Mix 1
+Green Mix 2
+Blue Mix 1
+Blue Mix 2
+Bits 1
+Bits 2
+121
+53
+118
+146
+37
+192
+24
+70
+mix(src(x,y,rnd(0,2))^ctl(6),m^ctl(7),ctl(0),ctl(1))
+mix(src(x,y,rnd(0,2))^ctl(6),m^ctl(7),ctl(2),ctl(3))
+mix(src(x,y,rnd(0,2))^ctl(6),m^ctl(7),ctl(4),ctl(5))
+a
+BWNoise.8bf
+Andrew's Filters 1
+Black And White plus Noise...
+AB
+Freeware
+
+
+
+
+Noise
+
+
+
+
+
+
+
+100
+0
+0
+0
+0
+0
+0
+0
+(c+src(x,y,1)+src(x,y,2))/3+rnd(0,ctl(0))
+(src(x,y,0)+c+src(x,y,2))/3+rnd(0,ctl(0))
+(src(x,y,0)+src(x,y,1)+c)/3+rnd(0,ctl(0))
+a
+ChlShft.8bf
+Andrew's Filters 1
+Channel Shift...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+76
+50
+104
+0
+0
+0
+0
+0
+r+val(0,-255,255)
+g+val(1,-255,255)
+b+val(2,-255,255)
+a
+CircTrem.8bf
+Andrew's Filters 1
+Circular Tremors...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Brightness
+
+
+
+
+198
+71
+115
+183
+0
+0
+0
+0
+(src(m+val(0,-10,10),y,0)+src(m,y,0)+src(m-val(0,-10,10),y,0))/val(3,1,4)
+(src(m+val(1,-10,10),y,1)+src(m,y,1)+src(m-val(1,-10,10),y,1))/val(3,1,4)
+(src(m+val(2,-10,10),y,2)+src(m,y,2)+src(m-val(2,-10,10),y,2))/val(3,1,4)
+a
+CircWeav.8bf
+Andrew's Filters 1
+Circular Weave...
+AB
+Freeware
+
+
+
+
+Red magnitude
+Red angle
+Green magnitude
+Green angle
+Blue magnitude
+Blue angle
+Background
+Divisions
+54
+128
+66
+103
+68
+98
+187
+11
+m*m/ctl(7)%val(0,1,ctl(7))||d*d/ctl(7)%val(3,1,ctl(7))?c:ctl(6)
+m*m/ctl(7)%val(1,1,ctl(7))||d*d/ctl(7)%val(4,1,ctl(7))?c:ctl(6)
+m*m/ctl(7)%val(2,1,ctl(7))||d*d/ctl(7)%val(5,1,ctl(7))?c:ctl(6)
+a
+CirNoise.8bf
+Andrew's Filters 1
+Circular Noise
+AB
+Freeware
+
+
+
+
+
+
+
+
+
+
+
+
+0
+0
+0
+0
+0
+0
+0
+0
+r+rnd(1,m)
+g+rnd(1,m)
+b+rnd(1,m)
+a
+Clerkenw.8bf
+Andrew's Filters 1
+ClerkenWell On My Mind...
+AB
+Freeware
+
+
+
+
+Mix 1
+Mix 2
+Red
+Green
+Blue
+Mod 1
+Mod 2
+
+117
+54
+17
+42
+48
+13
+13
+0
+rnd(c,mix(c,src(X%x%ctl(5),Y%y%ctl(6),z),ctl(0),ctl(1))+val(2,-100,100))
+rnd(c,mix(c,src(X%x%ctl(5),Y%y%ctl(6),z),ctl(0),ctl(1))+val(3,-100,100))
+rnd(c,mix(c,src(X%x%ctl(5),Y%y%ctl(6),z),ctl(0),ctl(1))+val(4,-100,100))
+a
+ColPush.8bf
+Andrew's Filters 1
+Colour Pushout...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Divider
+
+
+
+
+236
+157
+70
+189
+0
+0
+0
+0
+(c+rad(d,m+val(0,1,10),0)+rad(d,(m-val(0,1,10)),0))/val(3,1,5)
+(c+rad(d,m+val(1,1,10),1)+rad(d,m-val(1,1,10),1))/val(3,1,5)
+(c+rad(d,m+val(2,1,10),2)+rad(d,m-val(2,1,10),2))/val(3,1,5)
+a
+ColSmear.8bf
+Andrew's Filters 1
+Colour Horizontal Smear...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+160
+158
+156
+0
+0
+0
+0
+0
+src(x+val(0,-10,10),y,0)+c+src(x-val(0,-10,10),y,0)
+src(x+val(1,-10,10),y,1)+c+src(x-val(1,-10,10),y,1)
+src(x+val(2,-10,10),y,2)+c+src(x-val(2,-10,10),y,2)
+a
+ColSwirl.8bf
+Andrew's Filters 1
+Colour Swirl...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+121
+120
+120
+0
+0
+0
+0
+0
+rad(d,m+val(0,-100,100),0)
+rad(d,m+val(1,-100,100),1)
+rad(d,m+val(2,-100,100),2)
+a
+FairClrs.8bf
+Andrew's Filters 1
+Colours of a Fairground...
+AB
+Freeware
+
+
+
+
+Red X
+Red Y
+Green X
+Green Y
+Blue X
+Blue Y
+
+
+35
+21
+21
+24
+25
+31
+0
+0
+(rad(d+ctl(0),m+ctl(1),0)+rad(d-ctl(0),m-ctl(1),0)+rad(d-ctl(0),m+ctl(1),0)+rad(d+ctl(0),m-ctl(1),0))/4
+(rad(d+ctl(2),m+ctl(3),1)+rad(d-ctl(2),m-ctl(3),1)+rad(d-ctl(2),m+ctl(3),1)+rad(d+ctl(2),m-ctl(3),1))/4
+(rad(d+ctl(4),m+ctl(5),2)+rad(d-ctl(4),m-ctl(5),2)+rad(d-ctl(4),m+ctl(5),2)+rad(d+ctl(4),m-ctl(5),2))/4
+a
+Flipped.8bf
+Andrew's Filters 1
+Colour Flipped...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+114
+33
+87
+0
+0
+0
+0
+0
+src(x+X,y+Y,0)+src((X-x),(Y-y),0)+c-ctl(0)
+src(x+X,y+Y,1)+src((X-x),(Y-y),1)+c-ctl(1)
+src(x+X,y+Y,2)+src((X-x),(Y-y),2)+c-ctl(2)
+a
+Mezz1.8bf
+Andrew's Filters 1
+AB Filters...
+AB
+Freeware
+
+
+
+
+Divisions
+
+
+
+
+
+
+
+66
+0
+0
+0
+0
+0
+0
+0
+c2m(x,y/2+sin(d*ctl(0)))-c+c2m(x-1,y/2+sin(d*ctl(0)))-src(x-1,y,0)-c
+c2m(x,y/2+sin(d*ctl(0)))-c+c2m(x-1,y/2+sin(d*ctl(0)))-src(x-1,y,1)-c
+c2m(x,y/2+sin(d*ctl(0)))-c+c2m(x-1,y/2+sin(d*ctl(0)))-src(x-1,y,2)-c
+a

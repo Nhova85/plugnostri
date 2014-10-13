@@ -1,0 +1,582 @@
+FFL1.0
+   20
+AftNijmg.8bf
+Andrew's Filters 6
+After A Night in Nijmegen...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+76
+119
+151
+141
+81
+89
+0
+0
+mix(c,src(x-val(0,-X,X),y-val(1,-Y,Y),0),d,m)
+mix(c,src(x-val(2,-X,X),y-val(3,-Y,Y),1),d,m)
+mix(c,src(x-val(4,-X,X),y-val(5,-Y,Y),2),d,m)
+a
+ALtBump.8bf
+Andrew's Filters 6
+A Little Bumpy Along...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Factor 1
+Factor 2
+93
+27
+170
+46
+86
+89
+219
+205
+mix(src(X-x,y,0),sin((X-x)*val(0,-100,100)+y*val(1,-100,100)),val(6,-100,100),val(7,-100,100))
+mix(src(X-x,y,1),sin((X-x)*val(2,-100,100)+y*val(3,-100,100)),val(6,-100,100),val(7,-100,100))
+mix(src(X-x,y,2),sin((X-x)*val(4,-100,100)+y*val(5,-100,100)),val(6,-100,100),val(7,-100,100))
+a
+Anotheri.8bf
+Andrew's Filters 6
+Another I...
+AB
+Freeware
+
+
+
+
+i Factor
+U Factor
+v Factor
+Red Dif
+Green Dif
+Blue Dif
+Moved
+
+155
+153
+117
+223
+179
+58
+131
+0
+ctl(6)-dif(ctl(3),dif(src(x-X,y-Y,0)||val(0,i,2*i),c))
+ctl(6)-dif(ctl(4),dif(src(x-X,y-Y,1)||val(1,u,2*u),c))
+ctl(6)-dif(ctl(5),dif(src(x-X,y-Y,2)||val(2,v,2*v),c))
+a
+ArielWbe.8bf
+Andrew's Filters 6
+Ariel And Wonder Be ...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Factor 1
+factor 2
+178
+142
+176
+187
+182
+106
+19
+125
+min(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),c)<ctl(3)?c:ctl(0)
+min(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),src(x,y,0))<ctl(4)?c:ctl(1)
+min(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),src(x,y,0))<ctl(5)?c:ctl(2)
+a
+AtAtomic.8bf
+Andrew's Filters 6
+At The Atomic Level...
+AB
+Freeware
+
+
+
+
+Radius
+Pattern
+Factor X
+Red Divided
+Green Divided
+Blue Divided
+
+
+21
+42
+22
+6
+10
+2
+0
+0
+((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)==ctl(2)?c:c/ctl(3)
+((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)==ctl(2)?c:c/ctl(4)
+((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)==ctl(2)?c:c/ctl(5)
+a
+BackFor.8bf
+Andrew's Filters 6
+Backwards and Forwards...
+AB
+Freeware
+
+
+
+
+Red 
+Green
+Blue
+Equals
+Random A
+Random B
+
+
+23
+122
+44
+28
+10
+112
+0
+0
+src(val(0,rnd(0,val(4,0,7)),rnd(1,val(5,0,7)))==val(3,0,5)?dif(x,y):dif(m,d),y,0)
+src(val(1,rnd(0,val(4,0,7)),rnd(1,val(5,0,7)))==val(3,0,5)?dif(x,y):dif(m,d),y,1)
+src(val(2,rnd(0,val(4,0,7)),rnd(1,val(5,0,7)))==val(3,0,5)?dif(x,y):dif(m,d),y,2)
+a
+BandPce.8bf
+Andrew's Filters 6
+Blits & Pieces...
+AB
+Freeware
+
+
+
+
+Red d
+Red m
+Green d
+Green d
+Blue d
+Blue m
+
+
+0
+12
+4
+4
+1
+15
+0
+0
+src(c2d(x^ctl(0),y^ctl(1)),c2m(x^ctl(0),y^ctl(1)),0)
+src(c2d(x^ctl(2),y^ctl(3)),c2m(x^ctl(2),y^ctl(3)),1)
+src(c2d(x^ctl(4),y^ctl(5)),c2m(x^ctl(4),y^ctl(5)),2)
+a
+Beatrice.8bf
+Andrew's Filters 6
+Beatrice, Sweet Beatrice...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Factor 1
+Factor 2
+178
+210
+198
+187
+139
+106
+24
+188
+max(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),c)<ctl(3)?c:ctl(0)
+max(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),src(x,y,0))<ctl(4)?c:ctl(1)
+max(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),src(x,y,0))<ctl(5)?c:ctl(2)
+a
+BiCurTh.8bf
+Andrew's Filters 6
+A Bit Of A Curve There...
+AB
+Freeware
+
+
+
+
+Red 1
+Green 1
+Blue 1
+Red 2
+Green 2
+Blue 2
+Factor 1
+Factor 2
+128
+202
+187
+164
+159
+61
+138
+82
+mix(rad(d+m,m+val(7,-100,100),0),sin(ctl(0)*abs(d)+m+val(7,-100,100)),ctl(3),ctl(6))
+mix(rad(d+m,m+val(7,-100,100),1),sin(ctl(1)*abs(d)+m+val(7,-100,100)),ctl(4),ctl(6))
+mix(rad(d+m,m+val(7,-100,100),2),sin(ctl(2)*abs(d)+m+val(7,-100,100)),ctl(5),ctl(6))
+a
+BigFlt.8bf
+Andrew's Filters 6
+Big Filter...
+AB
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Not Telling
+
+
+
+
+136
+155
+199
+184
+0
+0
+0
+0
+src(mix(x,y,val(0,-X,X),val(1,-Y,Y)),mix(y,x,val(2,-Y,Y),val(3,-X,X)),0)
+src(mix(x,y,val(0,-X,X),val(1,-Y,Y)),mix(y,x,val(2,-Y,Y),val(3,-X,X)),1)
+src(mix(x,y,val(0,-X,X),val(1,-Y,Y)),mix(y,x,val(2,-Y,Y),val(3,-X,X)),2)
+a
+BigWell.8bf
+Andrew's Filters 6
+Bigger Than Well, Big...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+2
+2
+2
+2
+2
+6
+0
+0
+src(x/ctl(0),y/ctl(1),sqr(rnd(0,2)*rnd(0,2)))
+src(x/ctl(2),y/ctl(3),sqr(rnd(0,2)*rnd(0,2)))
+src(x/ctl(4),y/ctl(5),sqr(rnd(0,2)*rnd(0,2)))
+a
+BiOvPla.8bf
+Andrew's Filters 6
+Bits Over The Place...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+17
+149
+17
+149
+17
+149
+0
+0
+src(x%mix(sin(x),y,ctl(0),ctl(1)),y%mix(sin(y),x,ctl(0),ctl(1)),0)
+src(x%mix(sin(x),y,ctl(2),ctl(3)),y%mix(sin(y),x,ctl(2),ctl(3)),1)
+src(x%mix(sin(x),y,ctl(4),ctl(5)),y%mix(sin(y),x,ctl(4),ctl(5)),2)
+a
+BitLeft.8bf
+Andrew's Filters 6
+A Bit Left Over Gradient...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+189
+155
+222
+215
+188
+204
+0
+0
+dif(c,mix(abs(d),sqr(x),val(0,-100,100),val(1,-100,100)))
+dif(c,mix(abs(d),sqr(x),val(2,-100,100),val(3,-100,100)))
+dif(c,mix(abs(d),sqr(x),val(4,-100,100),val(5,-100,100)))
+a
+BitMess.8bf
+Andrew's Filters 6
+Bit Of A Mess...
+AB
+Freeware
+
+
+
+
+Red Increment
+Green Increment
+Blue Increment
+Red Drift
+Green Drift
+Blue Drift
+
+
+22
+12
+18
+141
+154
+192
+0
+0
+max(src(x^val(3,-100,100),y,0),max(src(x^val(3,-100,100),y,2),src(x^val(3,-100,100),y,1)))+ctl(0)
+max(src(x^val(4,-100,100),y,0),max(src(x^val(4,-100,100),y,2),src(x^val(4,-100,100),y,1)))+ctl(1)
+max(src(x^val(5,-100,100),y,0),max(src(x^val(5,-100,100),y,2),src(x^val(5,-100,100),y,1)))+ctl(2)
+a
+BitPud.8bf
+Andrew's Filters 6
+Bits Of A Puddle...
+AB
+Freeware
+
+
+
+
+Red M Up
+Green M Up
+Blue M Up
+Ripples
+Red M Down
+Green M Down
+Blue M Down
+Brightness
+46
+45
+30
+70
+4
+6
+13
+94
+100*rad(d,(m+ctl(0)-ctl(4))^ctl(3),0)/ctl(7)
+100*rad(d,(m+ctl(1)-ctl(5))^ctl(3),1)/ctl(7)
+100*rad(d,(m+ctl(2)-ctl(6))^ctl(3),2)/ctl(7)
+a
+BitRaSpr.8bf
+Andrew's Filters 6
+Bits Random Spread...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+12
+159
+14
+159
+14
+158
+0
+0
+src(x%mix(tan(X-x),y,ctl(0),ctl(1)),y%mix(tan(Y-y),x,ctl(0),ctl(1)),rnd(0,2))
+src(x%mix(tan(X-x),y,ctl(2),ctl(3)),y%mix(tan(Y-y),x,ctl(2),ctl(3)),rnd(0,2))
+src(x%mix(tan(X-x),y,ctl(4),ctl(5)),y%mix(tan(Y-y),x,ctl(4),ctl(5)),rnd(0,2))
+a
+BitsHere.8bf
+Andrew's Filters 6
+Bits Here...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+20
+14
+13
+8
+11
+7
+0
+0
+src(x|rnd(0,ctl(0)),y|rnd(0,ctl(1)),0)
+src(x|rnd(0,ctl(2)),y|rnd(0,ctl(3)),1)
+src(x|rnd(0,ctl(4)),y|rnd(0,ctl(5)),2)
+a
+BlacCl.8bf
+Andrew's Filters 6
+Black Cat In A Black...
+AB
+Freeware
+
+
+
+
+Red Drift
+Green Drift
+Blue Drift
+Red Cat
+Green Cat
+Blue Cat
+
+
+52
+12
+46
+177
+231
+225
+0
+0
+sqr(mix(c,src(x+val(0,-10,10),y,0),ctl(3),m))
+sqr(mix(c,src(x+val(1,-10,10),y,0),ctl(4),m))
+sqr(mix(c,src(x+val(2,-10,10),y,2),ctl(5),m))
+a
+BlockOut.8bf
+Andrew's Filters 6
+Blocked Out...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+9
+5
+8
+8
+5
+6
+0
+0
+src(x|sin(rnd(0,ctl(0))),y|sin(rnd(0,ctl(1))),0)
+src(x|sin(rnd(0,ctl(2))),y|sin(rnd(0,ctl(3))),1)
+src(x|sin(rnd(0,ctl(4))),y|sin(rnd(0,ctl(5))),2)
+a
+BluBiPe.8bf
+Andrew's Filters 6
+Blurred Bits & Pieces...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+X Shift
+Y Shift
+20
+14
+19
+12
+10
+21
+138
+136
+(src(x|rnd(0,ctl(0)),y|rnd(0,ctl(1)),0)+src(x|rnd(0,ctl(0))-val(6,-30,30),y|rnd(0,ctl(1))-val(7,-30,30),0)+src(x|rnd(0,ctl(0))+val(6,30,30),y|rnd(0,ctl(1))+val(07,-30,30),0))/3
+(src(x|rnd(0,ctl(2)),y|rnd(0,ctl(3)),1)+src(x|rnd(0,ctl(2))-val(6,-30,30),y|rnd(0,ctl(3))-val(7,-30,30),1)+src(x|rnd(0,ctl(2))+val(6,30,30),y|rnd(0,ctl(3))+val(07,-30,30),1))/3
+(src(x|rnd(0,ctl(4)),y|rnd(0,ctl(5)),2)+src(x|rnd(0,ctl(4))-val(6,-30,30),y|rnd(0,ctl(5))-val(7,-30,30),2)+src(x|rnd(0,ctl(4))+val(6,30,30),y|rnd(0,ctl(5))+val(07,-30,30),2))/3
+a

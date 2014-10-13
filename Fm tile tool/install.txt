@@ -1,0 +1,20 @@
+About this distribution
+
+This zip file distribution contains only the 
+essential files needed to run FM Tile Tools - 
+to save space and download time it doesn't 
+include a help file or installation program.
+
+Installation 
+
+To Install the files, first find the "plugins" 
+directory for your host image editing program.
+Then copy the plugin files fmtt1.8bf, fmtt2.8bf,
+and fmtt3.8bf to that plugin directory. When
+you restart your image editing program, the 
+filters will be listed under the "FM Tile Tools"
+heading under the filter menu.
+
+
+For more information, read the readme.txt file
+included in this distribution.

@@ -1,0 +1,87 @@
+FunHouse and Psychosis Filters
+by Kipp McMichael
+
+
+This is an alphabetical list of my filters with a brief description.  You'll find the rest of the filters files in the second zip file called FunH2.zip.  I've included both the filter and the code (.afs files) so you can experiment with my filters (and hopefully improve some).  If you do modify my code to make your own filter, all I ask is that you include my name in the copyright section.  And please, post whatever you create to the web site - we'd all like to see it.
+
+Acid Lithograph:  This filter adds noise to channels in a variable way that results in a grainy, fals colored image.  Controls effect how intense the noise is with intense noise moving the image toward white(since the channels overlap).  Really neat effects on photographic images.
+
+BugEye:  This filter mimics the look of reflections in a bug's eyes.  The control effects how large (and hence, how many) lenses there are in the image.  It is not symmetrical.  High settings move the image toward rings of color.  Works well on any image
+
+Centripedal Tile: This filter creates a randomized tile of the image (both in size and in what part of the image the tile is).  The controls effect the tile size and how intense the effect is.  Low intensity creates a near tile mirror (see below) effect.  Really neat effects when used (with layers) for large text or bold simple graphics.
+
+Chaos Mirror: This filter tiles a random sector of the image about the origin.  The name implies the type of effect achieved.  Will work on any image.
+
+Circular Streaker:  This filter offsets the image in random circular patterns in each channel.  The effect is lots of rings of random color in the image.  Best for photo images.
+
+Circus Maximus:  This filter is a mimic of the photoshop ripple filter.  It is a relative of ring mirror (with randomized width anf distortion).  It works well on most images.
+
+Cirquelate:  If you've ever played with Fractint (another hobby of mine) then you'll recognize this filter as very similar to the Circle fractal (though it's not actually a fractal).  It creates lots of little rings and circles across an image.  It works very well on any colorful image.
+
+Color Warp:  This filter doesn't have the afs file (it's the first one I ever made - before I thought to save the code).  At low settings, the filter just makes the image negative.  As you move the slider, successice waves of color onto and across the image.  Very psychedelic effect at high settings.
+
+Confetti:  This filter creates an effect similar to mosaic in PS.  The pleasant diffrence is that the the tiles are randomly sized and spaced.  The effect is much like turning the filter into a confetti collage.  Colorful, bold images work best.
+
+Convergence:  This filter tiles the image in diminishing proportion to the center of the image. Neat effect for just about any type of image.
+
+Emission Mirror: This filter is hard to describe.  It duplicates the image into quadrants and zooms these out toward the corners. Neat effect for photos.
+
+Evanescence:  This filter creates successive rings in the image that vary ad magnification as you move from the center.  The effect is concentric round frames of the image that zoom out.  Cool on photos and bold text.
+
+Facet Offset:  This filter is a single direction version of emission mirroe.  It zooms the image toward the right lower corner.  Coll on most images.
+
+Heizenberg's Mirror:  This filter chaotically moves and flips randomly sized squares of the image.  The effect is similar to the little puzzles you get as party favors or the puzzle game that comes on Macintosh computers.
+
+Maelstr”m:  This filter swirls the image in increasing intensity from the center in fairly regular bands.  A nice effect for most images.
+
+Moire mirror:  Filter factory uses integer math for calculations.  This puts alot of constraints on how well it works, but it also makes filters like this one possible.  Moire mirror  creates little moire patterns across the image.  Low control settings give a very lace like apperance to the image.
+
+Patch ring:  The filter creates a patch work like pattern across the image in a radial manner.  It is the radial version of patch work.
+
+Patch work:  This filter creates an interesting square pattern across the image.  High settings create results similar to a patchwork quilt image.  Works on photos the best.
+
+Perverse:  This filter reflects the image into quadrants and then overlaps the resulting image with a relfection of itself.  The last control allows for darkening the over-exposed image.
+
+Polar convergence:  This filter is the radial version of convergence (see above).
+
+Polar perverse:  This filter opperates just like perverse except the reflections are slightly distorted circularly around the center of reflection.
+
+Quantum Tile:  This filter tiles the image in a chaotic effect somewhat similar to Kai's vortex tile.  High and control settings create a more regular pattern.  Works well on most images.
+
+Radial Mirror:  This filter reflects the image around the origin.  Controls effect how many reflections are created.  High values create a star-burst pattern.
+
+Radial Moirror:  This filtr is the radial version of moire mirror (see above).
+
+Radial Tile Mirror:  This filter is the radial version of tile mirror (see below).
+
+Ring Mirror:  This filter creates rings in the image similar to regular ripples.  High values create a refracted lens like effect.  Works well with most images.
+
+Ring Tile:  This filter tiles the image in successive rings about the origin. You can change the start of the tiling with the zoom control.
+
+Sector Mosaic:  This filter functions just like photoshops mosaic filter except radially.  Neat effect on any colorful image.
+
+Sectorize:  The filter distorts the image into sectors around the origin.  It works well for any color image.
+
+Sierpenski's Mirror:  Another Fractint inspired filter, this one creates a sierpenski pattern across the image.  Controls effect Scaling factor (the size of the largest triangle) and fractal power (how quickly the triangles are divided up.  Great for any image - and it makes a nice background pattern.  If used on a square image, it is tileable.
+
+Spyrozag:  This filter creates waves in the image that converge toward the center.  It is a rdial relative of Zigzaggerate.
+
+Streak Mirror:  This filter distorts the image in perpindicular streaks.  Low settings give effects similar to scratched up slides.  Works with colorful images.
+
+Streaker:  This filter works just like streak mirror but adds random streaks of color in the image.  A very interesting effect on images of mostly similar colors.
+
+Tile Mirror: This filter scales and tiles the image.  Sliders effect how many tiles are created.
+
+Tremors:  This filter moves peices of the image around in an interesting pattern reminiscient of a shacky camera.  Many effects are possible by setting the controls to different levels.  Really cool on any image and especially nice on large text.
+
+Tunnel Tile:  This filter is similar to ring tile, but the effect gives much greater depth to the rings.  Zoom factor also has more control.
+
+Turbine Mirror:  This filter creates an effect similar to chopping up the image into radially centered strips.  Low setting give the best results.
+
+Twister:  This filter twists an image around the center.  Very cool effect!
+
+Xaggerate:  This filter creates intersecting diagonal sine waves.  It looks great as a background and works best on colorful images.
+
+Zigzaggerate:  This filter creates an effect like Xaggerate, but the waves are horizontal and verticle.  Simialar to the wave-triangle type distortion that comes with PS.
+
+That's it for the filters in this group.  There are some random afs files I've included in the zips.  Some are just older versions of the filters and others are just unfinished codes.  Good luck, and happy filtering.

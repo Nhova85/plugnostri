@@ -1,0 +1,62 @@
+
+
+Tika Carr (summer_rain40@hotmail.com) was so kind to send me a tutorial
+of how to create cursor/icons with my format plug-ins.
+
+Tika uses Photo-Shop-Pro with which you can use 16Bit image modes.
+(Not per channel, but for the whole picture.)
+Saving such images causes problems with the alpha plane.
+In those modes PSP seems to store alpha planes in 16Bit, too.
+My plug expects 8Bit alpha values so each 16Bit pixel is treaded as two.
+Though i fill in the 'colBytes' field with 1 Byte per pixel it does
+not seem to work. If anyone knows a solution i´m happy to include it.
+
+You might also want to visit Tika´s homepage which you´ll find at
+http://www.5thpower.com/tika/
+
+
+Philipp (DragonFly) Spoeth
+DragonPhil@gmx.de
+
+
+
+
+Here is the Tutorial:
+--------------------------------------------------------------------------------
+
+How to create a cursor:
+
+1. Create a 32 x 32 image or resize one to 32 x 32.
+
+2. Make sure the background is a solid color.
+
+3. Select the background only with the magic wand or color wand tool.
+
+4. Save this selection to an alpha channel.
+
+5. Deselect.
+
+6. Zoom in on the image until you are able to select ONE PIXEL. This is
+   going to be the "hot spot" for the cursor (where the cursor "points").
+
+7. Save this selection to an alpha channel. (You now have two alpha channels:
+   First one for the background, second one for the hot spot. They HAVE to be
+   in this order!)
+
+8. Deselect.
+
+9. Reduce the color depth to 256 colors. (Currently, it doesn't seem to work
+   well with 16-color icons and cursors, but it will be ok for hi-color
+cursors).
+
+10. Select the background only. Use the FIRST color in the palette (make sure
+    it's BLACK - you might have to edit the palette for this) and fill the
+    selection with black (first color).
+
+11. Use the plugin to save the file as a .cur cursor file.
+
+Your cursor is ready to use.
+
+To Make icons with transparent background, follow the steps above for the
+cursor only leave out the steps to create the hot spot.
+

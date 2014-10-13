@@ -1,0 +1,48 @@
+
+DragonFly´s Retrodots Filter
+-----------------------------
+
+William Christenson gave me the idea for this filter.
+I really like this nice little filter.
+If you have any ideas for new filters please let me know.
+
+This filter is free, but if you want to redistribute it in any form
+please contact me.
+
+If you have some nice work done with it i´d be really interested
+to see it. Please mail me and tell me about.
+I.E. Jamie Flint did a very nice postcard with my previous sinedots
+filter and mailed me some of those. Such stuff really makes my day :)
+
+
+copyrighted in 2000 by Philipp Spoeth
+EMail: philipp@philipp-spoeth.de
+homepage: www.philipp-spoeth.de
+
+p.s. the interface was done for a filterpack i want to release someday...
+
+
+Requirements:
+-------------
+- Win32
+- photoshop compatible host program
+
+Installing:
+-----------
+Just copy the file 'Retrodots.8bf' somewhere into the
+plugin directory of the program you want to use the filter with.
+
+
+Usage:
+------
+Use the filter with a smooth selection. Otherwise it will look horrible.
+The selections strength determines the size of the dots.
+
+Parameters names should be self explaining.
+
+
+
+
+
+
+

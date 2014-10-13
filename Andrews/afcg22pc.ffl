@@ -1,0 +1,582 @@
+FFL1.0
+   20
+MoreNozz.8bf
+Andrew's Filters 22
+Yet More Noise...
+AB
+Freeware
+
+
+
+
+Intensity
+Cut Back
+Red Random
+Green Random
+Blue Random
+
+
+
+221
+62
+31
+63
+142
+0
+0
+0
+(c+ctl(0))*c/(ctl(1)+rnd(-ctl(2),ctl(2)))
+(c+ctl(0))*c/(ctl(1)+rnd(-ctl(3),ctl(3)))
+(c+ctl(0))*c/(ctl(1)+rnd(-ctl(4),ctl(4)))
+a
+Overlap.8bf
+Andrew's Filters 22
+Overlapper...
+AB
+Freeware
+
+
+
+
+Red Control 1
+Red Control 2
+Green Control 1
+Green Control 2
+Blue Control 1
+Blue Control 2
+
+
+3
+3
+9
+16
+1
+0
+0
+0
+ctl(0)*c-ctl(1)*src(X-x,y,1)
+ctl(2)*src(x,y,0)-ctl(3)*src(X-x,y,2)
+ctl(4)*src(x,y,0)-ctl(5)*src(X-x,y,0)
+a
+Overlap4.8bf
+Andrew's Filters 22
+Overlap 4...
+AB
+Freeware
+
+
+
+
+Position 1
+Position 2
+Position 3
+Position 4
+
+
+
+
+29
+68
+114
+111
+0
+0
+0
+0
+((val(0,0,5)*src(y,x,0))+(val(1,0,5)*c)+(val(2,0,5)*src(X-x,Y-y,0))+(val(3,0,5)*src(Y-y,X-x,0)))/4
+((val(0,0,5)*src(y,x,1))+(val(1,0,5)*c)+(val(2,0,5)*src(X-x,Y-y,1))+(val(3,0,5)*src(Y-y,X-x,1)))/4
+((val(0,0,5)*src(y,x,2))+(val(1,0,5)*c)+(val(2,0,5)*src(X-x,Y-y,2))+(val(3,0,5)*src(Y-y,X-x,2)))/4
+a
+QuickBlt.8bf
+Andrew's Filters 22
+Quick Blast
+AB
+Freeware
+
+
+
+
+
+
+
+
+
+
+
+
+0
+0
+0
+0
+0
+0
+0
+0
+c+max(c,max(src(x,y,1),src(x,y,2)))
+src(x,y,1)+max(src(x,y,0),max(c,src(x,y,2)))
+c+max(src(x,y,0),max(src(x,y,1),c))
+a
+RandCirc.8bf
+Andrew's Filters 22
+Random Mosaic Circular...
+AB
+Freeware
+
+
+
+
+Red Angle
+Red Mangnitude
+Green Angle
+Green Magnitude
+Blue Angle
+Blue Magnitude
+Randomness
+
+203
+167
+147
+109
+114
+115
+172
+0
+rad(d-d%val(0,-30,30)+rnd(0,val(6,-30,30)),m-m%val(1,-30,30)+rnd(0,val(6,-30,30)),z)
+rad(d-d%val(2,-30,30)+rnd(0,val(6,-30,30)),m-m%val(3,-30,30)+rnd(0,val(6,-30,30)),z)
+rad(d-d%val(4,-30,30)+rnd(0,val(6,-30,30)),m-m%val(5,-30,30)+rnd(0,val(6,-30,30)),z)
+a
+RandCuts.8bf
+Andrew's Filters 22
+Random CutOutness...
+AB
+Freeware
+
+
+
+
+Red Threshold
+Green Threshold
+Blue Threshold
+Red Random
+Green Random
+Blue Random
+X Shove
+Y Shove
+137
+64
+93
+102
+105
+90
+98
+91
+dif(c,src(x+val(6,-X,X),y+val(7,-Y,Y),0))>ctl(0)?c:c+rnd(-ctl(3),ctl(3))
+dif(c,src(x+val(6,-X,X),y+val(7,-Y,Y),1))>ctl(1)?c:c+rnd(-ctl(4),ctl(4))
+dif(c,src(x+val(6,-X,X),y+val(7,-Y,Y),2))>ctl(2)?c:c+rnd(-ctl(5),ctl(5))
+a
+RandIntr.8bf
+Andrew's Filters 22
+Random Interest...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Random 1
+Random 2
+176
+173
+120
+214
+12
+9
+165
+204
+((100*val(0,0,10)*c)-(100*val(1,0,10)*src(X*x,Y*y,1)))/100+rnd(0,ctl(6))-rnd(0,ctl(7))
+((100*val(2,0,10)*src(x,y,0))-(100*val(3,0,10)*src(X*x,Y*y,2)))/100+rnd(0,ctl(6))-rnd(0,ctl(7))
+((100*val(4,0,10)*src(x,y,0))-(100*val(5,0,10)*src(X*x,Y*y,0)))/100+rnd(0,ctl(6))-rnd(0,ctl(7))
+a
+RandMos.8bf
+Andrew's Filters 22
+Random Mosaic...
+AB
+Freeware
+
+
+
+
+Red Horizontal
+Red Vertical
+Green Horizontal
+Green Vertical
+Blue Horizontal
+Blue vertical
+Random Factor
+
+130
+103
+90
+169
+166
+132
+154
+0
+src(x-x%val(0,-30,30)+rnd(0,val(6,-30,30)),y-y%val(1,-30,30)+rnd(0,val(6,-30,30)),z)
+src(x-x%val(2,-30,30)+rnd(0,val(6,-30,30)),y-y%val(3,-30,30)+rnd(0,val(6,-30,30)),z)
+src(x-x%val(4,-30,30)+rnd(0,val(6,-30,30)),y-y%val(5,-30,30)+rnd(0,val(6,-30,30)),z)
+a
+RandomX.8bf
+Andrew's Filters 22
+Random from X...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+175
+12
+11
+0
+0
+0
+0
+0
+src(x+rnd(-val(0,0,10),c),y,0)
+src(x+rnd(-val(1,0,10),c),y,1)
+src(x+rnd(-val(2,0,10),c),y,2)
+a
+RandRing.8bf
+Andrew's Filters 22
+Random Rings...
+AB
+Freeware
+
+
+
+
+Ring Radius
+Ring Magnitude
+Random Red
+Random Green
+Random Blue
+Darkness
+Offset
+Difference
+17
+55
+182
+59
+195
+27
+96
+154
+(d%val(0,-10,10)>val(6,-5,5)&&d%val(0,-10,10)<val(6,0,5)+val(7,0,7))||(m%val(1,-10,10)>val(6,0,5)&&m%val(1,-10,10)<val(6,0,5)+val(7,0,7))?c+val(5,-30,30):c+rnd(0,ctl(2))
+(d%val(0,-10,10)>val(6,-5,5)&&d%val(0,-10,10)<val(6,0,5)+val(7,0,7))||(m%val(1,-10,10)>val(6,0,5)&&m%val(1,-10,10)<val(6,0,5)+val(7,0,7))?rad(d,m,0)+val(5,-30,30):rad(d,m,0)+rnd(0,ctl(3))
+(d%val(0,-10,10)>val(6,-5,5)&&d%val(0,-10,10)<val(6,0,5)+val(7,0,7))||(m%val(1,-10,10)>val(6,0,5)&&m%val(1,-10,10)<val(6,0,5)+val(7,0,7))?rad(d,m,0)+val(5,-30,30):rad(d,m,0)+rnd(0,ctl(4))
+a
+RandStrk.8bf
+Andrew's Filters 22
+Randomness Streaks...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+31
+11
+97
+0
+0
+0
+0
+0
+src(x-rnd(-val(0,0,10),c),y,0)
+src(x-rnd(-val(1,0,10),c),y,1)
+src(x-rnd(-val(2,0,10),c),y,2)
+a
+RandTea.8bf
+Andrew's Filters 22
+Random tea Cloth...
+AB
+Freeware
+
+
+
+
+Red Division
+Green Division
+Blue Division
+Red Randomness
+Green Randomness
+Blue Randomness
+
+
+137
+95
+128
+26
+134
+242
+0
+0
+x%2*val(0,-30,30)==0&&x%val(0,-30,30)==0||y%2*val(0,-30,30)==0&&y%val(0,-30,30)==0?c:rnd(-val(3,0,256),val(3,0,256))
+x%2*val(1,-30,30)==0&&x%val(1,-30,30)==0||y%2*val(1,-30,30)==0&&y%val(1,-30,30)==0?c:rnd(-val(4,0,256),val(4,0,256))
+x%2*val(2,-30,30)==0&&x%val(2,-30,30)==0||y%2*val(2,-30,30)==0&&y%val(2,-30,30)==0?c:rnd(-val(5,0,256),val(5,0,256))
+a
+Rotation.8bf
+Andrew's Filters 22
+Rotation and ReSize...
+AB
+Freeware
+
+
+
+
+Red Angle
+Green Angle
+Blue Angle
+Red Size
+Green Size
+Blue Size
+Random
+
+15
+15
+15
+19
+19
+19
+201
+0
+rad(d+val(0,0,1024),m/scl(ctl(3),0,256,1,25),0)+rnd(0,val(6,-100,100))
+rad(d+val(1,0,1024),m/scl(ctl(4),0,256,1,25),1)+rnd(0,val(6,-100,100))
+rad(d+val(2,0,1024),m/scl(ctl(5),0,256,1,25),2)+rnd(0,val(6,-100,100))
+a
+RoundBit.8bf
+Andrew's Filters 22
+Round a Bit...
+AB
+Freeware
+
+
+
+
+Red Round
+Green Round
+Blue Round
+Red Magnitude
+Green Magnitude
+Blue Magnitude
+Random 1
+Random 2
+31
+24
+127
+48
+74
+76
+74
+139
+rad(d>>val(0,0,5),m>>val(3,0,5),0)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+rad(d>>val(1,0,5),m>>val(4,0,5),1)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+rad(d>>val(2,0,5),m>>val(5,0,5),2)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+a
+RoundRad.8bf
+Andrew's Filters 22
+Round Randomness...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Red Random
+Green random
+Blue Random
+
+
+230
+214
+63
+2
+5
+3
+0
+0
+rad(d,ctl(0)*m/(rnd(0,ctl(3))*100),0)
+rad(d,ctl(1)*m/(rnd(0,ctl(4))*100),1)
+rad(d,ctl(2)*m/(rnd(0,ctl(5))*100),2)
+a
+ShnGrad.8bf
+Andrew's Filters 22
+Shine Gradient...
+AB
+Freeware
+
+
+
+
+Red Damper
+Green Damper
+Blue Damper
+Red Channel
+Green Channel
+Blue Channel
+
+
+109
+43
+101
+182
+110
+204
+0
+0
+(c-tan(val(3,0,10)*d)/val(0,0,10))
+src(x,y,0)-tan(val(4,0,10)*d)/val(1,0,10)
+src(x,y,0)-tan(val(5,0,10)*d)/val(2,0,10)
+a
+SideUp.8bf
+Andrew's Filters 22
+SideWays Slide...
+AB
+Freeware
+
+
+
+
+Red Move
+Green Move
+Blue Move
+Red Move As Well
+Green Move As Well
+Blue Move As Well
+Random 1
+Random 2
+160
+83
+234
+172
+128
+209
+47
+195
+c+(val(3,-1,2)*src(x+(y>>val(0,0,7)),y+(x>>val(0,0,7)),0))+rnd(0,ctl(6))-rnd(0,ctl(7))
+c+(val(4,-1,2)*src(x+(y>>val(1,0,7)),y+(x>>val(1,0,7)),1))+rnd(0,ctl(6))-rnd(0,ctl(7))
+c+(val(5,-1,2)*src(x+(y>>val(2,0,7)),y+(x>>val(2,0,7)),2))+rnd(0,ctl(6))-rnd(0,ctl(7))
+a
+UivRand.8bf
+Andrew's Filters 22
+Uiv Random...
+AB
+Freeware
+
+
+
+
+In The Red
+In The Green
+In The Blue
+Random 1
+Random 2
+
+
+
+99
+71
+222
+91
+240
+0
+0
+0
+(u*val(0,0,20)-i+v)+(rnd(0,ctl(3))-rnd(0,ctl(4)))
+(i*val(1,0,20)-u+v)+(rnd(0,ctl(3))-rnd(0,ctl(4)))
+(v*val(2,0,20)-v+i)+(rnd(0,ctl(3))-rnd(0,ctl(4)))
+a
+WarpWp.8bf
+Andrew's Filters 22
+Warping Warps...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Red Back
+Green Back
+Blue Back
+
+
+11
+10
+16
+158
+24
+53
+0
+0
+(d%val(0,0,50)==0&&m%val(0,0,50)==0)||(d%val(0,0,50)==1&&m%val(0,0,50)==1)||(d%val(0,0,50)==val(0,0,50)-1&&m%val(0,0,50)==val(0,0,50)-1)?c:ctl(3)
+(d%val(1,0,50)==0&&m%val(1,0,50)==0)||(d%val(1,0,50)==1&&m%val(1,0,50)==1)||(d%val(1,0,50)==val(1,0,50)-1&&m%val(1,0,50)==val(1,0,50)-1)?c:ctl(4)
+(d%val(2,0,50)==0&&m%val(2,0,50)==0)||(d%val(2,0,50)==1&&m%val(2,0,50)==1)||(d%val(2,0,50)==val(2,0,50)-1&&m%val(2,0,50)==val(2,0,50)-1)?c:ctl(5)
+a
+YukDist2.8bf
+Andrew's Filters 22
+Yukky Distort 2...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+85
+65
+16
+234
+236
+235
+0
+0
+src(x-cos(d-m)/val(0,-20,20),y-cos(d-m)/val(1,-20,20),0)
+src(x-cos(d-m)/val(2,-20,20),y-cos(d-m)/val(3,-20,20),1)
+src(x-cos(d-m)/val(4,-20,20),y-cos(d-m)/val(5,-20,20),2)
+a

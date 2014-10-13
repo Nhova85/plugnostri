@@ -1,0 +1,524 @@
+FFL1.0
+   20
+ColBBlas.8bf
+Andrew's Filters 2
+Colour Bit Blast...
+AB
+Freeware
+
+
+
+
+Red >
+Green >
+Blue >
+Red Bit
+Green Bit
+Blue Bit
+Upper
+
+128
+132
+133
+76
+229
+209
+248
+0
+(r>ctl(0)?r:ctl(6)-r)^ctl(3)
+(g>ctl(1)?g:ctl(6)-g)^ctl(4)
+(b>ctl(2)?b:ctl(6)-b)^ctl(5)
+a
+CosJar.8bf
+Andrew's Filters 2
+Cosine Jar...
+AB
+Freeware
+
+
+
+
+Red X
+Red Y
+Green X
+Green Y
+Blue X
+Blue Y
+
+
+2
+3
+8
+7
+5
+16
+0
+0
+(cos(c)+cos(src(x+ctl(0),y+ctl(1),0))+cos(src(x-ctl(0),y-ctl(1),0)))/3
+(cos(c)+cos(src(x+ctl(2),y+ctl(3),1))+cos(src(x-ctl(2),y-ctl(3),1)))/3
+(cos(c)+cos(src(x+ctl(4),y+ctl(5),2))+cos(src(x-ctl(4),y-ctl(5),2)))/3
+a
+Curved.8bf
+Andrew's Filters 2
+Curvey Extra Special...
+AB
+Freeware
+
+
+
+
+X
+Y
+Closure
+Red Channel
+Green Channel
+Blue Channel
+
+
+124
+154
+140
+152
+117
+145
+0
+0
+abs(c2m(x,y)-c2m(val(0,0,X),val(1,0,Y)))>val(2,0,M)?c+val(3,-255,255):c
+abs(c2m(x,y)-c2m(val(0,0,X),val(1,0,Y)))>val(2,0,M)?c+val(4,-255,255):c
+abs(c2m(x,y)-c2m(val(0,0,X),val(1,0,Y)))>val(2,0,M)?c+val(5,-255,255):c
+a
+CuttOut.8bf
+Andrew's Filters 2
+Cutout...
+AB
+Freeware
+
+
+
+
+X
+Y
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+128
+136
+89
+87
+88
+0
+0
+0
+sqr((x-val(0,0,X))*(x-val(0,0,X))+(y-val(1,0,Y))*(y-val(1,0,Y)))>val(2,0,M)?255:c
+sqr((x-val(0,0,X))*(x-val(0,0,X))+(y-val(1,0,Y))*(y-val(1,0,Y)))>val(3,0,M)?255:c
+sqr((x-val(0,0,X))*(x-val(0,0,X))+(y-val(1,0,Y))*(y-val(1,0,Y)))>val(4,0,M)?255:c
+a
+DownHill.8bf
+Andrew's Filters 2
+Down Hill...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+33
+151
+128
+0
+0
+0
+0
+0
+val(0,1,10)*r*y/Y
+val(1,1,10)*g*y/Y
+val(2,1,10)*b*y/Y
+a
+DownHll2.8bf
+Andrew's Filters 2
+DownHill Too...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+180
+66
+28
+0
+0
+0
+0
+0
+val(0,1,10)*r*y/(Y-y)
+val(1,1,10)*g*y/(Y-y)
+val(2,1,10)*b*y/(Y-y)
+a
+Grey.8bf
+Andrew's Filters 2
+Grey
+AB
+Freeware
+
+
+
+
+
+
+
+
+
+
+
+
+0
+0
+0
+0
+0
+0
+0
+0
+(r+g+b)/3
+(r+g+b)/3
+(r+g+b)/3
+a
+GreyStrk.8bf
+Andrew's Filters 2
+Grey Streaks...
+AB
+Freeware
+
+
+
+
+Left
+Right
+
+
+
+
+
+
+16
+9
+0
+0
+0
+0
+0
+0
+(c+src(x,y,1)+src(x,y,2)+src(x+ctl(0),y,0)+src(x+ctl(0),y,1)+src(x+ctl(0),y,2)+src(x-ctl(1),y,0)+src(x-ctl(1),y,1)+src(x-ctl(1),y,2))/9
+(src(x,y,0)+c+src(x,y,2)+src(x+ctl(0),y,0)+src(x+ctl(0),y,1)+src(x+ctl(0),y,2)+src(x-ctl(1),y,0)+src(x-ctl(1),y,1)+src(x-ctl(1),y,2))/9
+(src(x,y,0)+src(x,y,1)+c+src(x+ctl(0),y,0)+src(x+ctl(0),y,1)+src(x+ctl(0),y,2)+src(x-ctl(1),y,0)+src(x-ctl(1),y,1)+src(x-ctl(1),y,2))/9
+a
+GridLne.8bf
+Andrew's Filters 2
+Gridlines...
+AB
+Freeware
+
+
+
+
+Red Lines
+Green Lines
+Blue Lines
+
+
+
+
+
+3
+4
+68
+0
+0
+0
+0
+0
+(X-x)%ctl(0)&&(Y-y)%ctl(0)?c:c/2
+(X-x)%ctl(1)&&(Y-y)%ctl(1)?c:c/2
+(X-x)%ctl(2)&&(Y-y)%ctl(2)?c:c/2
+a
+Halftones.8bf
+Andrew's Filters 2
+Halftones...
+AB
+Freeware
+
+
+
+
+Red Blocks
+Green Blocks
+Blue Blocks
+Size
+
+
+
+
+73
+82
+108
+32
+0
+0
+0
+0
+(X-x)%val(0,1,50)<val(3,1,50)&&(Y-y)%val(0,1,50)<val(3,1,50)?c:c/2
+(X-x)%val(1,1,50)<val(3,1,50)&&(Y-y)%val(1,1,50)<val(3,1,50)?c:c/2
+(X-x)%val(2,1,50)<val(3,1,50)&&(Y-y)%val(2,1,50)<val(3,1,50)?c:c/2
+a
+Head1.8bf
+Andrew's Filters 2
+Headache...
+AB
+Freeware
+
+
+
+
+Red
+Green
+Blue
+
+
+
+
+
+121
+27
+90
+0
+0
+0
+0
+0
+(src(x-ctl(0),y,0)+sin(src(x-ctl(0),y,0))-cos(src(x-ctl(0),y,0))+c+sin(c)-cos(c)+src(x+ctl(0),y,0)+sin(src(x+ctl(0),y,0))-cos(src(x+ctl(0),y,0)))/3
+(src(x-ctl(1),y,1)+sin(src(x-ctl(1),y,1))-cos(src(x-ctl(1),y,1))+c+sin(c)-cos(c)+src(x+ctl(1),y,1)+sin(src(x+ctl(1),y,1))-cos(src(x+ctl(1),y,1)))/3
+(src(x-ctl(2),y,0)+sin(src(x-ctl(2),y,2))-cos(src(x-ctl(2),y,2))+c+sin(c)-cos(c)+src(x+ctl(2),y,2)+sin(src(x+ctl(2),y,2))-cos(src(x+ctl(2),y,2)))/3
+a
+Innerslf.8bf
+Andrew's Filters 2
+Inner Self...
+AB
+Freeware
+
+
+
+
+Split
+
+
+
+
+
+
+
+16
+0
+0
+0
+0
+0
+0
+0
+y-ctl(0)>Y/2||x-ctl(0)>X/2?src(X-x,Y-y,0):c
+y-ctl(0)>Y/2||x-ctl(0)>X/2?src(X-x,Y-y,1):c
+y-ctl(0)>Y/2||x-ctl(0)>X/2?src(X-x,Y-y,2):c
+a
+InvChSft.8bf
+Andrew's Filters 2
+Inverted Channel Shift...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+160
+115
+42
+0
+0
+0
+0
+0
+255-r+val(0,-255,255)
+255-g+val(1,-255,255)
+255-b+val(2,-255,255)
+a
+InvRnd.8bf
+Andrew's Filters 2
+Inverted Random Shift...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Random Element
+
+
+
+
+172
+100
+34
+6
+0
+0
+0
+0
+255-r+val(0,-255,255)+rnd(val(3,-255,0),val(3,0,255))
+255-g+val(1,-255,255)+rnd(val(3,-255,0),val(3,0,255))
+255-b+val(2,-255,255)+rnd(val(3,-255,0),val(3,0,255))
+a
+Littlebox.8bf
+Andrew's Filters 2
+Little Box...
+AB
+Freeware
+
+
+
+
+On the Perp
+Size
+Light
+Dark
+
+
+
+
+103
+51
+172
+79
+0
+0
+0
+0
+(abs(x-val(0,0,X))<val(1,0,X))&&(abs(y-val(0,0,Y))<val(1,0,Y))?c+val(2,0,200):c-val(3,0,200)
+(abs(x-val(0,0,X))<val(1,0,X))&&(abs(y-val(0,0,Y))<val(1,0,Y))?c+val(2,0,200):c-val(3,0,200)
+(abs(x-val(0,0,X))<val(1,0,X))&&(abs(y-val(0,0,Y))<val(1,0,Y))?c+val(2,0,200):c-val(3,0,200)
+a
+Tempest.8bf
+Andrew's Filters 2
+Tempest...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Factor 1
+Factor 2
+2
+1
+2
+2
+2
+5
+179
+126
+mix(src((X-x)/ctl(0),(Y-y)/ctl(1),sqr(rnd(0,2)%rnd(0,2))),src((x)/ctl(0),(y)/ctl(1),sqr(rnd(0,2)%rnd(0,2))),ctl(6),ctl(7))
+mix(src((X-x)/ctl(2),(Y-y)/ctl(3),sqr(rnd(0,2)%rnd(0,2))),src((x)/ctl(2),(y)/ctl(3),sqr(rnd(0,2)%rnd(0,2))),ctl(6),ctl(7))
+mix(src((X-x)/ctl(4),(Y-y)/ctl(5),sqr(rnd(0,2)%rnd(0,2))),src((x)/ctl(4),(y)/ctl(5),sqr(rnd(0,2)%rnd(0,2))),ctl(6),ctl(7))
+a
+ThColWh.8bf
+Andrew's Filters 2
+Thrown About A Colour Wheel...
+AB
+Freeware
+
+
+
+
+Red Mix
+Green Mix
+Blue Mix
+Red Move
+Green Move
+Blue Move
+Mix 1
+Mix 2
+221
+161
+10
+144
+150
+159
+201
+121
+mix(src(x+val(3,-100,100),y+val(3,-100,100),0),ctl(0),ctl(6),ctl(7))
+mix(src(x+val(4,-100,100),y+val(4,-100,100),1),ctl(1),ctl(6),ctl(7))
+mix(src(x+val(5,-100,100),y+val(5,-100,100),2),ctl(2),ctl(6),ctl(7))
+a
+ToMumDad.8bf
+Andrew's Filters 2
+Last Time...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+
+170
+211
+21
+175
+174
+71
+0
+0
+c%rnd(x%ctl(0),y%ctl(1))
+c%rnd(x%ctl(2),y%ctl(3))
+c%rnd(x%ctl(4),y%ctl(5))
+a

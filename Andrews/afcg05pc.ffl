@@ -1,0 +1,582 @@
+FFL1.0
+   20
+AnothVis.8bf
+Andrew's Filters 5
+Another Vision...
+AB
+Freeware
+
+
+
+
+Red X
+Red Y
+Green X
+Green Y
+Blue X
+Blue Y
+Threshold
+Factor Z
+219
+208
+174
+228
+94
+14
+254
+9
+ctl(6)-dif(c,src(x+rnd(0,ctl(0))-rnd(0,ctl(0)),y+rnd(0,ctl(1))-rnd(0,ctl(1)),0))*ctl(7)
+ctl(6)-dif(c,src(x+rnd(0,ctl(2))-rnd(0,ctl(2)),y+rnd(0,ctl(3))-rnd(0,ctl(3)),1))*ctl(7)
+ctl(6)-dif(c,src(x+rnd(0,ctl(4))-rnd(0,ctl(4)),y+rnd(0,ctl(5))-rnd(0,ctl(5)),2))*ctl(7)
+a
+BadBlock.8bf
+Andrew's Filters 5
+Bad Blocks...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Random 1
+Random 2
+5
+8
+10
+23
+12
+9
+184
+127
+ctl(0)*c-ctl(1)*src(X^x,Y^y,1)+rnd(0,ctl(6))-rnd(0,ctl(7))
+ctl(2)*src(x,y,0)-ctl(3)*src(X^x,Y^y,2)+rnd(0,ctl(6))-rnd(0,ctl(7))
+ctl(4)*src(x,y,0)-ctl(5)*src(X^x,Y^y,0)+rnd(0,ctl(6))-rnd(0,ctl(7))
+a
+BehiBar.8bf
+Andrew's Filters 5
+Behind Bars...
+AB
+Freeware
+
+
+
+
+Red Bars
+Green Bars
+Blue Bars
+Random 1
+Random 2
+
+
+
+0
+3
+5
+56
+63
+0
+0
+0
+src(x%ctl(0)==0?x:x+sin(x),y,0)+rnd(0,ctl(3))-rnd(0,ctl(4))
+src(x%ctl(1)==0?x:x+sin(x),y,1)+rnd(0,ctl(3))-rnd(0,ctl(4))
+src(x%ctl(2)==0?x:x+sin(x),y,2)+rnd(0,ctl(3))-rnd(0,ctl(4))
+a
+BitsBits.8bf
+Andrew's Filters 5
+Bits and More Bits...
+AB
+Freeware
+
+
+
+
+Red X
+Green X
+Blue X
+Red Y
+Green Y
+Blue Y
+Random 1
+Random 2
+26
+27
+25
+40
+20
+22
+92
+34
+src(x>>val(0,0,5),y>>val(3,0,5),0)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+src(x>>val(1,0,5),y>>val(4,0,5),1)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+src(x>>val(2,0,5),y>>val(5,0,5),2)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+a
+ColBrush.8bf
+Andrew's Filters 5
+Coloured Radial Brush...
+AB
+Freeware
+
+
+
+
+Red Damper
+Green Damper
+Blue Damper
+Red Bit
+Green Bit
+Blue Bit
+Cut Off
+
+53
+101
+15
+85
+50
+29
+105
+0
+rad(d,m>2*M/val(0,1,10)?M:m,0)>ctl(6)?c:rad(d,m^ctl(3),0)
+rad(d,m>2*M/val(1,1,10)?M:m,1)>ctl(6)?c:rad(d,m^ctl(4),1)
+rad(d,m>2*M/val(2,1,10)?M:m,2)>ctl(6)?c:rad(d,m^ctl(5),2)
+a
+Colourbit.8bf
+Andrew's Filters 5
+Bit Of Colour...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Red Random
+Green Random
+Blue Random
+Damper
+Replacement Random
+150
+94
+54
+35
+216
+166
+232
+254
+((r>>val(0,0,8))*(r>>val(0,0,8))+rnd(0,val(3,0,200)))<ctl(6)?((r>>val(0,0,8))*(r>>val(0,0,8))+rnd(0,val(3,0,200))):rnd(255,ctl(7))
+((g>>val(1,0,8))*(g>>val(1,0,8))+rnd(0,val(4,0,200)))<ctl(6)?((g>>val(1,0,8))*(g>>val(1,0,8))+rnd(0,val(4,0,200))):rnd(255,ctl(7))
+((b>>val(2,0,8))*(b>>val(2,0,8))+rnd(0,val(5,0,200)))<ctl(6)?((b>>val(2,0,8))*(b>>val(2,0,8))+rnd(0,val(5,0,200))):rnd(255,ctl(7))
+a
+ColRepA.8bf
+Andrew's Filters 5
+Colour Replacer Around...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+Range
+Red New
+Green New
+Blue New
+
+142
+190
+88
+39
+101
+51
+8
+0
+dif(c,ctl(0))>ctl(3)?ctl(4):c
+dif(c,ctl(1))>ctl(3)?ctl(5):c
+dif(c,ctl(2))>ctl(3)?ctl(6):c
+a
+ColRepl.8bf
+Andrew's Filters 5
+Colour Replacement...
+AB
+Freeware
+
+
+
+
+Red To Go
+Green To Go
+Blue To Go
+Range
+Red To Be
+Green To Be
+Blue To Be
+
+149
+69
+63
+54
+29
+24
+31
+0
+dif(c,ctl(0))<ctl(3)?ctl(4):c
+dif(c,ctl(1))<ctl(3)?ctl(5):c
+dif(c,ctl(2))<ctl(3)?ctl(6):c
+a
+ColRotr.8bf
+Andrew's Filters 5
+Colour Rotator...
+AB
+Freeware
+
+
+
+
+Red Difference
+Green Difference
+Blue Difference
+Intensity 1
+Intensity 2
+Red Random
+Green Random
+Blue Random
+39
+63
+38
+48
+135
+36
+229
+33
+dif(rad((D-d),m,0),rad((D-d),m,0))>ctl(0)?rad(D-d,m,0)+val(3,-256,256)+rnd(0,val(5,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+dif(src((D-d),m,1),c)>ctl(1)?rad(D-d,m,1)+val(3,-256,256)+rnd(0,val(6,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+dif(rad(D-d,m,2),c)>ctl(2)?rad(D-d,m,2)+val(3,-256,256)+rnd(0,val(7,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+a
+ColSwep.8bf
+Andrew's Filters 5
+Colour Sweeping...
+AB
+Freeware
+
+
+
+
+Red Turn
+Green Turn
+Blue Turn
+Red Move
+Green Move
+Blue Move
+Random 1
+Random 2
+24
+41
+100
+92
+43
+65
+23
+0
+rad(d>val(0,0,1024)?d:val(3,0,1024)-d,m,0)+rnd(0,ctl(6))-rnd(0,ctl(7))
+rad(d>val(1,0,1024)?d:val(4,0,1024)-d,m,1)+rnd(0,ctl(6))-rnd(0,ctl(7))
+rad(d>val(2,0,1024)?d:val(5,0,1024)-d,m,2)+rnd(0,ctl(6))-rnd(0,ctl(7))
+a
+CornerRad.8bf
+Andrew's Filters 5
+Into A Corner...
+AB
+Freeware
+
+
+
+
+Red Angle
+Green Angle
+Blue Angle
+Red Magnitude
+Green Magnitude
+Blue Magnitude
+Random 1
+Random 2
+66
+88
+6
+0
+3
+0
+22
+18
+rad(d<<val(0,0,5),m<<val(3,0,5),0)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+rad(d<<val(1,0,5),m<<val(4,0,5),1)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+rad(d<<val(2,0,5),m<<val(5,0,5),2)+rnd(0,val(6,0,255))-rnd(0,val(7,0,255))
+a
+DistressQ.8bf
+Andrew's Filters 5
+Distressed Quad...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+125
+133
+30
+98
+154
+112
+0
+0
+src(x-2>X/2?(2*x-X)+rnd(ctl(0),x):(2*x)+rnd(ctl(0),x),y-2>Y/2?(2*y-Y)+rnd(ctl(1),y):(2*y)+rnd(ctl(1),y),0)
+src(x-2>X/2?(2*x-X)+rnd(ctl(2),x):(2*x)+rnd(ctl(2),x),y-2>Y/2?(2*y-Y)+rnd(ctl(3),y):(2*y)+rnd(ctl(3),y),1)
+src(x-2>X/2?(2*x-X)+rnd(ctl(4),x):(2*x)+rnd(ctl(5),x),y-2>Y/2?(2*y-Y)+rnd(ctl(6),y):(2*y)+rnd(ctl(6),y),2)
+a
+FanFan.8bf
+Andrew's Filters 5
+Fan...
+AB
+Freeware
+
+
+
+
+Red Angle
+Green Angle
+Blue Angle
+Red Angle, Too
+Green Angle, Too
+Blue Angle, Too
+
+
+49
+88
+108
+185
+200
+224
+0
+0
+c2d(x,y)>scl(ctl(0),0,256,0,256)&&c2d(x,y)<scl(ctl(3),0,256,0,256)?c:0
+c2d(x,y)>scl(ctl(1),0,256,0,256)&&c2d(x,y)<scl(ctl(4),0,256,0,256)?c:0
+c2d(x,y)>scl(ctl(2),0,256,0,256)&&c2d(x,y)<scl(ctl(5),0,256,0,256)?c:0
+a
+FlipColo.8bf
+Andrew's Filters 5
+Flip Colours ...
+AB
+Freeware
+
+
+
+
+Red Flip
+Green Flip
+Blue Flip
+Intensity 1
+Intensity 2
+Red Random
+Green Random
+Blue Random
+122
+130
+115
+103
+130
+148
+114
+125
+dif(src(X-x,y,0),c)>ctl(0)?src(X-x,y,0)+val(3,-256,256)+rnd(0,val(5,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+dif(src(X-x,y,1),c)>ctl(1)?src(X-x,y,1)+val(3,-256,256)+rnd(0,val(6,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+dif(src(X-x,y,2),c)>ctl(2)?src(X-x,y,2)+val(3,-256,256)+rnd(0,val(7,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+a
+FlippCol.8bf
+Andrew's Filters 5
+Flippy Colours...
+AB
+Freeware
+
+
+
+
+Red Magnitude
+Green Magnitude
+Blue magnitude
+Intensity 1
+Intensity 2
+Red Random
+Green Random
+Blue Random
+10
+90
+218
+121
+99
+192
+222
+222
+dif(rad(d,M-m,0),c)>ctl(0)?rad(D-d,m,0)+val(3,-256,256)+rnd(0,val(5,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+dif(src((d),M-m,1),c)>ctl(1)?rad(d,M-m,1)+val(3,-256,256)+rnd(0,val(6,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+dif(rad(d,M-m,2),c)>ctl(2)?rad(d,M-m,2)+val(3,-256,256)+rnd(0,val(7,-60,60)):c+val(4,-256,256)+rnd(0,val(5,-60,60))
+a
+GlowWorm.8bf
+Andrew's Filters 5
+Glow Worm...
+AB
+Freeware
+
+
+
+
+Red X
+Red Y
+Green X
+Green Y
+Blue X
+Blue Y
+
+
+255
+218
+82
+69
+43
+35
+0
+0
+dif(c,src(x+rnd(0,ctl(0))-rnd(0,ctl(0)),y+rnd(0,ctl(1))-rnd(0,ctl(1)),0))
+dif(c,src(x+rnd(0,ctl(2))-rnd(0,ctl(2)),y+rnd(0,ctl(3))-rnd(0,ctl(3)),1))
+dif(c,src(x+rnd(0,ctl(4))-rnd(0,ctl(4)),y+rnd(0,ctl(5))-rnd(0,ctl(5)),2))
+a
+IntoCent.8bf
+Andrew's Filters 5
+In To The Centre Of Things...
+AB
+Freeware
+
+
+
+
+Red Channel
+Green Channel
+Blue Channel
+
+
+
+
+
+118
+61
+122
+0
+0
+0
+0
+0
+rad(d,m>2*M/val(0,1,10)?M:m,0)
+rad(d,m>2*M/val(1,1,10)?M:m,1)
+rad(d,m>2*M/val(2,1,10)?M:m,2)
+a
+ManyFace.8bf
+Andrew's Filters 5
+Many Facets...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+83
+15
+186
+186
+128
+226
+0
+0
+src(r2x(D/val(0,-10,10)-d,M-m)+r2x(d,m),r2y(D/val(1,-10,10)-d,M-m)+r2y(d,m),0)
+src(r2x(D/val(2,-10,10)-d,M-m)+r2x(d,m),r2y(D/val(3,-10,10)-d,M-m)+r2y(d,m),1)
+src(r2x(D/val(4,-10,10)-d,M-m)+r2x(d,m),r2y(D/val(5,-10,10)-d,M-m)+r2y(d,m),2)
+a
+NegaNega.8bf
+Andrew's Filters 5
+Negative, Negative...
+AB
+Freeware
+
+
+
+
+Red Limit
+Green Limit
+Blue Limit
+Red Current
+Green Current
+Blue Current
+Random 1
+Random 2
+151
+89
+124
+129
+54
+193
+36
+188
+val(0,0,8)*R-val(3,0,8)*r+rnd(0,ctl(6))-rnd(0,ctl(7))
+val(1,0,8)*G-val(4,0,8)*g+rnd(0,ctl(6))-rnd(0,ctl(7))
+val(2,0,8)*B-val(5,0,8)*b+rnd(0,ctl(6))-rnd(0,ctl(7))
+a
+NotPart.8bf
+Andrew's Filters 5
+Not Particularly Shady...
+AB
+Freeware
+
+
+
+
+Red Effect
+Green Effect
+Blue Effect
+Red Factor
+Green Factor
+Blue Factor
+Intensity
+
+255
+64
+71
+2
+3
+2
+74
+0
+50*(src(x,y,val(0,0,2))+max(src(x^val(3,-10,10),y%val(3,-10,10),val(0,0,2)),min(src(x^val(4,-10,10),y%val(4,-10,10),val(1,0,2)),src(x^val(5,-10,10),y%val(5,-10,10),val(2,0,2)))))/ctl(6)
+50*(src(x,y,val(1,0,1))+max(src(x^val(3,-10,10),y%val(3,-10,10),val(1,0,1)),min(src(x^val(4,-10,10),y%val(4,-10,10),val(1,0,0)),src(x^val(5,-10,10),y%val(5,-10,10),val(2,0,2)))))/ctl(6)
+50*(src(x,y,val(2,0,2))+max(src(x^val(3,-10,10),y%val(3,-10,10),val(2,0,2)),min(src(x^val(4,-10,10),y%val(4,-10,10),val(1,0,0)),src(x^val(5,-10,10),y%val(5,-10,10),val(2,0,1)))))/ctl(6)
+a

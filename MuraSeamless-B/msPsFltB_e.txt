@@ -1,0 +1,80 @@
+                  MuRa's Seamless Filters B - Version 1.1
+                Copyright(c)1999 by MuRa, http://mura.hey.to
+
+Welcome to MuRa's Filters created with Filter Factory.
+This is the filter collection for Photoshop for making seamless patterns.
+Filters for seamless images are contained in it.
+If you apply them to a seamless image, it keeps seamless.
+
+This filter collection is Freeware. You can use them freely and distribute
+them without modifying. But it is forbidden to sell them without permission
+of the author.
+
+If '.ffl' files are contained in the archive, you have to convert them
+to '.8bf' files with Plugin Commander(PiCo) to use them.
+You can download PiCo from http://pico.i-us.com/
+
+Here is a brief description of the filters.
+
+Shift
+ This scrolls the image with wraparound.
+
+        Offset X        horizontal offset
+        Offset Y        vertical offset
+
+Shift at Arch
+ This warps the image at arch with wraparound.
+
+        Number          number of arch
+        Shift           amount of shift
+        Offset          offset of arch
+        Ratio           ratio of arch
+        Direction       direction(vertical1/horizontal1/vertical2/horizontal2)
+
+Shift at Random
+ This scrolls lines of the image at random with wraparound.
+
+        Number          number of lines(255:1 pixel width)
+        Shift           maximum of offset
+        Random Factor   factor of random
+        Direction       direction(vertical/horizontal)
+
+Shift at Slant
+ This warps the image slantingly with wraparound, or makes diagonal tiling
+of the image if you set both x-shift and y-shift.
+
+        X Shift         number of horizontal shift
+        Y Shift         number of vertical shift
+
+Shift at Wave
+ This warps the image at sin waves with wraparound.
+
+        Base Freq.      base frequency
+        Amplitude 1     amplitude of base frequency wave
+        Phase 1         phase of base frequency wave
+        Amplitude 2     amplitude of twice frequency wave
+        Phase 2         phase  of twice frequency wave
+        Amplitude 4     amplitude of 4 times frequency wave
+        Phase 4         phase of 4 times frequency wave
+        Direction       direction(vertical1/horizontal1/vertical2/horizontal2)
+
+Shift at Zigzag
+ This warps the image at zigzag with wraparound.
+
+        Number          number of zigzag
+        Shift           amount of shift
+        Offset          offset of shift
+        Ratio           ratio of top and bottom
+        Slope           slope
+        Direction       direction(vertical1/horizontal1/vertical2/horizontal2)
+
+Warp at Wave
+ This warps the image at wave lens with wraparound.
+
+        Effect          effect of warp
+        Freq.           frequency of waves
+        Phase           phase of waves
+        Number          number of wave lines
+        Offset          offset of wave lines
+        Direction       direction(vertical/horizontal)
+

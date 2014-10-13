@@ -1,0 +1,307 @@
+		Alf's Filter Factory Border FX Version 1.0
+
+This is the first version of my Filter Factory Border FX filters. The idea behind
+these filters is to use them to create special effects on the borders of a picture.
+I want to thank the participation of others with ideas and suggestions, mainly from 
+people in the Filter Factory Discussion Group. For more info on this mailing list,
+check out the home page, http://www.cnu.edu/~ffactory/.
+
+The Filter Factory is a plugin for Photoshop 3.0 that allows you to create 
+filters and compile them as a separate file. Here are some examples of 
+these filters, complete with source, compiled filters and examples of 
+their use. The compiled files are for Windows. There will be a macintosh
+version soon. Even though some programs say they can use Photoshop compatible
+filters, most of them will not be able to use these filters. So far only 
+PS 3.0 and Premiere 4.0 will be able to use these filters.
+The Filter Factory plugin does not come installed on Photoshop. If you have the 
+PS 3.0 CD look in the Goodies directory and copy the file ffactory.8bf to your
+Photoshop plugins directory. The next time you enter Photoshop it will be under
+the Synthetic category on your Filters menu.
+When compiling the filters, it is best to work on a transparent layer, so you can access 
+the A: channel. To convert the background layer into a transparent one, just double click
+on it in the Layers pallette.
+Some of the codes are pretty long. To avoid typing errors, just cut and paste these on 
+the Filter Factory plugin.
+
+The zip file contains:
+
+albord10.txt - this file;
+
+*.afs - source files for the Filter Factory plugin. Use the Load... command.
+If you want to compile the filters yourself, suggestions of the control's
+names are given for each filter.
+
+*.8bf - compiled filters for Windows. These must be placed in the plugins
+directory of Photoshop.
+
+Legal stuff
+
+These filters are FREE. No warranties are given. They were written to 
+stimulate discussion and sharing of information on Adobe Photoshop. If you 
+find these filters useful and learn from them, a small contribution of
+5-10 dollars is appreciated, as it would help to keep and expand my homepage.
+Do not modify this files. Do not post them separated or without this text
+file. 
+Now to the good stuff:
+
+				Alf's Border FX Filters
+
+These filters will give a different border for your picture. You can use some of them
+together with selecting the background color as transparent in a gif89a file for use on the Web.
+
+Border Checkers
+
+R: x>val(4,0,X)&x<X-val(4,0,X)&y>val(5,0,Y)&y<Y-val(5,0,Y)?
+   x<val(6,0,X)|x>X-val(6,0,X)|y<val(7,0,Y)|y>Y-val(7,0,Y)?
+   sin(scl(x,0,X,-512*ctl(0),512*ctl(0)))>0^sin(scl(y,0,Y,-512*ctl(0),512*ctl(0)))>0?
+   c:ctl(1):c:ctl(1)
+
+G: x>val(4,0,X)&x<X-val(4,0,X)&y>val(5,0,Y)&y<Y-val(5,0,Y)?
+   x<val(6,0,X)|x>X-val(6,0,X)|y<val(7,0,Y)|y>Y-val(7,0,Y)?
+   sin(scl(x,0,X,-512*ctl(0),512*ctl(0)))>0^sin(scl(y,0,Y,-512*ctl(0),512*ctl(0)))>0?
+   c:ctl(1):c:ctl(1)
+
+B: x>val(4,0,X)&x<X-val(4,0,X)&y>val(5,0,Y)&y<Y-val(5,0,Y)?
+   x<val(6,0,X)|x>X-val(6,0,X)|y<val(7,0,Y)|y>Y-val(7,0,Y)?
+   sin(scl(x,0,X,-512*ctl(0),512*ctl(0)))>0^sin(scl(y,0,Y,-512*ctl(0),512*ctl(0)))>0?
+   c:ctl(1):c:ctl(1)
+
+
+ctl(0) = Divisions
+ctl(1) = Background Red
+ctl(2) =            Green
+ctl(3) =            Blue
+ctl(4) = External X
+ctl(5) = External Y
+ctl(6) = Internal X
+ctl(7) = External Y
+
+Category: Alf's Border FX
+Name: Border Checkers
+Copyright: 1996 Alfredo Mateus
+Author: Alfredo Mateus
+File Name: borcheck.8bf
+
+Border Fade I
+
+R: put(rnd(0,ctl(0)),0),
+   (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ? ctl(7)>128?
+   c+val(5,0,25)*x :c-val(5,0,25)*x :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ? ctl(7)>128?
+   c+val(5,0,25)*y :c-val(5,0,25)*y:
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ? ctl(7)>128?
+   c+val(5,0,25)*(X-x) :c-val(5,0,25)*(X-x) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ? ctl(7)>128?
+   c+val(5,0,25)*(Y-y) :c-val(5,0,25)*(Y-y) : c))))
+
+G: (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ? ctl(7)>128?
+   c+val(5,0,25)*x :c-val(5,0,25)*x :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ? ctl(7)>128?
+   c+val(5,0,25)*y :c-val(5,0,25)*y:
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ? ctl(7)>128?
+   c+val(5,0,25)*(X-x) :c-val(5,0,25)*(X-x) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ? ctl(7)>128?
+   c+val(5,0,25)*(Y-y) :c-val(5,0,25)*(Y-y) : c))))
+
+B: (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ? ctl(7)>128?
+   c+val(5,0,25)*x :c-val(5,0,25)*x :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ? ctl(7)>128?
+   c+val(5,0,25)*y :c-val(5,0,25)*y:
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ? ctl(7)>128?
+   c+val(5,0,25)*(X-x) :c-val(5,0,25)*(X-x) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ? ctl(7)>128?
+   c+val(5,0,25)*(Y-y) :c-val(5,0,25)*(Y-y) : c))))
+
+ctl(1) = Width
+ctl(5) = Intensity
+ctl(7) = Darken/Lighten
+
+
+Category: Alf's Border FX
+Name: Border Fade I
+Copyright: 1996 Alfredo Mateus, Mario Klingermann and Ilyich the Toad
+Author: Alfredo Mateus, Mario Klingermann and Ilyich the Toad
+File Name: borfade1.8bf
+
+Border Fade II
+
+R: put(rnd(0,ctl(0)),0),
+   (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*x) : c-val(5,0,25)*(get(0)*x) :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*y) : c-val(5,0,25)*(get(0)*y):
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*(X-x)) : c-val(5,0,25)*(get(0)*(X-x)) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*(Y-y)): c-val(5,0,25)*(get(0)*(Y-y)) : c))))
+
+G: (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*x) : c-val(5,0,25)*(get(0)*x) :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*y) : c-val(5,0,25)*(get(0)*y):
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*(X-x)) : c-val(5,0,25)*(get(0)*(X-x)) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*(Y-y)): c-val(5,0,25)*(get(0)*(Y-y)) : c))))
+
+B: (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*x) : c-val(5,0,25)*(get(0)*x) :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*y) : c-val(5,0,25)*(get(0)*y):
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*(X-x)) : c-val(5,0,25)*(get(0)*(X-x)) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ?ctl(7)>128?
+   c+val(5,0,25)*(get(0)*(Y-y)): c-val(5,0,25)*(get(0)*(Y-y)) : c))))
+
+ctl(0) = Noise
+ctl(1) = Width
+ctl(5) = Intensity
+ctl(7) = Darken/Lighten
+
+
+Category: Alf's Border FX
+Name: Border Fade II
+Copyright: 1996 Alfredo Mateus, Mario Klingermann and Ilyich the Toad
+Author: Alfredo Mateus, Mario Klingermann and Ilyich the Toad
+File Name: borfade2.8bf
+
+Border Fade III
+
+R: put(rnd(0,ctl(0)),0),
+   (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ? mix(c,get(0),x,val(1,0,X/2)) :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ? mix(c,get(0),y,val(1,0,Y/2)) :
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ?mix(c,get(0),X-x,val(1,0,X/2)) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ?mix(c,get(0),Y-y,val(1,0,Y/2)) : c))))
+
+G: (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ? mix(c,get(0),x,val(1,0,X/2)) :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ? mix(c,get(0),y,val(1,0,Y/2)) :
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ?mix(c,get(0),X-x,val(1,0,X/2)) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ?mix(c,get(0),Y-y,val(1,0,Y/2)) : c))))
+
+B: (x<val(1,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ? mix(c,get(0),x,val(1,0,X/2)) :
+   (y<val(1,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ? mix(c,get(0),y,val(1,0,Y/2)) :
+   (x>val(1,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ?mix(c,get(0),X-x,val(1,0,X/2)) :
+   (y>val(1,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ?mix(c,get(0),Y-y,val(1,0,Y/2)) : c))))
+
+
+
+ctl(0) = Noise
+ctl(1) = Width
+
+Category: Alf's Border FX
+Name: Border Fade II
+Copyright: 1996 Alfredo Mateus, Mario Klingermann and Ilyich the Toad
+Author: Alfredo Mateus, Mario Klingermann and Ilyich the Toad
+File Name: borfade3.8bf
+
+Border Film
+
+R: ctl(7)<128?(y>val(5,0,Y)&y<Y-val(5,0,Y)?y<val(6,0,Y)^y>Y-val(6,0,Y)?
+   sin(scl(x,0,X,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):c:c) : 
+   (x>val(5,0,X)&x<X-val(5,0,X)?x<val(6,0,X)^x>X-val(6,0,X)? 
+   sin(scl(y,0,Y,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):c:c)
+
+G: ctl(7)<128?(y>val(5,0,Y)&y<Y-val(5,0,Y)?y<val(6,0,Y)^y>Y-val(6,0,Y)?
+   sin(scl(x,0,X,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):c:c) :  
+   (x>val(5,0,X)&x<X-val(5,0,X)?x<val(6,0,X)^x>X-val(6,0,X)?   
+   sin(scl(y,0,Y,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):c:c)
+
+
+B: ctl(7)<128?(y>val(5,0,Y)&y<Y-val(5,0,Y)?y<val(6,0,Y)^y>Y-val(6,0,Y)? 
+   sin(scl(x,0,X,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):c:c) :   
+   x>val(5,0,X)&x<X-val(5,0,X)?x<val(6,0,X)^x>X-val(6,0,X)?  
+   sin(scl(y,0,Y,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):c:c) 
+A: a
+
+ctl(0) = Divisions
+ctl(1) = Background Red
+ctl(2) =            Green
+ctl(3) =            Blue
+ctl(6) = Internal X
+ctl(7) = External Y
+
+
+Category: Alf's Border FX
+Name: Border Film
+Copyright: 1996 Alfredo Mateus
+Author: Alfredo Mateus
+File Name: borfilm.8bf
+
+This filter will create horizontal or vertical rectangles on the picture resembling
+the perfurations in film. The distance from the border and width of the rectangles can be 
+set at will, as well as their color.
+
+
+
+Gear
+
+R: m>val(7,0,M)?m<val(6,0,M)?sin(scl(d,0,D,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):ctl(1):c
+
+G: m>val(7,0,M)?m<val(6,0,M)?sin(scl(d,0,D,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):ctl(1):c
+
+B: m>val(7,0,M)?m<val(6,0,M)?sin(scl(d,0,D,-512*ctl(0),512*ctl(0)))>0?c:ctl(1):ctl(1):c
+
+
+ctl(0) = Divisions
+ctl(1) = Background Red
+ctl(2) =            Green
+ctl(3) =            Blue
+ctl(6) = Internal Radius
+ctl(7) = External Radius
+
+Category: Alf's Border FX
+Name: Border Gear
+Copyright: 1996 Alfredo Mateus
+Author: Alfredo Mateus
+File Name: borgear.8bf
+
+
+
+
+Mirror Bevel
+
+
+R: (x<val(0,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ?ctl(1)<128?src(2*x,y,z) : src(X-2*x,y,z) :
+   (y<val(0,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ?ctl(1)<128?src(x,2*y,z) : src(x,Y-2*y,z) :
+   (x>val(0,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ? src(2*x-X,y,z) :
+   (y>val(0,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ? src(x,2*y-Y,z) : c))))
+
+G: (x<val(0,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ?ctl(1)<128?src(2*x,y,z) : src(X-2*x,y,z) :
+   (y<val(0,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ?ctl(1)<128?src(x,2*y,z) : src(x,Y-2*y,z) :
+   (x>val(0,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ? src(2*x-X,y,z) :
+   (y>val(0,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ? src(x,2*y-Y,z) : c))))
+ 
+B: (x<val(0,0,X/2)&&x*Y<=X*y&&x*Y<=X*(Y-y) ?ctl(1)<128?src(2*x,y,z) : src(X-2*x,y,z) :
+   (y<val(0,0,Y/2)&&x*Y>=X*y&&Y*(X-x)>=X*y ?ctl(1)<128?src(x,2*y,z) : src(x,Y-2*y,z) :
+   (x>val(0,X,X/2)&&(X-x)*Y<=X*y&&x*(Y-y)>=y*(X-x) ? src(2*x-X,y,z) :
+   (y>val(0,Y,Y/2)&&x*Y>=X*(Y-y)&&x*(Y-y)<=y*(X-x) ? src(x,2*y-Y,z) : c))))
+
+A: a
+
+ctl(0) - Bevel width
+ctl(1) - Select Mirror
+
+Category - Alf's Power Toys
+Name: Mirror Bevel
+Copyright: Alfredo Mateus & Ilyich the Toad
+Author: Alfredo Mateus & Ilyich the Toad
+Filename: mirrbevl.8bf
+
+This filter comes directly from the Sucking Toad filter, the big difference is that it
+puts a compressd version of the image on the bevels. If ctl(1) > 128, it changes the 
+mirrors to have the horizontal and vertical mirrors the same (great for tiling...).
+
+
+Have fun!
+
+Alfredo Mateus, Chemistry Dept., University of Florida
+April 22, 1996
+
+More info and updates, check my homepage Photoshop Sites:
+http://www.fns.net/~almateus/photos.htm
+Send coments to almateus@grove.ufl.edu
+Send contributions to:
+Alfredo Mateus
+320 UVS #8
+Gainesville, FL - 32603
+USA

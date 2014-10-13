@@ -1,0 +1,10 @@
+------------- AFH Beveler Plugins ------------------
+
+Om deze filter te kunnen gebruiken moeten alle *.8bf files naar de pluginmap gekopieerd worden!
+
+Het makkelijkste is om de komplete map "AFH Beveler 2.0c" met de hele inhoud via b.v verkenner
+naar je plugin map van je keuze te slepen of kopieren!
+
+Het komt er dan b.v. zo uit te zien C:\naamfotoprogje\Insteekfilters\AFH Beveler 2.0c
+
+

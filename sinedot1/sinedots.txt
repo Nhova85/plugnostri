@@ -1,0 +1,178 @@
+
+DragonFly´s Sinedot Shader
+--------------------------
+
+This is my first try in creating a photoshop Filter.
+I choose this old demoeffect because it´s nice and easy to implement.
+I know that it is slow, extremly unintuitiv and probably not very usefull.
+Hopefully somebody has a use for it anyway.
+
+It should work with any photoshop 3.0+ compatible host under Windows 95/98/NT.
+
+This filter is free, but if you actually use it for some work i´d really
+like to see the result. So it´d be kind to mail me the url if available.
+Interesting settings are appreciated, too.
+
+You may redistribute this filter as long as you do two things:
+1st: Mail me at 'DragonPhil@gmx.de' and tell me.
+2nd: Distribute the unmodified files only together as one including this text file.
+
+Btw. I enabled all kinds of modes just because it´s possible.
+Please consider that i do no color conversion and thus the effect will
+have different colors for different modes...
+
+Mail me for any comment, suggestion, bug report, etc.
+If you have ideas for new Plug-Ins.... i´m interested, too.
+
+
+Philipp Spöth
+(DragonPhil@gmx.de)
+
+
+
+Parameters:
+----------
+
+The filter produces a curve which continually changes and shades itself into the picture.
+Because of the nature of the effect it´s a bit difficult to explain the
+parameters affection on the result. I´ll give it a try anyway:
+
+1st Dimension´s
+X-1/X-2
+Y-1/Y-2:   These Parameters determine the appeareance of the starting curve.
+           Values are represented as angles given in multiples of Pi.
+           
+2nd Dimension´s
+X-1/X-2
+Y-1/Y-2:   These Parameters determine how the starting curve developes and moves.
+
+Density:   Determines the amount of Dots beeing used for the effect
+           and thus the brightness/darkness the reulting structure.
+
+Inverse:   Inverts the 'shading direction'. Means the color values are
+           either increased or decreased.
+
+BalanceX
+BalanceY:  Defines the influence of X-1/Y-1 values relativ to X-2/Y-2
+
+
+Settings:
+--------
+
+It´s possible to save settings to disc. The entry '_defaults'
+is used to save the most recently applied values.
+Means: Every time you press the OK-Button the current settings
+are saved under this name.
+You can find the settings in the "sinedots.cfg" file which should
+normally be located in the same folder as this Plug-in.
+
+
+
+
+Installing:
+----------
+Short version: Execute the 'installer.exe' type in the desired folder under
+your standard Plug-In folder and push ok.
+
+Long Version: If the installer is not able to locate this directoy for
+you (probably this will work for Photoshop 5.0+ only) and you´re to lazy
+to type in the whole path. Or the installer does not work for some other
+reason, you may also copy the needed files by hand into your Plug-In´s folder.
+Needed files are:
+'AssignPath.exe',
+'sinedots.8bf' and
+'sinedots.cfg'
+
+Then you´ll have to run AssignPath.exe out of that directoy!
+
+The AssignPath does nothing else but to create a registry entry for my plug-in
+(HKEY_LOCAL_MACHINE\SOFTWARE\DragonFly\Sinedot Shader\Path)
+so it can find it´s config file in the current path.
+
+If you should move the plug-in to a different folder someday please don´t forget
+to run the AssignPath.exe again or use the installer, so the plug-in will find
+it´s config file.
+
+
+
+
+And for those who are interested in how the effect works,
+it´s basically something like this:
+
+
+    innerCount = (width+height)*gDensity*5;
+    outerCount = (width+height)*gDensity*5;
+
+    angle1 = pi * X1 / innerCount;
+    angle2 = pi * X2 / innerCount;
+    angle3 = pi * Y1 / innerCount;
+    angle4 = pi * Y2 / innerCount;
+
+    angle5 = pi * X11;
+    angle6 = pi * X22;
+    angle7 = pi * Y11;
+    angle8 = pi * Y22;
+
+    for (int j = 0;j < outerCount;j++)
+    {
+        double SinIndexX1 = ((angle5/outerCount) * j;
+        double SinIndexX2 = ((angle6/outerCount) * j;
+        double SinIndexY1 = ((angle7/outerCount) * j;
+        double SinIndexY2 = ((angle8/outerCount) * j;
+        
+        for (int i = innerCount;i > 0;--i)
+        {
+            SinIndexX1 += angle1;
+            SinIndexX2 += angle2;
+            SinIndexY1 += angle3;
+            SinIndexY2 += angle4;
+
+            int x = width/2;
+            x += (width/2-1) * ((gBalanceX * sin(SinIndexX1)) + ((1-gBalanceX) * sin(SinIndexX2)));
+
+            int y = height/2;
+            y += (height/2-1) * ((gBalanceY * cos(SinIndexY1)) + ((1-gBalanceY) * cos(SinIndexY)));
+
+            Shade(x,y,Inverse);
+            }
+    }
+
+
+------------------------------------------------
+              Changes
+
+//
+// 31th of Juli
+// - fixed bug with the saving code which might
+//   have caused problems on some systems
+//
+
+//
+// 15th of Juli
+// - added possebility to save settings
+// - fixed few bugs
+// - enabled all kinds of modes.
+//
+
+// 9th of Juli 1999
+//
+// - fixed the 'hanging slider bug'
+// - added support for grayscale mode
+// - added scripting support
+// - removed the fickering of the preview window.
+//
+
+// 8th of Juli 1999
+//
+// The filter accidently used a debug version of the msvcrt.dll which is not
+// present on every system. Now linking it with the normal version of that dll.
+//
+
+// 6th of Juli 1999
+//
+//	fixed stupid bug in the masking code.
+//
+
+
+
+

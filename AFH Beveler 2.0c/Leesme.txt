@@ -1,0 +1,24 @@
+------------- AFH Beveler Plugins ------------------
+This zip file contains two versions of the freeware
+AFH Beveler plugin for Windows Adobe Photoshop 3.0+.
+
+Version 2.0a offers more control over the shading
+of the bevels than 1.0, but treats corner butts
+slightly differently, so both versions are included
+here.
+
+To use the plugins, copy the *.8bf files into your
+Photoshop plugins directory.
+
+These plugins were generated with the Adobe Photoshop
+Filter Factory.  The source files (*.afs) are
+included to allow you to regenerate the plugins on
+platforms other than Windows.
+
+Please send comments/suggestions to alex@afh.com.
+
+Enjoy!
+
+-Alex Hunter
+AFH Web Design
+www.afh.com

@@ -1,0 +1,582 @@
+FFL1.0
+   20
+ReaGlow.8bf
+Andrew's Filters 50
+Really Glow...
+Andrew Buckle
+Freeware
+
+
+
+
+Grey
+m
+Red
+Green
+Blue
+Mix 1
+Mix 2
+Something
+31
+30
+84
+85
+79
+21
+23
+22
+mix(mix(r+g+b,c,ctl(5),ctl(6)),val(7,512,255)-ctl(1)*m*(ctl(0)+(r+g+b))/(4*M),ctl(2),100)
+mix(mix(r+g+b,c,ctl(5),ctl(6)),val(7,512,255)-ctl(1)*m*(ctl(0)+(r+g+b))/(4*M),ctl(3),100)
+mix(mix(r+g+b,c,ctl(5),ctl(6)),val(7,512,255)-ctl(1)*m*(ctl(0)+(r+g+b))/(4*M),ctl(4),100)
+a
+RedGlow.8bf
+Andrew's Filters 50
+RedGlow...
+Andrew Buckle
+freeware
+
+
+
+
+Red
+Green
+Blue
+Factor
+Mix
+Mix 1
+Factor 2
+Mix
+3
+7
+6
+32
+16
+13
+5
+61
+mix(mix(r+g+b,c,ctl(4),ctl(5)),val(6,512,255)-ctl(3)*m*(ctl(0)+(r+g+b))/(4*M),ctl(7),100)
+mix(r,val(6,512,255)-ctl(3)*m*(ctl(1)+(r+g+b))/(4*M),ctl(7),100)
+mix(r,val(6,512,255)-ctl(3)*m*(ctl(2)+(r+g+b))/(4*M),ctl(7),100)
+a
+RedPlays.8bf
+Andrew's Filters 50
+Red Plays...
+Andrew Buckle
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Mix 1
+Mix 2
+205
+79
+22
+21
+208
+46
+93
+58
+mix(c,mix(c,mix(255-c,src(rnd(0,(X-x)),rnd(0,Y-y),z),ctl(0),ctl(1)),ctl(6),100),ctl(7),100)
+mix(c,src(rnd(0,(X-x)),rnd(0,Y-y),z),ctl(2),ctl(3))
+mix(c,src(rnd(0,(X-x)),rnd(0,Y-y),z),ctl(4),ctl(5))
+a
+RedTGre.8bf
+Andrew's Filters 50
+Red To Grey...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Factor 4
+Mix 1
+Mix 2
+Green
+Blue
+182
+215
+214
+146
+58
+86
+31
+17
+mix(c,dif(src(x+rnd(0,val(0,-20,20)),y+rnd(0,val(1,-20,20)),0),src(x-rnd(0,val(2,-20,20)),y+rnd(0,val(3,-20,20)),0)),ctl(4),ctl(5))
+mix(c,(r+g+b)/3,ctl(6),100)
+mix(c,(r+g+b)/3,ctl(7),100)
+a
+RemBlack.8bf
+Andrew's Filters 50
+Remove blackground
+AB
+Freeware
+
+
+
+
+
+
+
+
+
+
+
+
+0
+0
+0
+0
+0
+0
+0
+0
+r<20?21:r
+g<20?21:g
+b<20?21:b
+a
+ReOnlXY.8bf
+Andrew's Filters 50
+Red Only In XY Mix...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Factor 4
+X
+Y
+Mix 1
+Mix 2
+42
+63
+16
+37
+106
+118
+125
+27
+mix(c,src(mix(x,y,ctl(4),ctl(5))%ctl(0)>>ctl(2)?mix(x,y,ctl(4),ctl(5))+ctl(0)/2:mix(x,y,ctl(4),ctl(5))-ctl(0)/2,mix(x,y,ctl(5),ctl(4))%ctl(3)>>ctl(6)?mix(x,y,ctl(5),ctl(4))+ctl(1)/2:mix(x,y,ctl(5),ctl(4))-ctl(1)/2,z),ctl(6),ctl(7))
+g
+b
+a
+RGBShf1.8bf
+Andrew's Filters 50
+RGB Shifter...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Green
+Blue
+Mix 1
+Mix 2
+Mix 3
+Mix 4
+
+115
+136
+115
+147
+36
+77
+187
+44
+mix(c,mix((r+g+b)/3,(src(x+val(0,-30,30),y+val(0,-30,30),0)+src(x+val(1,-30,30),y+val(1,-30,30),1)+src(x+val(2,-30,30),y+val(2,-30,30),2))/3,ctl(3),ctl(4)),ctl(5),ctl(6))
+mix(c,mix((r+g+b)/3,(src(x+val(0,-30,30),y+val(0,-30,30),0)+src(x+val(1,-30,30),y+val(1,-30,30),1)+src(x+val(2,-30,30),y+val(2,-30,30),2))/3,ctl(3),ctl(4)),ctl(5),ctl(6))
+mix(c,mix((r+g+b)/3,(src(x+val(0,-30,30),y+val(0,-30,30),0)+src(x+val(1,-30,30),y+val(1,-30,30),1)+src(x+val(2,-30,30),y+val(2,-30,30),2))/3,ctl(3),ctl(4)),ctl(5),ctl(6))
+a
+RiModul.8bf
+Andrew's Filters 50
+Ripples Modulo...
+Andrew Buckle
+Freeware
+
+
+
+
+x
+y
+Mod x
+Mod y
+Red
+Green
+Blue
+
+24
+5
+24
+21
+128
+125
+144
+68
+mix(c,sin(ctl(0)*(x%ctl(2)))-tan(ctl(1)*(y%ctl(3))),ctl(4),100)
+mix(c,sin(ctl(0)*(x%ctl(2)))-tan(ctl(1)*(y%ctl(3))),ctl(5),100)
+mix(c,sin(ctl(0)*(x%ctl(2)))-tan(ctl(1)*(y%ctl(3))),ctl(6),100)
+a
+RInBath.8bf
+Andrew's Filters 50
+Ripples Into The BathRoom...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Factor 4
+Red
+Green
+Blue
+Factor 5
+19
+80
+47
+72
+86
+80
+83
+15
+mix(c,sin(abs(X-ctl(2)*x-y)*ctl(0))-sin(abs(Y-ctl(3)*y-x*ctl(7))*ctl(1)),ctl(4),100)
+mix(c,sin(abs(X-ctl(2)*x-y)*ctl(0))-sin(abs(Y-ctl(3)*y-x*ctl(7))*ctl(1)),ctl(5),100)
+mix(c,sin(abs(X-ctl(2)*x-y)*ctl(0))-sin(abs(Y-ctl(3)*y-x*ctl(7))*ctl(1)),ctl(6),100)
+a
+RinMast.8bf
+Andrew's Filters 50
+The Ringmaster Would Like This ...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Red 1
+Green 
+Green 1
+Blue
+Blue 1
+Mix
+Mix 1
+34
+31
+76
+38
+7
+128
+125
+139
+mix(c,val(0,-512,512)-sin((m%x)*ctl(1))-sin((x*m)),ctl(6),ctl(7))
+mix(c,val(2,-512,512)-sin((m%x)*ctl(3))-sin((x*m)),ctl(6),ctl(7))
+mix(c,val(4,-512,512)-sin((m%x)*ctl(5))-sin((x*m)),ctl(6),ctl(7))
+a
+RiPatte.8bf
+Andrew's Filters 50
+Rippling Pattern...
+Andrew Buckle
+Freeware
+
+
+
+
+x
+y
+Cos
+Sin
+Mix 1
+Mix 2
+
+
+36
+24
+17
+17
+30
+36
+0
+0
+mix(c,mix(-cos(2*x*ctl(0))/2+cos(2*y*ctl(1))/2,-sin(2*x*ctl(0))/2+sin(2*y*ctl(1))/2,ctl(2),ctl(3)),ctl(4),ctl(5))
+mix(c,mix(-cos(2*x*ctl(0))/2+cos(2*y*ctl(1))/2,-sin(2*x*ctl(0))/2+sin(2*y*ctl(1))/2,ctl(2),ctl(3)),ctl(4),ctl(5))
+mix(c,mix(-cos(2*x*ctl(0))/2+cos(2*y*ctl(1))/2,-sin(2*x*ctl(0))/2+sin(2*y*ctl(1))/2,ctl(2),ctl(3)),ctl(4),ctl(5))
+a
+RipDow6.8bf
+Andrew's Filters 50
+Rippling Around And Down...
+Andrew Buckle
+Freeware
+
+
+
+
+d
+m
+Mix 1
+Mix 2
+Red
+Green
+Blue
+Mix
+19
+15
+20
+14
+55
+10
+4
+91
+mix(c,mix(mix(sin(d*ctl(0)-m*ctl(0)),sin((M-m)*ctl(1)-d*ctl(1)),ctl(2),ctl(3)),mix(sin((D-d)*ctl(0)-m*ctl(0)),sin((M-m)*ctl(1)-d*ctl(1)),ctl(2),ctl(3)),ctl(4),100),ctl(7),100)
+mix(c,mix(mix(sin(d*ctl(0)-m*ctl(0)),sin((M-m)*ctl(1)-d*ctl(1)),ctl(2),ctl(3)),mix(sin((D-d)*ctl(0)-m*ctl(0)),sin((M-m)*ctl(1)-d*ctl(1)),ctl(2),ctl(3)),ctl(5),100),ctl(7),100)
+mix(c,mix(mix(sin(d*ctl(0)-m*ctl(0)),sin((M-m)*ctl(1)-d*ctl(1)),ctl(2),ctl(3)),mix(sin((D-d)*ctl(0)-m*ctl(0)),sin((M-m)*ctl(1)-d*ctl(1)),ctl(2),ctl(3)),ctl(6),100),ctl(7),100)
+a
+RNegTal.8bf
+Andrew's Filters 50
+Negative Randomy Tales...
+Andrew Buckle
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Negative
+
+10
+181
+149
+142
+53
+231
+128
+20
+rnd(ctl(6),255)-mix(c,(r+g+b)/3,ctl(0),ctl(1))
+rnd(ctl(6),255)-mix(c,(r+g+b)/3,ctl(2),ctl(3))
+rnd(ctl(6),255)-mix(c,(r+g+b)/3,ctl(4),ctl(5))
+a
+RouNega.8bf
+Andrew's Filters 50
+Rough Negative...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Red
+Green
+Blue
+Factor 2
+Mix 1
+Mix 2
+Factor 3
+19
+144
+48
+35
+32
+72
+6
+44
+mix(val(7,0,512)-c,((c%val(0,0,10)==0?c:ctl(1))%val(4,0,20)==0)?(r+g+b)/3:0,ctl(5),ctl(6))
+mix(val(7,0,512)-c,((c%val(0,0,10)==0?c:ctl(2))%val(4,0,20)==0)?(r+g+b)/3:0,ctl(5),ctl(6))
+mix(val(7,0,512)-c,((c%val(0,0,10)==0?c:ctl(3))%val(4,0,20)==0)?(r+g+b)/3:0,ctl(5),ctl(6))
+a
+RRanRng.8bf
+Andrew's Filters 50
+Rings Of Random Rings...
+Andrew Buckle
+Freeware
+
+
+
+
+d
+m
+Red
+Green
+Blue
+Random
+Mix 1
+Mix 2
+5
+3
+2
+6
+26
+222
+38
+37
+mix(c,(c*ctl(2))-cos(d*ctl(0))-tan(m*ctl(1)),ctl(6),ctl(7))-rnd(0,ctl(5))
+mix(c,(c*ctl(3))-cos(d*ctl(0))-tan(m*ctl(1)),ctl(6),ctl(7))-rnd(0,ctl(5))
+mix(c,(c*ctl(4))-cos(d*ctl(0))-tan(m*ctl(1)),ctl(6),ctl(7))-rnd(0,ctl(5))
+a
+RRRand.8bf
+Andrew's Filters 50
+Rough And Ready Random...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Green
+Blue
+Divide 1
+Divide 2
+Mix 1
+Mix 2
+Random
+226
+160
+43
+12
+51
+100
+104
+204
+mix((r+g+b)/ctl(3),(r*ctl(0)+g*ctl(1)+b*ctl(2))/ctl(4),ctl(5),ctl(6))-rnd(0,ctl(5))
+mix((r+g+b)/ctl(3),(r*ctl(0)+g*ctl(1)+b*ctl(2))/ctl(4),ctl(5),ctl(6))-rnd(0,ctl(5))
+mix((r+g+b)/ctl(3),(r*ctl(0)+g*ctl(1)+b*ctl(2))/ctl(4),ctl(5),ctl(6))-rnd(0,ctl(5))
+a
+RShift.8bf
+Andrew's Filters 50
+Really Shifting...
+AB
+Freeware
+
+
+
+
+Red d
+Green d
+Blue d
+Red Mod
+Green Mod
+Blue Mod
+Move 1
+Move 2
+4
+5
+5
+201
+217
+232
+0
+19
+dif(rad(d,m+rnd(ctl(6),ctl(7)),z),rad(d%ctl(0),m,rnd(0,2)))%ctl(3)
+dif(rad(d,m+rnd(ctl(6),ctl(7)),z),rad(d%ctl(1),m,rnd(0,2)))%ctl(4)
+dif(rad(d,m+rnd(ctl(6),ctl(7)),z),rad(d%ctl(2),m,rnd(0,2)))%ctl(5)
+a
+RuTracks.8bf
+Andrew's Filters 50
+Running Down The Tracks...
+Andrew Buckle
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+Mix
+Sine
+29
+198
+13
+213
+17
+208
+116
+34
+mix(sin((y-x)*ctl(6))-sin(y),src(mix(x+y,x,ctl(0),ctl(1)),mix(x+y,y,ctl(0),ctl(1)),z),ctl(7),200)
+mix(sin((y-x)*ctl(6))-sin(y),src(mix(x+y,x,ctl(2),ctl(3)),mix(x+y,y,ctl(2),ctl(3)),z),ctl(7),200)
+mix(sin((y-x)*ctl(6))-sin(y),src(mix(x+y,x,ctl(4),ctl(5)),mix(x+y,y,ctl(4),ctl(5)),z),ctl(7),200)
+a
+SBeams.8bf
+Andrew's Filters 50
+Smooth Beams...
+Andrew Buckle
+Freeware
+
+
+
+
+x
+y
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+5
+4
+28
+28
+44
+58
+130
+67
+mix(c,sin((x/2)+sin(2*ctl(0)*x/4*ctl(0)))-sin((y/2)+sin(2*ctl(1)*y/4*ctl(1))),ctl(2),ctl(3))
+mix(c,sin((x/2)+sin(2*ctl(0)*x/4*ctl(0)))-sin((y/2)+sin(2*ctl(1)*y/4*ctl(1))),ctl(4),ctl(5))
+mix(c,sin((x/2)+sin(2*ctl(0)*x/4*ctl(0)))-sin((y/2)+sin(2*ctl(1)*y/4*ctl(1))),ctl(6),ctl(7))
+a
+ScAngel.8bf
+Andrew's Filters 50
+Screen Angel...
+Andrew Buckle
+Freeware
+
+
+
+
+Trig x
+x
+Trig y
+y
+Red
+Green
+Blue
+Mix
+117
+61
+131
+110
+199
+164
+51
+196
+mix(c,(c>ctl(1)?sin(ctl(0)*r2x(d,m)):0)-(c>ctl(3)?sin(ctl(2)*r2y(d,m)):0),ctl(4),ctl(7))
+mix(c,(c>ctl(1)?sin(ctl(0)*r2x(d,m)):0)-(c>ctl(3)?sin(ctl(2)*r2y(d,m)):0),ctl(5),ctl(7))
+mix(c,(c>ctl(1)?sin(ctl(0)*r2x(d,m)):0)-(c>ctl(3)?sin(ctl(2)*r2y(d,m)):0),ctl(6),ctl(7))
+a

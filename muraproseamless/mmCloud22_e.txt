@@ -1,0 +1,36 @@
+                    MuRa's Filter Meister - Cloud 2.2
+                Copyright(c)2000 by MuRa, http://mura.hey.to
+
+This is the high quality filter for Photoshop.
+This makes seamless cloud on the image.
+
+This filter is freeware. You can use it freely and distribute it without
+modifying. But it is forbidden to sell it without permission of the author.
+
+Parameters
+        Preset menu     You can switch settings easily
+
+        Effect          Opacity of the cloud
+        Amount          Amount of the cloud(by gamma crrection)
+        Grain           Grain size of the cloud
+        Contrast        Contrast of the cloud
+        Bias            Make flat area of BG color or FG color
+        Light           Shade in the cloud
+        Cubic           Make pseudo-cubic cloud
+        Blur            Blur cloud
+        Contour         Number of contour
+
+        Light/FG/BG     Light/Foreground/Background color
+                        Click the color pallets to change colors. 
+                        Turn off the check boxes to clear colors.
+        Reset Colors    Reset Light/FG/BG color
+
+        Source base     Make cloud with lightness/darkness of the source image
+        Blend mode      Mode of blending the output image on the source
+
+Updates
+(Ver.2.2)
+Blur, Contour and Light Color were added.
+Preset Menu was added.
+Replace and Opacity were appended to the Blend Mode.
+You can turn off the Light/FG/BG colors.

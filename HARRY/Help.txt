@@ -1,0 +1,139 @@
+
+Harry's Filters 2.0
+------------------------------------------------------
+Copyright 1997-2001 by Harald Heim
+
+
+Harry's Filters 2.0 is a Photoshop-compatible plugin which can be used in dozens of different image editing appliations e.g. Photoshop, Paint Shop Pro, Corel Photo-Paint and many many other. It includes 55 effect filters, a Random button, options for saving and opening presets and a instant preview feature.
+
+Harry's Filters 2.0 is freeware. You can use them for whatever you like, but you aren't allowed to distribute them without my permission. For installation instructions see below!
+
+Have a look at the successor of Harry's Filters called Plugin Galaxy (a set of 20 professional plugins with over 120 effects) at http://plugingalaxy.com/
+
+This plugin was created with Filter Meister. Check it out at
+http://www.filtermeister.com/
+
+Please send any preset file you generated with Harry's Filters to info@thepluginsite.com
+
+
+QUICK INSTRUCTIONS
+==================
+
+* The two drop down box at the top:
+The first box contains the main categories of the filters, while the second box lets you select the specific filter effects.
+
+* The Random button:
+Clicking on it will generate random slider settings.
+
+* The sliders:
+Use them to adjust the image effects
+
+* The Instant Preview check box:
+If it is activated it will display the effect while you drag a slider. If the calculations are too slow or inconveniant, you can deactivate this check box. Try this cool feature, you will love it!
+
+* The ? button:
+Displays this file
+
+* The Open and Save buttons:
+The Open button displays a file dialog for saving the current filter settings and the Save button lets you restore saved settings. The saved preset files currently don't have a file extension and are 10 bytes large. Several preset files are already delivered with Harry's Filters.
+
+* The OK and Cancel buttons
+OK applies the current effect and Cancel exits the plugin.
+
+
+
+Using Harry's Filters with different applications
+=================================================
+
+
+Adobe Photoshop / Adobe Illustrator / Adobe ImageReady
+
+Make sure you installed or copied the 8bf file into the "Plugins" or "Plug-ins" sub folder inside the Photoshop/Illustrator/ImageReady folder. After restarting the application, you will find them in the Filter menu.
+
+Adobe PageMaker 
+
+Make sure you installed or copied the 8bf file into the Rsrc/.../Plugins/Effects folder inside the PageMaker folder. After restarting PageMaker, you will find them in the Element> Image> Photoshop Effects menu.
+
+CiEBV Photoline 32
+
+Choose 'File options' or 'Extended' from the Options menu, click on the 'Plug In Path' tab and select the folder where the 8bf file are located. After pressing OK, the plugins will appear at the bottom of the the Filter menu.
+
+Corel Photo-Paint
+
+Press <Ctl + J> to display the Options dialog, select Plugins from the list box on the left, press the Add button and choose the location of the 8bf file. The plugins will appear in the Effects menu right after the Options dialog disappeared.
+
+Corel Photo House
+
+Select Effects > Plug-in Effects > Add/Remove Plug-in Effects. Press the Add button and select the folder where the 8bf file is located. After pressing OK, the plugins will appear on the Effects > Plug-in Effects menu.
+
+Deneba Canvas
+
+Select Preferences from the File menu. In the Prefernces dialog select the Paint tab. Press the Plug-ins button and select the folder where the 8bf file are located. After restarting Canvas, the plugin effects will appear on the Image > Filter sub menu.
+
+imageN
+
+Select Plug-ins from the Configure menu. In the appearing Plugins dialog press the Search button. After imageN has searched all your drives for plugins (which can take a while), the plugin effects will appear on the plugin list, too. To apply a plugin, select it from the list and press the Test buton.
+
+Irfan View 
+
+Press <K> to display the Filter Factory dialog and press the Add Filters button to select the location of the 8bf file. But it only works with 8bf files which are 56.344 bytes or 49.152 bytes large. Therefor please download Harry's Filters 1.0 from http://thepluginsite.com/ !!!
+
+Jasc Paint Shop Pro 4 - 6
+
+Choose Preferences from the File menu, press the Plug-in Filters tab and select the folder, you extracted the 8bf file to. After pressing OK, the plugins will appear on the Plugin Filters sub menu of the Image menu.
+
+Jasc Paint Shop Pro 7
+
+Choose Preferences > File Locations from the File menu, press the Plug-in Filters tab and select the folder, you extracted the 8bf file to. After pressing OK, the plugins will appear in the Plug-in Filters sub menu of the Effects menu.
+
+Macromedia Freehand
+
+Make sure you installed or copied the 8bf file into the English/Xtras sub folder inside the Freehand folder. After restarting Freehand, you will find the plugin effects in the Xtras menu.
+
+Macromedia Fireworks
+
+Choose Preferences from the File menu and in the Folders section of the Preferences dialog activate the Photoshop Plug-ins checkbox . Then select the folder, you installed or copied the 8bf file to, by pressing the "..." or Browse button. After restarting Fireworks the plugins will be displayed at the bottom of the Xtras menu.
+
+Megalux Ultimate Paint
+
+Choose Preferences from the Options menu, click on the Plugins tab and select the folder where the 8bf file is located. After pressing OK, the plugins will appear in the Adobe sub menu of the Image menu.
+
+Corel Painter / Fractal Design Detailer
+
+Choose Preferences > Plugins... from the Edit menu and select the folder where the 8bf file is located. After restarting Painter/Detailer, the plugins will appear on the Effects menu.
+
+Microsoft Photodraw 2000
+
+Select Tools > Options and press the Plug-in tab. Press the Browse button and select the folder where the 8bf file is located. Finally press OK on the Options dialog. Choose Format > Effects > Plug-ins and select the plugin category in the combo box at the top of the Plug-ins dialog.
+
+Micrografx Picture Publisher
+
+Make sure you installed or copied the 8bf file into the "Plugins" sub folder inside the Picture Publisher folder. After restarting Picture Publisher, you will find them in the Effects menu.
+
+Right Hemisphere Deep Paint
+
+Select File > Preferences > Directories and press the Browse button next to the Photoshop Plugins text box. In the file dialog, select the folder where the 8bf file is located and press Ok. Then press Ok on the Directories dialog. After restarting Deep Paint, you will find the plugin effects in the Filters menu.
+
+Ulead Photo Impact
+
+Choose Preferences from the File menu and select the folder, you installed or copied the 8bf file to, in the Plugins tab of the Preferences dialog. After restarting Photo Impact the plugins will be displayed at the bottom of the Effect menu.
+
+Ulead Gif Animator
+
+Choose Preferences from the File menu, click on the Plugin Filters tab and select the folder where the 8bf file is located. After restarting Gif Animator, the plugins will appear in the Filters menu.
+
+Ulead PhotoExpress
+
+Choose Preferences from the File menu and select the folder, you extracted the Plugin Galaxy plugins to, in the Plug-Ins tab of the Preferences dialog. After restarting PhotoExpress the plugins will be displayed in the Photo menu.
+
+
+ 
+
+Enjoy this plugin!
+
+Harald Heim
+info@thepluginsite.om
+
+
+The Plugin Site - Your guide to image and video effects
+http://ThePluginSite.com

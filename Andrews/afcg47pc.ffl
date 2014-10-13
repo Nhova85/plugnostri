@@ -1,0 +1,582 @@
+FFL1.0
+   20
+MaGrAtt.8bf
+Andrew's Filters 47
+Making A Grey Attempt...
+Andrew Buckle
+Freeware
+
+
+
+
+Mix
+Green
+Blue
+Mix
+Red Mix
+Green Mix
+Blue Mix
+Red
+45
+184
+134
+56
+107
+111
+133
+206
+mix(c,src(x+val(7,-20,20),y+val(7,-20,20),0)+src(x+val(1,-20,20),y+val(1,-20,20),1)+src(x+val(2,-20,20),y+val(2,-20,20),2),ctl(0),100)-mix(c,ctl(3),ctl(4),100)
+mix(c,src(x+val(7,-20,20),y+val(7,-20,20),0)+src(x+val(1,-20,20),y+val(1,-20,20),1)+src(x+val(2,-20,20),y+val(2,-20,20),2),ctl(0),100)-mix(c,ctl(3),ctl(5),100)
+mix(c,src(x+val(7,-20,20),y+val(7,-20,20),0)+src(x+val(1,-20,20),y+val(1,-20,20),1)+src(x+val(2,-20,20),y+val(2,-20,20),2),ctl(0),100)-mix(c,ctl(3),ctl(6),100)
+a
+MakALOf.8bf
+Andrew's Filters 47
+Really Making A Line Of It...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Green
+Blue
+Red
+Green
+Blue
+Mix
+Mix 1
+16
+7
+7
+112
+154
+57
+117
+42
+mix(sin((mix(Y-y-x,x-y,ctl(6),100))*ctl(3))-sin(y),src(mix(x+y,x,ctl(0),100),mix(x+y,y,ctl(0),100),z),ctl(7),200)
+mix(sin((mix(Y-y-x,x-y,ctl(6),100))*ctl(4))-sin(y),src(mix(x+y,x,ctl(1),100),mix(x+y,y,ctl(1),100),z),ctl(7),200)
+mix(sin((mix(Y-y-x,x-y,ctl(6),100))*ctl(5))-sin(y),src(mix(x+y,x,ctl(2),100),mix(x+y,y,ctl(2),100),z),ctl(7),200)
+a
+MakAWTE.8bf
+Andrew's Filters 47
+Making A Weave To The Edge...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+23
+36
+45
+53
+30
+26
+42
+34
+mix(c,sin((X%x-m)*ctl(0))-sin((Y%y-m)*ctl(1)),ctl(2),ctl(3))
+mix(c,sin((X%x-m)*ctl(0))-sin((Y%y-m)*ctl(1)),ctl(4),ctl(5))
+mix(c,sin((X%-x-m)*ctl(0))-sin((Y%y-m)*ctl(1)),ctl(6),ctl(7))
+a
+MakFSur.8bf
+Andrew's Filters 47
+Making For A Surprise...
+Andrew Buckle
+Freeware
+
+
+
+
+Mix 1
+Mix 2
+Mix 3
+Mix 4
+Red
+Green
+Blue
+Mixer
+38
+40
+72
+57
+13
+86
+64
+28
+mix((r+g+b)/3,src(mix(x,rnd(x,X),ctl(0),ctl(1)),mix(y,rnd(y,Y),ctl(2),ctl(3)),z),ctl(4),ctl(7))
+mix((r+g+b)/3,src(mix(x,rnd(x,X),ctl(0),ctl(1)),mix(y,rnd(y,Y),ctl(2),ctl(3)),z),ctl(5),ctl(7))
+mix((r+g+b)/3,src(mix(x,rnd(x,X),ctl(0),ctl(1)),mix(y,rnd(y,Y),ctl(2),ctl(3)),z),ctl(6),ctl(7))
+a
+MakSkysc.8bf
+Andrew's Filters 47
+Making Skyscrapers...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Factor 4
+
+
+
+
+21
+53
+9
+50
+22
+18
+0
+0
+(sin(ctl(1)*(ctl(0)-y))-sin(ctl(1)*(ctl(0)-x)))*(sin(ctl(3)*(ctl(2)-y))-sin(ctl(3)*(ctl(2)-x)))
+(sin(ctl(1)*(ctl(0)-y))-sin(ctl(1)*(ctl(0)-x)))*(sin(ctl(3)*(ctl(2)-y))-sin(ctl(3)*(ctl(2)-x)))
+(sin(ctl(1)*(ctl(0)-y))-sin(ctl(1)*(ctl(0)-x)))*(sin(ctl(3)*(ctl(2)-y))-sin(ctl(3)*(ctl(2)-x)))
+a
+MakSTea.8bf
+Andrew's Filters 47
+Making Some More Tea...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Red 1
+Green
+Green 1
+Blue
+Blue 1
+Factor
+
+76
+166
+69
+14
+74
+123
+113
+96
+scl(ctl(0),0,(r+g+b)/3,val(6,0,10000),ctl(1))
+scl(ctl(2),0,(r+g+b)/3,val(6,0,10000),ctl(3))
+scl(ctl(4),0,(r+g+b)/3,val(6,0,10000),ctl(5))
+a
+MALenS2.8bf
+Andrew's Filters 47
+Making A Lens Somewhere...
+Andrew Buckle
+Freeware
+
+
+
+
+Mix X
+Mix Y
+Mix A
+Mix B
+x
+y
+Mix 1
+Mix 2
+36
+10
+186
+191
+85
+98
+9
+55
+mix(c,src(mix(m%(x+val(4,-20,20)),x+val(4,-20,20),ctl(0),100),mix(m%(y+val(5,-20,20)),y+val(5,-20,20),ctl(1),100),z),ctl(6),ctl(7))-mix(c,src(mix(m%x,x,ctl(2),100),mix(m%y,y,ctl(3),100),z),ctl(6),ctl(7))
+mix(c,src(mix(m%(x+val(4,-20,20)),x+val(4,-20,20),ctl(0),100),mix(m%(y+val(5,-20,20)),y+val(5,-20,20),ctl(1),100),z),ctl(6),ctl(7))-mix(c,src(mix(m%x,x,ctl(2),100),mix(m%y,y,ctl(3),100),z),ctl(6),ctl(7))
+mix(c,src(mix(m%(x+val(4,-20,20)),x+val(4,-20,20),ctl(0),100),mix(m%(y+val(5,-20,20)),y+val(5,-20,20),ctl(1),100),z),ctl(6),ctl(7))-mix(c,src(mix(m%x,x,ctl(2),100),mix(m%y,y,ctl(3),100),z),ctl(6),ctl(7))
+a
+MaShBlr.8bf
+Andrew's Filters 47
+Making A Blur Sharp...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Red 1
+Green
+Green 1
+Blue 
+Blue 1
+Random
+Mix
+4
+3
+13
+10
+10
+15
+90
+161
+mix(c,2*c-src(x+rnd(0,ctl(0)),y+rnd(0,ctl(1)),z)-rnd(0,ctl(6)),ctl(7),100)
+mix(c,2*c-src(x+rnd(0,ctl(2)),y+rnd(0,ctl(3)),z)-rnd(0,ctl(6)),ctl(7),100)
+mix(c,2*c-src(x+rnd(0,ctl(4)),y+rnd(0,ctl(5)),z)-rnd(0,ctl(6)),ctl(7),100)
+a
+MazOPat.8bf
+Andrew's Filters 47
+Mazzyiodal Patterns...
+Andrew Buckle
+Freeware
+
+
+
+
+x
+y
+Blue 1
+Blue 2
+Green 1
+Green 2
+Red 1
+Red 2
+89
+124
+105
+60
+7
+128
+17
+100
+val(7,-512,512)-sin((y%x)*ctl(6))-sin((x*y))
+mix(r,src(x+val(0,-20,20),y+val(1,-20,20),z),ctl(4),ctl(5))
+mix(r,src(x+val(0,-20,20),y+val(1,-20,20),z),ctl(2),ctl(3))
+a
+MerMix1.8bf
+Andrew's Filters 47
+Merry Mix...
+Andrew Buckle
+Freeware
+
+
+
+
+Red
+Green
+Blue
+Mix
+Mix 1
+Mix 2
+Mix 3
+
+197
+188
+152
+64
+49
+205
+83
+92
+mix((r+g+b)/3,mix(c,r*x/ctl(0)+g*x/ctl(1)+b*x/ctl(2),ctl(3),ctl(4)),ctl(5),ctl(6))
+mix((r+g+b)/3,mix(c,r*x/ctl(0)+g*x/ctl(1)+b*x/ctl(2),ctl(3),ctl(4)),ctl(5),ctl(6))
+mix((r+g+b)/3,mix(c,r*x/ctl(0)+g*x/ctl(1)+b*x/ctl(2),ctl(3),ctl(4)),ctl(5),ctl(6))
+a
+MetFini.8bf
+Andrew's Filters 47
+Metallic Finishes...
+Andrew Buckle
+Freeware
+
+
+
+
+Red Metal
+Red Metal, Too
+Green Metal
+Green Metal, Too
+Blue Metal
+Blue Metal, Too
+Random Metal
+Mixing Metal
+5
+3
+5
+7
+13
+12
+54
+118
+mix(c,tan(2*c-src(x+rnd(0,ctl(0)),y+rnd(0,ctl(1)),z))-rnd(0,ctl(6)),ctl(7),100)
+mix(c,tan(2*c-src(x+rnd(0,ctl(2)),y+rnd(0,ctl(3)),z))-rnd(0,ctl(6)),ctl(7),100)
+mix(c,tan(2*c-src(x+rnd(0,ctl(4)),y+rnd(0,ctl(5)),z))-rnd(0,ctl(6)),ctl(7),100)
+a
+MezLine.8bf
+Andrew's Filters 47
+Mezzo Lines...
+AB
+Freeware
+
+
+
+
+X
+Y
+Random X 1
+Random X 2
+Random Y 1
+Random Y 2
+
+
+130
+51
+29
+45
+0
+10
+21
+7
+x%val(0,1,5)==0&&y%val(1,1,5)==0?2*src(x+rnd(0,ctl(2))-rnd(0,ctl(3)),y+rnd(0,ctl(4))-rnd(0,ctl(5)),0):0
+x%val(0,1,5)==0&&y%val(1,1,5)==0?2*src(x+rnd(0,ctl(2))-rnd(0,ctl(3)),y+rnd(0,ctl(4))-rnd(0,ctl(5)),1):0
+x%val(0,1,5)==0&&y%val(1,1,5)==0?2*src(x+rnd(0,ctl(2))-rnd(0,ctl(3)),y+rnd(0,ctl(4))-rnd(0,ctl(5)),2):0
+a
+MGreyT.8bf
+Andrew's Filters 47
+MixingIntoGrey...
+Andrew Buckle
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Mix 1
+Mix 2
+119
+115
+37
+46
+130
+98
+38
+63
+mix(c,ctl(0)*(r+g+b)/3/ctl(1),ctl(6),ctl(7))
+mix(c,ctl(2)*(r+g+b)/3/ctl(3),ctl(6),ctl(7))
+mix(c,ctl(4)*(r+g+b)/3/ctl(5),ctl(6),ctl(7))
+a
+MiGCon.8bf
+Andrew's Filters 47
+Mixed Up Grey And Confused...
+Andrew Buckle
+Freeware
+
+
+
+
+Grey 1
+Grey 2
+Random
+Mix 1
+Mix 2
+Red
+Green
+Blue
+85
+32
+184
+49
+20
+71
+46
+23
+mix(c,255-mix(rnd(0,ctl(2)),ctl(0)*(r+g+b)/(3*ctl(1)),ctl(3),ctl(4)),ctl(5),100)
+mix(c,255-mix(rnd(0,ctl(2)),ctl(0)*(r+g+b)/(3*ctl(1)),ctl(3),ctl(4)),ctl(6),100)
+mix(c,255-mix(rnd(0,ctl(2)),ctl(0)*(r+g+b)/(3*ctl(1)),ctl(3),ctl(4)),ctl(7),100)
+a
+MInflue.8bf
+Andrew's Filters 47
+M Influenced...
+Andrew Buckle
+Freeware
+
+
+
+
+x
+y
+m
+m 1
+Red
+Green
+Blue
+
+142
+63
+204
+191
+106
+118
+26
+105
+mix((r+g+b)/3,sin(ctl(0)*(ctl(3)*m-x-y))-sin(ctl(1)*(x-y-ctl(2)*m)),ctl(4),100)
+mix((r+g+b)/3,sin(ctl(0)*(ctl(3)*m-x-y))-sin(ctl(1)*(x-y-ctl(2)*m)),ctl(5),100)
+mix((r+g+b)/3,sin(ctl(0)*(ctl(3)*m-x-y))-sin(ctl(1)*(x-y-ctl(2)*m)),ctl(6),100)
+a
+MinSMix.8bf
+Andrew's Filters 47
+Min Trig Mix...
+Andrew Buckle
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Factor 4
+Mix 1
+Mix 2
+Mix 3
+Mix 4
+72
+26
+62
+89
+53
+73
+24
+78
+sin(mix(c,max(r*g*b*ctl(0)/(64000*ctl(1)),c),ctl(6),ctl(7))-mix(c,min(r*g*b*ctl(0)/(64000*ctl(1)),c),ctl(6),ctl(7)))-sin(mix(c,max(r*g*b*ctl(2)/(64000*ctl(3)),c),ctl(6),ctl(7))-mix(c,min(r*g*b*ctl(2)/(64000*ctl(3)),c),ctl(4),ctl(5)))
+sin(mix(c,max(r*g*b*ctl(0)/(64000*ctl(1)),c),ctl(6),ctl(7))-mix(c,min(r*g*b*ctl(0)/(64000*ctl(1)),c),ctl(6),ctl(7)))-sin(mix(c,max(r*g*b*ctl(2)/(64000*ctl(3)),c),ctl(6),ctl(7))-mix(c,min(r*g*b*ctl(2)/(64000*ctl(3)),c),ctl(4),ctl(5)))
+sin(mix(c,max(r*g*b*ctl(0)/(64000*ctl(1)),c),ctl(6),ctl(7))-mix(c,min(r*g*b*ctl(0)/(64000*ctl(1)),c),ctl(6),ctl(7)))-sin(mix(c,max(r*g*b*ctl(2)/(64000*ctl(3)),c),ctl(6),ctl(7))-mix(c,min(r*g*b*ctl(2)/(64000*ctl(3)),c),ctl(4),ctl(5)))
+a
+MiRGBW.8bf
+Andrew's Filters 47
+Mixing Up In A Random RGB...
+Andrew Buckle
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Random 1
+Random 2
+205
+79
+22
+21
+38
+65
+127
+241
+rnd(ctl(6),ctl(7))-mix(c,g+b,ctl(0),ctl(1))
+rnd(ctl(6),ctl(7))-mix(c,r+b,ctl(2),ctl(3))
+rnd(ctl(6),ctl(7))-mix(c,r+g,ctl(4),ctl(5))
+a
+MItAlUp.8bf
+Andrew's Filters 47
+Making It All Up...
+Andrew Buckle
+Freeware
+
+
+
+
+d
+m
+d
+m
+Red
+Green
+Blue
+
+12
+205
+42
+18
+31
+47
+0
+0
+mix(c,src(r2x(abs(sin(ctl(0)*d/ctl(1))),m),r2y(abs(sin(d*ctl(2)/ctl(3))),m),z),ctl(4),100)
+mix(c,src(r2x(abs(sin(ctl(0)*d/ctl(1))),m),r2y(abs(sin(d*ctl(2)/ctl(3))),m),z),ctl(5),100)
+mix(c,src(r2x(abs(sin(ctl(0)*d/ctl(1))),m),r2y(abs(sin(d*ctl(2)/ctl(3))),m),z),ctl(6),100)
+a
+MixWarp.8bf
+Andrew's Filters 47
+Mix To The Warp...
+AB
+Freeware
+
+
+
+
+x
+y
+Red m
+Green m
+Blue m
+Mix Red
+Mix Green
+Mix Blue
+4
+3
+3
+3
+2
+26
+86
+17
+mix(c,src((sin(x%y))-val(0,0,ctl(2)*m-x),(sin(y%(m-x)))-val(1,0,y),0),ctl(5),100)
+mix(c,src((sin(x%y))-val(0,0,ctl(3)*m-x),(sin(y%(m-x)))-val(1,0,y),0),ctl(6),100)
+mix(c,src((sin(x%y))-val(0,0,ctl(4)*m-x),(sin(y%(m-x)))-val(1,0,y),0),ctl(7),100)
+a
+MMMachi.8bf
+Andrew's Filters 47
+Max and Min Match Machine...
+Andrew Buckle
+Freeware
+
+
+
+
+Red Max
+Red Min
+Green Max
+Green Min
+Blue Max
+Blue Min
+Max
+Min
+7
+6
+3
+24
+30
+44
+55
+78
+mix(ctl(0)*max((r+g+b)/3,c)/10,ctl(1)*min((r+g+b)/3,c)/10,ctl(6),ctl(7))
+mix(ctl(2)*max((r+g+b)/3,c)/10,ctl(3)*min((r+g+b)/3,c)/10,ctl(6),ctl(7))
+mix(ctl(4)*max((r+g+b)/3,c)/10,ctl(5)*min((r+g+b)/3,c)/10,ctl(6),ctl(7))
+a

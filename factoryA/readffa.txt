@@ -1,0 +1,51 @@
+Filter Factory Gallery 'A'
+
+
+
+The Filter Factory Gallery 'A' files are:
+
+
+FILENAME                  NAME OF FILTER        AUTHOR
+
+ffa01gal.8bf..............Ripper................Mario Klingemann
+ffa02gal.8bf..............Raygun................Mario Klingemann
+ffa03gal.8bf..............Wood Grain............Sandy Blair
+ffa04gal.8bf..............Pool Shadow...........Greg Schorno
+ffa05gal.8bf..............Spotlight.............Greg Schorno
+ffa06gal.8bf........Gravitational Lenser 1.2....Leos Ondra
+ffa07gal.8bf..............Zoom In...............Greg Schorno
+ffa08gal.8bf..............Zoom Out..............Greg Schorno
+ffa09gal.8bf..............Marble Madness One....Mario Klingemann
+ffa10gal.8bf..............Weave.................Mario Klingemann
+ffa11gal.8bf..............Round Button..........Mario Klingemann
+ffa12gal.8bf..............Origami...............Mario Klingemann
+ffa13gal.8bf..............Mirror, Mirror........Alfredo Mateus
+ffa14gal.8bf..............Gunsite...............John E. Laroche
+ffa15gal.8bf..............Sabers Explosion One..John E. Laroche
+ffa16gal.8bf..............Infinity..............Alfredo Mateus & Kipp McMichael
+ffa17gal.8bf..............Tunnel Tiles..........Kipp McMichael
+ffa18gal.8bf..............Holidays In Egypt.....Mario Klingemann
+ffa19gal.8bf..............Triangular Mosaic.....Mario Klingemann
+ffa20gal.8bf..............Kaleidoscope 2........Mario Klingemann
+
+
+INSTALLATION
+
+Copy or move the *.8bf files to the directory you keep your Photoshop plug-ins at. Normally, it's c:/photoshp/plugins by default.  The next time you start Photoshop, it will automatically create a new Filters submenu called Filter Factory Gallery A, which will contain the filters in that Gallery(the 'A' will change with each release of each Gallery).
+
+You should retain this Readffa.txt for future reference The 'ffa' in the filename denotes which Gallery this Readme file belongs to. If you ever want to not load the filter(s), copy them to another directory.  The filter file naming, ffa01gal.8bf,  denotes 'ff' as filter factory, the third letter is from the Gallery it's from, the number is the filter number in that Gallery from 1-20, and the gal denotes Gallery.
+
+ABOUT THE FILTERS
+
+These filters have been custom made by individuals who use Filter Factory in making custom Plug-Ins for Photoshop.  Filter Factory can be found on the CD-ROM edition of Photoshop under the Goodies directory. The plug-ins have adjustable parameters when launched, and can be used like any other plug-in filter.  The filters in this Gallery have been compiled to be used with the PC version of Photoshop 3.0 or greater.  The code to compile the filters is taken from the various postings to the Filter Factory Discussion Group mailing list.  The choice of filters I compile and make available is solely my discretion, with no rhyme or reason, so I can't take requests for specific filters.
+
+COPYRIGHT NOTICE
+
+Each of the filters are copyright of their respective author.  You do not have permission to sell, repackage, distribute commercially or use these filters in a commercial way.  You can use them freely for your own personal use.  
+
+DISCLAIMER
+
+No warranties are expressed or implied.  I myself cannot answer any questions about the filters since I did not design them.  If you need more information about them, follow the appropriate links at my web site (PC Resources for Photoshop) at:  <http://www.netins.net/showcase/wolf359/adobepc.htm> concerning Filter Factory and Plug-Ins links.
+
+Steve Fisher - July 1996
+wolf359@netins.net

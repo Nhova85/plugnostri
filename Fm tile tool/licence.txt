@@ -1,0 +1,40 @@
+FANTASTIC MACHINES TILE TOOLS 
+LICENSE AGREEMENT
+
+You should carefully read the following terms and conditions before using this software.  Your use of this software you indicates your acceptance of this license agreement and warranty.
+
+Fantastic Machines (also referred to as FM), provides the computer software (hereinafter referred to as Software) contained on the medium in this package and licenses its use.  You assume full responsibility for the selection of the Software to achieve your intended results and for the installation, use and results obtained from the Software.
+
+This License is effective until terminated. You may terminate it at any time by destroying the Software together with any copies currently in your posession. The License also terminates if you fail to comply with the terms and conditions of this agreement, and additionally you need to destroy any copies or variations of the software.
+
+
+OTHER RESTRICTIONS
+  
+This License Agreement is your proof of license to exercise the rights granted herein and must be retained by you.  You may not rent or lease the Software. You may not reverse engineer, decompile or disassemble the Software.
+
+
+REGISTERED VERSION
+
+One registered copy of the Software may either be used by a single person who uses the software personally on one or more computers, or installed on a single workstation used nonsimultaneously by multiple people, but not both.
+
+Any password obtained from FM for the purpose of fully enabling the Software may not be redistributed for any reason.
+
+
+DISTRIBUTION
+    
+This Software may not be redistributed in any way (CD-ROMs, BBSs, etc.) without the express written consent of FM.
+
+
+GOVERNING LAW
+
+This Agreement is governed by the laws of the Province of British Columbia, Canada. 
+
+
+DISCLAIMER OF WARRANTY
+
+NO WARRANTIES ARE PROVIDED. THE SOFTWARE PRODUCT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, FANTASTIC MACHINES AND ITS SUPPLIERS DISCLAIM ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE AND ANY WARRANTY AGAINST INFRINGEMENT, WITH REGARD TO THE SOFTWARE PRODUCT. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY HAVE OTHERS, WHICH VARY FROM JURISDICTION TO JURISDICTION.
+
+NO LIABILITY FOR CONSEQUENTIAL DAMAGES. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL FANTASTIC MACHINES OR ITS SUPPLIERS BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF FANTASTIC MACHINES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BECAUSE SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU. 
+
+
+

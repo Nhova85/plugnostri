@@ -1,0 +1,582 @@
+FFL1.0
+   20
+ffb01gal.8bf
+Filter Factory Gallery B
+Luma Greyscale
+mwvdlee@open.net
+Copyright © 1998 Martijn W. van der Lee
+
+
+
+
+
+
+
+
+
+
+
+
+95
+0
+0
+0
+0
+0
+0
+0
+put(((r*30)+(g*59)+(b*11))/100,0),get(0)
+get(0)
+get(0)
+a
+ffb02gal.8bf
+Filter Factory Gallery B
+Sliding Spirals...
+Sandy Blair
+Copyright © Sandy Blair
+
+
+
+
+
+Zoom In/Out
+Spokes 
+Rotation
+
+
+
+Shading Amount
+0
+70
+105
+124
+0
+0
+0
+132
+put(val(1,0,m*m*20000/(M*M)),0),put(d*val(2,1,16),1),put(sin(val(3,512,-512)+get(0)+get(1)),2),mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+a
+ffb03gal.8bf
+Filter Factory Gallery B
+Accelerating Glass...
+Sandy Blair
+Copyright © 1994 Sandy Blair
+
+
+
+
+
+Zoom In/Out
+Spokes
+Rotation
+
+
+
+Shading Amount
+0
+70
+105
+124
+0
+0
+0
+132
+put(val(1,0,m*m*20000/(M*M)),0),put(d*val(2,1,16),1),put(sin(val(3,512,-512)+sin(get(1))+cos(get(0))),2),mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+a
+ffb04gal.8bf
+Filter Factory Gallery B
+Accelerating Daisies...
+Sandy Blair
+Copyright © 1994 Sandy Blair
+
+
+
+
+
+Zoom In/Out
+Spokes
+Rotation
+
+
+
+Shading Amount
+0
+70
+105
+124
+0
+0
+0
+132
+put(val(1,0,m*m*20000/(M*M)),0),put(d*val(2,1,16),1),put(sin(val(3,512,-512)+sin(get(1))-cos(get(1)+get(0))),2),mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+a
+ffb05gal.8bf
+Filter Factory Gallery B
+Zero Tolerance...
+Sandy Blair
+Copyright © Sandy Blair.
+
+
+
+
+
+Zoom In/Out
+Spokes
+Rotation
+
+
+
+Shading Amount
+0
+83
+132
+194
+0
+0
+0
+130
+put(val(1,0,m*m*20000/(M*M)),0),put(d*val(2,1,16),1),put(sin(val(3,512,-512)+sin(get(1)-get(0))-cos(get(1)+get(0))),2),mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+mix(scl(c,0,255,get(2)<0?0:get(2)/2,get(2)<0?(get(2)+512)/2:255),c,ctl(7),255)
+a
+ffb06gal.8bf
+Filter Factory Gallery B
+Fluttering Flag...
+Sandy Blair
+Copyright © Sandy Blair
+
+
+
+
+Horizontal Frequency
+Horizontal Scale
+Vertical Frequency
+Vertical Scale
+Shading Offset
+Shading Amount
+
+
+162
+255
+255
+229
+12
+172
+0
+0
+put(val(0,X*2,X/5),4),put(val(2,Y*2,Y/5),1),put(val(1,0,Y/8),5),put(val(3,0,X/8),6),put(val(4,512,-512),0),put(get(0)+x*1024/get(4),2),put(get(0)+y*1024/get(1),3),put(val(5,64,0),55),put(y-scl(sin(get(2)),-512,512,-get(5),get(5)),7),put(x-scl(sin(get(1)),-512,512,-get(6),get(6)),8),put(scl(sin(get(2)),-512,512,get(55),128-get(55)),17),put(scl(sin(get(1)),-512,512,get(55),128-get(55)),18),src(get(8)%X+X*(get(8)<0),get(7)%Y+Y*(get(7)<0),z)+get(17)-get(18)
+src(get(8)%X+X*(get(8)<0),get(7)%Y+Y*(get(7)<0),z)+get(17)-get(18)
+src(get(8)%X+X*(get(8)<0),get(7)%Y+Y*(get(7)<0),z)+get(17)-get(18)
+src(get(8)%X+X*(get(8)<0),get(7)%Y+Y*(get(7)<0),z)
+ffb07gal.8bf
+Filter Factory Gallery B
+Bubble...
+Mario Klingemann
+Copyright © 1996 Visual Manipulation
+
+
+
+
+Inner Radius
+Outer Radius
+Center X
+Center Y
+Inner Shading
+Outer Shading
+X Distortion
+Y Distortion
+132
+135
+137
+130
+169
+255
+255
+251
+put(c2m(x-val(2,0,X),y-val(3,0,Y)),1),put(c2d(x-val(2,0,X),y-val(3,0,Y)),3),put(mix(ctl(5),ctl(4),get(1)-val(0,0,M),val(1,0,M)),0),put(src(val(2,0,X)+r2x(get(3),scl(get(0),ctl(4),ctl(5),0,val(6,0,M))),val(3,0,Y)+r2y(get(3),scl(get(0),ctl(4),ctl(5),0,val(7,0,M))),z),2),get(1)<=val(1,0,M)?scl(get(2),0,255,get(0)<128?0:2*get(0)-255,get(0)<128?2*get(0):255):c
+put(src(val(2,0,X)+r2x(get(3),scl(get(0),ctl(4),ctl(5),0,val(6,0,M))),val(3,0,Y)+r2y(get(3),scl(get(0),ctl(4),ctl(5),0,val(7,0,M))),z),2),get(1)<=val(1,0,M)?scl(get(2),0,255,get(0)<128?0:2*get(0)-255,get(0)<128?2*get(0):255):c
+put(src(val(2,0,X)+r2x(get(3),scl(get(0),ctl(4),ctl(5),0,val(6,0,M))),val(3,0,Y)+r2y(get(3),scl(get(0),ctl(4),ctl(5),0,val(7,0,M))),z),2),get(1)<=val(1,0,M)?scl(get(2),0,255,get(0)<128?0:2*get(0)-255,get(0)<128?2*get(0):255):c
+put(src(val(2,0,X)+r2x(get(3),scl(get(0),ctl(4),ctl(5),0,val(6,0,M))),val(3,0,Y)+r2y(get(3),scl(get(0),ctl(4),ctl(5),0,val(7,0,M))),z),2),get(1)<=val(1,0,M)?get(2):c
+ffb08gal.8bf
+Filter Factory Gallery B
+Spinner...
+Lindon Parker.
+Copyright © Lindon Parker.
+
+
+
+
+Number of Spins
+Visibility
+
+Transparency
+
+
+
+
+39
+60
+89
+0
+0
+0
+0
+0
+c+(tan(d-(((1000/M)*m/10))*ctl(0))/ctl(1))
+c+(tan(d-(((1000/M)*m/10))*ctl(0))/ctl(1))
+c+(tan(d-(((1000/M)*m/10))*ctl(0))/ctl(1))
+a-ctl(3)
+ffb09gal.8bf
+Filter Factory Gallery B
+Seismic Twirl...
+Kipp McMichael
+Copyright © 1996 Kipp McMichael
+
+
+
+
+Longitudinal
+Transverse
+Divisions
+
+
+
+
+Mode
+65
+187
+255
+0
+0
+0
+0
+1
+put(val(2,0,min(X,Y)),5),put(x%get(5)-get(5)/2,0),put(y%get(5)-get(5)/2,1),put(c2d(get(0),get(1)),2),put(c2m(get(0),get(1)),3),put(((x%get(5)<x%(get(5)*2))^(y%get(5)<y%(get(5)*2)))&&ctl(7)<128?-get(2):get(2),2),rad(get(2)-(scl(abs(get(3)%ctl(1)*2-ctl(1)),0,get(5)/2,0,get(3)+val(0,0,D))),get(3),z)
+rad(get(2)-(scl(abs(get(3)%ctl(1)*2-ctl(1)),0,get(5)/2,0,get(3)+val(0,0,D))),get(3),z)	
+rad(get(2)-(scl(abs(get(3)%ctl(1)*2-ctl(1)),0,get(5)/2,0,get(3)+val(0,0,D))),get(3),z)
+rad(get(2)-(scl(abs(get(3)%ctl(1)*2-ctl(1)),0,get(5)/2,0,get(3)+val(0,0,D))),get(3),z)
+ffb10gal.8bf
+Filter Factory Gallery B
+Cut Glass...
+Lindon Parker.
+Copyright © Crescent Moon Software Australia 1996.
+
+
+
+
+Number (and size) of Facets
+Transparency of Effect
+
+
+
+
+
+
+19
+50
+0
+0
+0
+0
+0
+2
+(x/(X/ctl(0)))%2?(y/(Y/ctl(0)))%2?((x%(X/ctl(0)))+(y%(Y/ctl(0)))>(Y/ctl(0)))?r+ctl(1):r-ctl(1):(x%(X/ctl(0)))<=(y%(Y/ctl(0)))?r+ctl(1)+(ctl(1)/3):r-ctl(1)-(ctl(1)/2):(y/(Y/ctl(0)))%2?(x%(X/ctl(0)))>(y%(Y/ctl(0)))?r:r+(ctl(1)/2):((x%(X/ctl(0)))+(y%(Y/ctl(0)))<=(Y/ctl(0)))?r-(ctl(1)/3):r+(ctl(1)+(ctl(1)/3)+(ctl(1)/3))
+(x/(X/ctl(0)))%2?(y/(Y/ctl(0)))%2?((x%(X/ctl(0)))+(y%(Y/ctl(0)))>(Y/ctl(0)))?g+ctl(1):g-ctl(1):(x%(X/ctl(0)))<=(y%(Y/ctl(0)))?g+ctl(1)+(ctl(1)/3):g-ctl(1)-(ctl(1)/2):(y/(Y/ctl(0)))%2?(x%(X/ctl(0)))>(y%(Y/ctl(0)))?g:g+(ctl(1)/2):((x%(X/ctl(0)))+(y%(Y/ctl(0)))<=(Y/ctl(0)))?g-(ctl(1)/3):g+(ctl(1)+(ctl(1)/3)+(ctl(1)/3))
+(x/(X/ctl(0)))%2?(y/(Y/ctl(0)))%2?((x%(X/ctl(0)))+(y%(Y/ctl(0)))>(Y/ctl(0)))?b+ctl(1):b-ctl(1):(x%(X/ctl(0)))<=(y%(Y/ctl(0)))?b+ctl(1)+(ctl(1)/3):b-ctl(1)-(ctl(1)/2):(y/(Y/ctl(0)))%2?(x%(X/ctl(0)))>(y%(Y/ctl(0)))?b:b+(ctl(1)/2):((x%(X/ctl(0)))+(y%(Y/ctl(0)))<=(Y/ctl(0)))?b-(ctl(1)/3):b+(ctl(1)+(ctl(1)/3)+(ctl(1)/3))
+a
+ffb11gal.8bf
+Filter Factory Gallery B
+X-Diffusion...
+ Greg Schorno
+Copyright © 1996 (c) Greg Schorno
+
+
+
+
+Distance
+Amount
+
+
+
+
+
+
+189
+161
+0
+0
+0
+0
+0
+2
+put(val(0,1,M/4),2),put(sqr(rnd(0,get(2))),0),put(sqr(rnd(0,get(2))),1),scl(ctl(1),0,128,c,src(x+get(0),y+get(1),z))
+scl(ctl(1),0,128,c,src(x+get(0),y+get(1),z))
+scl(ctl(1),0,128,c,src(x+get(0),y+get(1),z))
+scl(ctl(1),0,128,c,src(x+get(0),y+get(1),z))
+ffb12gal.8bf
+Filter Factory Gallery B
+Starmaker...
+Mario Klingemann
+Copyright © 1996 Visual Manipulation
+
+
+
+
+Center X
+Center Y
+Soft Radius
+Hard Radius
+Rotation 1
+Beam 1
+Rotation 2
+Beam 2
+128
+128
+183
+97
+151
+83
+181
+112
+put(c2d(x-val(0,0,X),y-val(1,0,Y))+val(4,0,1024),1),put(c2d(x-val(0,0,X),y-val(1,0,Y))+val(6,0,1024),2),put(c2m(x-val(0,0,X),y-val(1,0,Y))+mix(-val(3,0,M),0,sin(get(1)*val(5,0,100))+sin(get(2)*val(7,0,100))+512,1024),0),put(scl(get(0),0,val(2,0,M/2),255,0),4),get(0)<val(2,0,M/2)?get(4)+c-(get(4)*c/255):c
+get(0)<val(2,0,M/2)?get(4)+c-(get(4)*c/255):c
+get(0)<val(2,0,M/2)?get(4)+c-(get(4)*c/255):c
+a
+ffb13gal.8bf
+Filter Factory Gallery B
+Button Deluxe...
+Mario Klingemann
+Copyright © 1996 Visual Manipulation
+
+
+
+
+Edge Width
+Top Shading 
+Right Shading
+Bottom Shading
+Left Shading
+
+
+Distortion On/Off
+211
+120
+118
+123
+122
+0
+0
+127
+put((d+511)/128,0),put(get(0)==0?ctl(4):ctl((get(0)-1)/2+1),0),put((abs(X/2-x)<val(0,0,min(X,Y)/2))&(abs(Y/2-y)<val(0,0,min(X,Y)/2)),1),put(ctl(7)>128?c:mix(rad(d,val(0,0,M),z),rad(d,M,z),m,M),2),get(1)==1?c:get(0)<128?((get(2)*2)*get(0))/255:((get(2)-128)*2)+get(0)-((get(2)-128)*2)*get(0)/255
+put(ctl(7)>128?c:mix(rad(d,val(0,0,M),z),rad(d,M,z),m,M),2),get(1)==1?c:get(0)<128?((get(2)*2)*get(0))/255:((get(2)-128)*2)+get(0)-((get(2)-128)*2)*get(0)/255
+put(ctl(7)>128?c:mix(rad(d,val(0,0,M),z),rad(d,M,z),m,M),2),get(1)==1?c:get(0)<128?((get(2)*2)*get(0))/255:((get(2)-128)*2)+get(0)-((get(2)-128)*2)*get(0)/255
+put(ctl(7)>128?c:mix(rad(d,val(0,0,M),z),rad(d,M,z),m,M),2),get(1)==1?c:get(2)
+ffb14gal.8bf
+Filter Factory Gallery B
+James Bondage...
+Mario Klingemann
+Copyright © 1996 Visual Manipulation
+
+
+
+
+Distortion Radius
+Twirl
+ Transparency Radius
+
+
+
+
+
+154
+111
+68
+0
+0
+0
+0
+0
+m>val(0,0,M)?rad(d+scl(m,val(0,0,M),M,0,val(1,0,512)),val(0,0,M),z):c
+m>val(0,0,M)?rad(d+scl(m,val(0,0,M),M,0,val(1,0,512)),val(0,0,M),z):c
+m>val(0,0,M)?rad(d+scl(m,val(0,0,M),M,0,val(1,0,512)),val(0,0,M),z):c
+m<val(2,0,M)?0:m>val(0,0,M)?rad(d+scl(m,val(0,0,M),M,0,val(1,0,512)),val(0,0,M),z):c
+ffb15gal.8bf
+Filter Factory Gallery B
+Gradient Window...
+Alfredo Mateus & Ilyich the Toad
+Copyright ©  1996  Alfredo Mateus & Ilyich the Toad
+
+
+
+
+Frame Width
+
+
+
+
+
+Select Gradient Going In/Out
+
+73
+0
+0
+0
+0
+0
+54
+0
+ctl(6)<128?(x<=val(0,0,X)&&x*Y<=X*(Y-y)?scl(x,0,X,0,512):(y>=val(0,Y,0)?scl(y,Y,0,0,512):c)):(x<=val(0,0,X)&&x*Y<=X*(Y-y)?scl(x,X,0,0,64):(y>=val(0,Y,0)?scl(y,0,Y,0,64):c))
+ctl(6)<128?(x<=val(0,0,X)&&x*Y<=X*(Y-y)?scl(x,0,X,0,512):(y>=val(0,Y,0)?scl(y,Y,0,0,512):c)):(x<=val(0,0,X)&&x*Y<=X*(Y-y)?scl(x,X,0,0,64):(y>=val(0,Y,0)?scl(y,0,Y,0,64):c))
+ctl(6)<128?(x<=val(0,0,X)&&x*Y<=X*(Y-y)?scl(x,0,X,0,512):(y>=val(0,Y,0)?scl(y,Y,0,0,512):c)):(x<=val(0,0,X)&&x*Y<=X*(Y-y)?scl(x,X,0,0,64):(y>=val(0,Y,0)?scl(y,0,Y,0,64):c))
+a
+ffb16gal.8bf
+Filter Factory Gallery B
+Circulator...
+Mario Klingemann
+Copyright © 1996 Mario Klingemann
+
+
+
+
+Inner Radius
+Ring Width
+Y-Start
+Y-Scale
+Rotation
+Transparency
+
+
+108
+65
+156
+80
+70
+155
+0
+0
+put(scl(d,-511,512,X+val(4,0,X),val(4,0,X)),0),put(get(0)>X?get(0)-X:get(0),0),m>=val(0,0,M)&&m<val(0,0,M)+val(1,1,M)?src(get(0),val(2,0,Y)+scl((m-val(0,0,M))%val(1,1,M),0,val(1,1,M),0,val(3,0,Y)),z):c
+m>=val(0,0,M)&&m<val(0,0,M)+val(1,1,M)?src(get(0),val(2,0,Y)+scl((m-val(0,0,M))%val(1,1,M),0,val(1,1,M),0,val(3,0,Y)),z):c
+m>=val(0,0,M)&&m<val(0,0,M)+val(1,1,M)?src(get(0),val(2,0,Y)+scl((m-val(0,0,M))%val(1,1,M),0,val(1,1,M),0,val(3,0,Y)),z):c
+m>=val(0,0,M)&&m<val(0,0,M)+val(1,1,M)?src(get(0),val(2,0,Y)+scl((m-val(0,0,M))%val(1,1,M),0,val(1,1,M),0,val(3,0,Y)),z):ctl(5)
+ffb17gal.8bf
+Filter Factory Gallery B
+Filesize Reducer...
+Werner D.Streidt, Harry the Raver 
+Copyright 1998 by Werner D. Streidt and harry@visca.com
+
+
+
+
+Bit 8 on/off
+Bit 7 on/off
+Bit 6 on/off
+Bit 5 on/off
+Bit 4 on/off:
+Bit 3 on/off
+Bit 2 on/off
+Bit 1 on/off
+0
+0
+0
+0
+0
+0
+0
+0
+put(ctl(0)>127?1:0,0),put(ctl(1)>127?2:0,1),put(ctl(2)>127?4:0,2),put(ctl(3)>127?8:0,3),put(ctl(4)>127?16:0,4),put(ctl(5)>127?32:0,5),put(ctl(6)>127?64:0,6),put(ctl(7)>127?128:0,7),put(255-get(0)-get(1)-get(2)-get(3)-get(4)-get(5)-get(6)-get(7),8),c&get(8)
+c&get(8)
+c&get(8)
+a
+ffb18gal.8bf
+Filter Factory Gallery B
+I Would Cut...
+Ralph Nevins
+Copyright © Ralph Nevins 1996 
+
+
+
+
+Horz Density
+Vert Density
+Strength
+Thickness
+
+
+
+
+203
+79
+194
+53
+0
+0
+0
+0
+put((79*r+150*g+29*b)/256,1),			put((256-get(1))*ctl(2)/256,2),			put(				((x+y*get(1))%(X*get(2)/(ctl(0)))<=ctl(3))|				((y+x*get(1))%(Y*get(2)/(ctl(1)))<=ctl(3))?				(get(1)<16?0:255):(get(1)>240?255:0),0)
+get(0)
+get(0)
+a
+ffb19gal.8bf
+Filter Factory Gallery B
+Crystal Ball...
+Mario Klingemann
+Copyright © 1996 Mario Klingemann
+
+
+
+
+Highlight X
+Highlight Y
+Highlight Size
+Distortion
+Radius
+Background-Brightness
+Background-Transparency
+Sphere-Transparency
+144
+159
+179
+192
+128
+129
+244
+255
+put(255-scl(c2m(val(0,0,X)-x,val(1,0,Y)-y),0,M,0,val(2,0,512)),0),m<val(4,0,M)?rad(d,scl(cos(scl(m,0,M,0,512)),-512,512,M-M/val(3,1,50),0),z)+get(0)*(get(0)>0)-scl(cos(scl(m,0,M,0,512)),-256,512,255,0):mix(ctl(5),c,abs(val(5,-128,128)),128)
+m<val(4,0,M)?rad(d,scl(cos(scl(m,0,M,0,512)),-512,512,M-M/val(3,1,50),0),z)+get(0)*(get(0)>0)-scl(cos(scl(m,0,M,0,512)),-256,512,255,0):mix(ctl(5),c,abs(val(5,-128,128)),128)
+m<val(4,0,M)?rad(d,scl(cos(scl(m,0,M,0,512)),-512,512,M-M/val(3,1,50),0),z)+get(0)*(get(0)>0)-scl(cos(scl(m,0,M,0,512)),-256,512,255,0):mix(ctl(5),c,abs(val(5,-128,128)),128)
+m<val(4,0,M)?mix(255,abs(128-rad(d,scl(cos(scl(m,0,M,0,512)),-512,512,M-M/val(3,1,50),0),z)+get(0)*(get(0)>0)-scl(cos(scl(m,0,M,0,512)),-256,512,255,0)),ctl(7),255):mix(c,0,ctl(6),255)
+ffb20gal.8bf
+Filter Factory Gallery B
+The Blackhole...
+Mario Klingemann
+Copyright © 1996 Mario Klingemann
+
+
+
+
+X-Position 
+Y-Position 
+Strength
+
+
+
+
+
+126
+126
+153
+0
+0
+0
+0
+0
+put(scl(c2m(val(0,0,X)-x,val(1,0,Y)-y),0,M/2,val(2,-M,M),0),0),put(c2d(x-val(0,0,X),y-val(1,0,Y)),1),src(x+r2x(get(1),get(0)),y+r2y(get(1),get(0)),z)
+src(x+r2x(get(1),get(0)),y+r2y(get(1),get(0)),z)
+src(x+r2x(get(1),get(0)),y+r2y(get(1),get(0)),z)
+src(x+r2x(get(1),get(0)),y+r2y(get(1),get(0)),z)

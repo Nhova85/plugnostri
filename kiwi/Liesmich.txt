@@ -1,0 +1,50 @@
+
+
+                         °v° Kiwi`s Oelfilter
+                        ----------------------
+
+
+   Allgemeines:
+  -------------    
+      Die beiliegenden Filter sind Freeware, sie sind daher in keiner
+      Weise in ihrer Funktion beschränkt und bedürfen keiner Registrier-
+      gebühr. Die Filter dürfen kostenlos weitergegeben werden, 
+      jedoch nur im gesamten Paket, inclusive der Liesmich.txt
+      und Filter.txt Dateien.
+
+   Installation:
+  --------------
+      Nach dem Entpacken müssen die Filter (*.8bf) in das entsprechende
+      Plugin Verzeichnis der Bildanwendung kopiert oder verschoben werden.
+      (Z.B. C:\Photoshp\plugins). Die Dateien benötigen ca. 560 KB Festplatten-
+      speicher.
+
+   Über die Filter:
+  -----------------
+      Die Filter arbeiten nur mit Bildern die im RGB Format vorliegen und
+      benötigen außreichenden Arbeitsspeicher! Nicht immer stimmen die Vor-
+      schaubilder genau mit dem tatsächlichen Effekt überein. Da die Filter
+      mit ADOBE Filter Factory erstellt wurden, sind sie hauptsächlich für 
+      den ADOBE Photoshop konzipiert. Ich selbst habe sie aber auch mit dem
+      Sharewareprogramm Paintshop Pro 4.1 getestet. Damit die Filter 
+      funktionieren, muß sich die Datei MSVCRT10.dll im Windows Verzeichnis
+      befinden!
+      Eine kurze Übersicht und Beschreibung der Filter befindet sich in der
+      Filter.txt Datei.
+
+   Garantie:
+  ----------
+      Die Filter sind Freeware und daher kostenlos. Die Nutzung der Soft-
+      ware geschieht auf eigenes Risiko und Verantwortung des Nutzers. Eine
+      Haftung des Autoren besteht zu keiner Zeit. Es werden auch keinerlei
+      Garantien für die Funktionen der Filter oder Schäden die durch die
+      Installation oder Benutzung entstehen gegeben.
+      Mit der Installation der Filter werden diese Bestimmungen anerkannt.
+
+   Kopierrecht:
+  -------------
+      Alle Rechte der Filter liegen beim Autor, eine weitere Nutzung, außer
+      zum privaten Gebrauch bedürfen der schriftlichen Zustimmung des Autors.
+     
+ 
+

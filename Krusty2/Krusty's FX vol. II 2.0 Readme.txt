@@ -1,0 +1,355 @@
+---------------------------------------------------------------------------------------
+Krusty's FX vol. II 2.0 -------------- README -------------------------- (c) 1999 KRUST
+---------------------------------------------------------------------------------------
+-           These plugins are Freewares and cannot be sold for any reasons !!         -
+---------------------------------------------------------------------------------------
+last updated : 07/02/99
+
+
+                             KRUSTY's FX 2.0
+                          VOL. II - GENERATORS
+
+
+                          BETA version 2.0.1.b1
+
+     This version is currently in beta stage, all the current filters are
+practically finished and may not change at all. I will simply add new filters
+to it. You'll find the final version or latest beta at :
+
+   - http://www.krust.com/krust.html
+
+     Other beta versions will be version 2.0.1.b2, 2.0.1.b3 and so on. The 
+final will be called 2.0.1
+
+             * PLEASE READ THE LICENSE AGREEMENT (LICENSE.TXT) *
+
+
+TABLE OF CONTENT
+----------------
+
+1  - INTRODUCTION
+2  - WHAT'S NEW (since version 1.0)
+3  - COMPATIBLE GRAPHIC APPLICATIONS
+4  - INFORMATIONS & TIPS
+5  - REDISTRIBUTION (can you distribuate or sell these filters ?)
+6  - TROUBLESHOOTING
+7  - CREDITS & GREETINGS
+8  - WHERE CAN I FIND OTHER FREE F.F. PHOTOSHOP PLUGINS ?
+9  - WARRANTIES
+10 - HOW TO ADD KRUSTY'S FX IN PLUGIN MANAGER 1.0(b) 
+11 - WHO DID WHAT ? (copyrights)
+
+
+---------------------------------------------------------------------------------------
+* 1 - INTRODUCTION *
+
+     These Photoshop plugins were made while experimenting random algorithms
+in Adobe's filter factory (freely available on the net and on the photoshop
+CD). They doesn't serve a particular purpose, since the textures they generate
+do not create real-life textures, but weird or pattern textures. Only you 
+can tell how you will use them, let your imagination flow ...
+
+     I hope you'll like them and that they can be useful in your graphic
+experimentations or artworks ! Feel free to send any comments (krust@axes.com)
+
+     Volume I & III of Krusty's FX 2.0 may come soon, isn't it strange ? :)
+
+
+--------------------------------------------------------------------------------------- 
+* 2 - WHAT'S NEW *
+    
+     This is the new version of Krusty's FX vol. II 1.0. Many new changes
+have been made since the first version (Released 2 years ago). There's a
+totally new 3D user interface (with  256 graphics). I took about half of
+the version 1.0 plugins,corrected few bugs and included it in this version. 
+The bugs corrected were : 
+ 
+       - The preview windows didn't match the final result
+       - They were too slow - The filters are now 2 to 3 times faster.
+       - Unwanted bright colors & white were removed from some filters
+       - Some minor changes
+
+     Every other filters are completely  new filters. Done from scratch or
+are old filters transformed or mixed together.
+
+     Since version 2.0 & 1.0 do not produce the same result and that some
+1.0 filters are not available in version 2.0, Version 1.0 will still be
+available as version 1.1 (with a new GUI - but no other changes) on KRUST's
+web site (http://www.krust.com/krust.html)
+
+
+---------------------------------------------------------------------------------------
+* 3 - COMPATIBLE GRAPHIC APPLICATIONS *
+
+     Krusty's FX only works in RGB mode & support transparency
+
+     The plugin as been tested in Windows 95/98 and Windows NT 4.0, I'm
+     not sure if they work in windows 3.1.
+  
+     This Photoshop Plugin should work in the following applications :
+
+       - Adobe Photoshop 3.x & newer
+       - Factral Design Painter 3.x & newer
+       - Paint Shop Pro   (I didn't have the time to test supported version)
+       - COREL Photopaint (I didn't have the time to test supported version)
+       - About any Photoshop 3.0 Plugin compatible applications
+
+     If you're using an application that doesn't support the filters, please 
+send a notice at krustyfx@krust.com.
+
+
+---------------------------------------------------------------------------------------
+* 4 - INFORMATIONS & TIPS *
+
+     There's not much tips or instructions to give about Krusty's FX. I guess
+the only suggestion I could give you is experiment & have fun. But just in case
+here some few things you should know :
+
+     Sometimes a blur or blur more after you applied the effect can enhance the
+texture you just generated.
+
+     Only one word about the Red/Green/Blue & Brightness Sliders. You will notice
+that some filters have something like "C2 Red %" or even "C2 Brightness" sliders.
+This means that these sliders can produce two colors.
+ 
+            Ordinary Red % slider
+
+            0%                  100%
+            |-------<>-------------|
+
+
+
+            A C2 Red % slider
+
+                     slider
+                     center
+            100%       0%       100%
+            |----------|---<>------|         This setting will only produce one 
+              2 colors    1 color            Color
+                                             (sliding to the right will accentuate
+                                              the red level of the texture)
+                     slider
+                     center
+            100%       0%       100%
+            |---<>-----|-----------|         This setting will produce a two color 
+              2 colors    1 color            texture.
+              (colorB)    (colorA)           (sliding to the left will accentuate
+                                              the level of colorB, to the right 
+                                              the level of colorA)
+                                 
+            C2 Brightness sliders
+
+            colorB <<      >> colorA
+            |--------------<>------|         In 1 color mode the brightness will act
+                                             as an ordinary brightness slider, but in
+                                             2 colors mode it will accentuate one of the
+                                             2 colors.
+
+       And the "<H V> Offset" sliders (found in the N-x Generators) may be a bit confusing 
+too. <H V> means that it's a two modes sliders, if you slide to left you will move the 
+texture horizontally, to the right : vertically. ex:
+
+           <H V> Offet
+
+                     slider
+                     center
+            <<       >> <<        >>
+            |---<>-----|-----------|         Will move the texture horizontally   
+     move   horizontal |    vertical   
+
+
+
+
+---------------------------------------------------------------------------------------
+* 5 - REDISTRIBUTION *
+
+      These plugins are Freewares and cannot be sold for any reasons !!
+
+      The only legal source of distribution is KRUST's web site (www.krust.com). 
+You cannot redistribute these filter without asking a special version first, send 
+email to krustyfx@krust.com. Read the License.txt file for more information.
+
+FOR MORE INFORMATION PLEASE READ THE LICENSE AGREEMENT (LICENSE.TXT)
+
+
+---------------------------------------------------------------------------------------
+* 6 - TROUBLESHOOTING *
+
+      - I see the plugins but they are disabled !! what can I do ?
+
+           * Are you in RGB color mode ? Krusty's FX only not work in RGB and will
+             not work in grayscale,CMYK,LAB,Indexed,Etc..
+
+      - The plugins doesn't work at all !
+
+           * Are you using Windows 95/98 or NT ? I'm not sure these plugins work in
+             Windows 3.1.
+
+           * Make sure that you have installed the plugins in your Photoshop plugin
+             directory and that your host application is correctly configured to
+             locate this directory (read you manual).
+
+           * If you get an error message when starting the host application, make sure
+             that you have the file MSVCRT10.DLL in your WINDOWS/SYSTEM directory. If 
+             you don't reinstall the plugins or get the MSVCRT10.DLL file on MICROSOFT's
+             WEB or FTP site (www.microsoft.com) and put it in you SYSTEM directory.
+
+      - The plugin dialogs are a way too big !!!
+
+           * Krusty's FX use a font called IMPACT.TTF, if it's not correctly installed
+             in your FONT directory the dialog box will use another font and could be
+             too big. To install the font reinstall the filters (and click yes when you
+             see a dialog box called Impact font) or try to execute the file Impact32.exe
+             which should be found where you've installed the plugins.
+
+      If you need more help, information or want to report a bug, write to krustyfx@krust.com
+
+
+---------------------------------------------------------------------------------------
+* 7 - CREDITS & GREETINGS *
+
+    These plugins were made with Adobe's filter factory, Freely available at : 
+      - the new version : ftp://ftp.i-us.com/pluginhead/ffactory.zip
+      - the old version : ftp://ftp.i-us.com/pluginhead/oldffactory.zip
+
+    Thanks to Werner D. Streidt for his very good filter factory FAQ
+      (100526.16@compuserve.com). Krusty's FX wouldn't exist without it !!
+      it can be found at : http://privat.schlund.de/filter-factory/ , it's
+      now called FF GUIDE.
+
+    The user interface resource edition was made with Microsoft Visual C++, 
+      thanks to Michael Johannhanwahr (mjohannh@provi.de) for that wonderful 
+      idea ! :-) take a look at his handsome web site 
+      - http://johann.simplenet.com/index.html
+
+    Thanks to all members of the filter factory discussion group 
+      (http://pluginhead.i-us.com/fflist.htm) for help, ideas and their 
+      imagination !
+
+    Thanks to my friend Scott (Aka Platy) for the text files verification and everything
+      he helped me with in the last few years.
+
+    A huge amount of gratitude for all Krusty's FX 1.0 users for their 
+    feedbacks & suggestions ! 
+
+
+---------------------------------------------------------------------------------------
+* 8 - WHERE CAN I FIND OTHER FREE F.F. PHOTOSHOP PLUGINS ? *
+
+  Also available from KRUST : Krusty's FX 1.0 vol. I,II & III,
+   coming soon : Krusty's FX vol. II 1.1 (1.0 + new user interface)
+   - http://www.krust.com/krust.html
+
+  (These links were taken from The plugin head (http://pluginhead.i-us.com/)
+   some may be outdated)
+
+  - Visual Manipulation       > http://www.partysan.de/visual/MAIN.HTM
+  - Filter Factory Gallery    > http://www.netins.net/showcase/wolf359/ffagalry.htm
+  - Plugin Com HQ             > http://pico.i-us.com/
+  - Truman Brown's TruFilters > http://www.websharx.com/~ttbrown/trufiltr.html
+  - DCspecial Filters         > http://www.teleport.com/~pegasys/plgn.html
+  - Button Maker Plugins      > http://www.hsv.tis.net/~puon/photoshop
+  - Unplugged                 > http://members.xoom.com/rambo/unplugged/index.html
+  - Kang's Plugins            > http://www.asan.com/users/kangaroo/graphics.htm?
+  - Greg's Factory Output     > http://mars.ark.com/~gschorno/gfo/
+  - RCS Filter Pak            > http://www.jwp.bc.ca/kamikaze/pspage.htm
+  - Pawel's Plugin Filters    > http://www.arrowweb.com/pawel/pifs.html
+  - AFH Bevel Filters         > http://www.afh.com/web/
+  - Werner's Neology Plugins  > http://www.edesign.com/filters/
+  - NVR Border Mania filters  > http://www.mediaco.com/nvr/filters.html
+  - Kevin Filters             > http://intermedia.arts.ufl.edu/filters/filters.html
+  - Mock's filters            > http://www.primenet.com/~mock/soft02.html
+  - Johann's Filters          > http://johann.simplenet.com/index.html
+    And Johann's wonderful Plugin Manager shareware !!
+
+
+---------------------------------------------------------------------------------------
+* 9 - WARRANTIES *
+
+  - Please note that this software does not include any warranties of any kind.
+    See License.txt for more informations
+
+
+---------------------------------------------------------------------------------------
+* 10 - HOW TO ADD KRUSTY'S FX IN PLUGIN MANAGER 1.0(b) *
+
+  Plugin manager is a very useful utility to manage plugins, it allows you to 
+  able/disable your photoshop plugins, it's nessecery because can't manage too
+  many plugins installed together. Version 1.0b was a freeware but version 2.0
+  is now a shareware. You can find it at : http://johann.simplenet.com/index.html
+
+  Since I've already sent the Krusty's FX info to Michael Johannhanwahr, you only
+  need to download the latest FILTERS.INI file (johann.simplenet.com) to use Krusty's
+  filter in Plugin Manager, but if you down have an internet connection or do not
+  want to download it, just add the following lines in your FILTERS.INI file :
+
+  THIS ONLY APPLIES TO VERSION 1.0(b) (version 2.0 works without any changes)
+
+---- CLIP HERE (do not include) --------
+#------------------------------------------------------------
+# Krusty's FX vol. II 2.0 (beta version, more plugin to come)
+#------------------------------------------------------------
+
+KRUST2A1.8BF;	Krusty's FX vol. II 2.0; Generator A-1 (Eye)
+KRUST2A2.8BF;	Krusty's FX vol. II 2.0; Generator A-2 (Eye)
+KRUST2B1.8BF;	Krusty's FX vol. II 2.0; Generator B-1 (Spider)
+KRUST2C1.8BF;	Krusty's FX vol. II 2.0; Generator C-1 (Straws)
+KRUST2C2.8BF;	Krusty's FX vol. II 2.0; Generator C-2 (Straws)
+KRUST2D1.8BF;	Krusty's FX vol. II 2.0; Generator D-1 (Metalic)
+KRUST2E1.8BF;	Krusty's FX vol. II 2.0; Generator E-1 (Radial)
+KRUST2E2.8BF;	Krusty's FX vol. II 2.0; Generator E-2 (Radial)
+KRUST2E3.8BF;	Krusty's FX vol. II 2.0; Generator E-3 (Radial)
+KRUST2F1.8BF;	Krusty's FX vol. II 2.0; Generator F-1 (Gardien)
+KRUST2G1.8BF;	Krusty's FX vol. II 2.0; Generator G-1 (Radial)
+KRUST2H1.8BF;	Krusty's FX vol. II 2.0; Generator H-1 (Eye)
+KRUST2H2.8BF;	Krusty's FX vol. II 2.0; Generator H-2 (Eye)
+KRUST2I1.8BF;	Krusty's FX vol. II 2.0; Generator I-1 (Deco)
+KRUST2I2.8BF;	Krusty's FX vol. II 2.0; Generator I-2 (Deco)
+KRUST2I3.8BF;	Krusty's FX vol. II 2.0; Generator I-3 (Deco)
+KRUST2J1.8BF;	Krusty's FX vol. II 2.0; Generator J-1 (Spider)
+KRUST2J2.8BF;	Krusty's FX vol. II 2.0; Generator J-2 (Spider)
+KRUST2J3.8BF;	Krusty's FX vol. II 2.0; Generator J-3 (Spider)
+KRUST2K1.8BF;	Krusty's FX vol. II 2.0; Generator K-1 (Flower)
+KRUST2K2.8BF;	Krusty's FX vol. II 2.0; Generator K-2 (Flower)
+KRUST2L1.8BF;	Krusty's FX vol. II 2.0; Generator L-1 (Curtains)
+KRUST2M1.8BF;	Krusty's FX vol. II 2.0; Generator M-1 (3DPatchwork)
+KRUST2M2.8BF;	Krusty's FX vol. II 2.0; Generator M-2 (3DPatchwork)
+KRUST2N1.8BF;	Krusty's FX vol. II 2.0; Generator N-1 (Deco)
+KRUST2N2.8BF;	Krusty's FX vol. II 2.0; Generator N-2 (Deco)
+KRUST2N3.8BF;	Krusty's FX vol. II 2.0; Generator N-3 (Deco)
+---- CLIP HERE (do not include) --------
+
+
+
+---------------------------------------------------------------------------------------
+11 - WHO DID WHAT ? (copyrights)
+
+(C) 1998-99 KRUST, inc, All right reserved
+by Thomas Robert de Massy
+homepage : http://www.krust.com/krust.html
+email    : krustyfx@krust.com
+
+The algorithms used in these Photoshop filters are copyrighted, so you 
+can't use them for your own filters. COPYRIGHT (c) 1998 KRUST. Graphical
+user interface and artworks done by Thomas Robert de Massy for KRUST.
+
+This program is a transformed version (the dialog resources were edited
+with MSVC++) of Adobe's Filter Factory (the user Interface), if you think 
+that by doing so, I'm breaking some copyright laws (which I strongly doubt), 
+Please let me know.
+
+MSVCRT10.DLL (c) MICROSOFT
+
+IMPACT.TTF font (c) 1991-1996 The monotype corp./Microsoft (not sure of it
+take a look at the license agreement in the impact32.exe file)
+
+Filter Factory (C) 1994 Adobe Systems, Inc All Rights Reserved 
+programmed by Joseph Ternasky and Dave Corboy
+ 
+KRUST's logo is a TRADEMARK of KRUST, inc.
+(c) 1998-99 KRUST, All rights reserved.
+
+all artworks (c) 1998-99 by Thomas Robert de Massy
+
+FOR MORE INFORMATION PLEASE READ THE LICENSE AGREEMENT (LICENSE.TXT)
+---------------------------------------------------------------------------------------

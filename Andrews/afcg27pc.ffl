@@ -1,0 +1,582 @@
+FFL1.0
+   20
+SDisDis.8bf
+Andrew's Filters 27
+Slightly Distorted Distortions...
+AB
+Freeware
+
+
+
+
+Mod 1
+Mod 2
+Mod 3
+Red
+Green
+Blue
+Shift x
+Shift y
+167
+186
+75
+190
+149
+156
+184
+140
+dif(((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)<ctl(2)?c:c%ctl(3),((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)<ctl(2)?c:src(x+val(6,-50,50),y+val(7,-50,50),z)%ctl(3))
+dif(((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)<ctl(2)?c:c%ctl(4),((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)<ctl(2)?c:src(x+val(6,-50,50),y+val(7,-50,50),z)%ctl(4))
+dif(((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)<ctl(2)?c:c%ctl(5),((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)<ctl(2)?c:src(x+val(6,-50,50),y+val(7,-50,50),z)%ctl(5))
+a
+SearLigh.8bf
+Andrew's Filters 27
+SearchLights...
+AB
+Freeware
+
+
+
+
+Red Mod
+Red Control
+Green Mod
+Green Control
+Blue Mod
+Blue Control
+Intensity
+Divider
+96
+31
+72
+33
+79
+34
+221
+3
+((c2d(x,y)%ctl(0)<ctl(1)?c:c+val(6,-60,60))+(c2d(X-x,Y-y)%ctl(0)<ctl(1)?c:src(X-x,Y-y,z)+val(6,-60,60)))/ctl(7)
+((c2d(x,y)%ctl(2)<ctl(3)?c:c+val(6,-60,60))+(c2d(X-x,Y-y)%ctl(0)<ctl(1)?c:src(X-x,Y-y,z)+val(6,-60,60)))/ctl(7)
+((c2d(x,y)%ctl(4)<ctl(5)?c:c+val(6,-60,60))+(c2d(X-x,Y-y)%ctl(0)<ctl(1)?c:src(X-x,Y-y,z)+val(6,-60,60)))/ctl(7)
+a
+ShColCAp.8bf
+Andrew's Filters 27
+Filter That Shouted Color ...
+AB
+Freeware (at the Heart Of An Adobe Plugin Compatible App)
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Mix 1
+Mix 2
+150
+158
+182
+46
+181
+121
+162
+66
+mix(c,dif(c2m(x,y)%ctl(0),c2d(x,y)%ctl(1)),ctl(6),ctl(7))
+mix(c,dif(c2m(x,y)%ctl(2),c2d(x,y)%ctl(3)),ctl(6),ctl(7))
+mix(c,dif(c2m(x,y)%ctl(4),c2d(x,y)%ctl(5)),ctl(6),ctl(7))
+a
+ShiShoe.8bf
+Andrew's Filters 27
+Bit Shifting A Shoe Shop...
+AB
+Freeware
+
+
+
+
+Red Bit 1
+Red Bit 2
+Green Bit 1
+Green Bit 2
+Blue Bit 1
+Blue Bit 2
+Shift 1
+Shift 2
+120
+122
+73
+8
+99
+71
+143
+132
+rnd(c^ctl(0),c^ctl(1))+rnd(src(x+val(6,-50,50),y+val(6,-50,50),z)^ctl(0),src(x+val(7,-50,50),y+val(7,-50,50),z)^ctl(1))
+rnd(c^ctl(2),c^ctl(3))+rnd(src(x+val(6,-50,50),y+val(6,-50,50),z)^ctl(2),src(x+val(7,-50,50),y+val(7,-50,50),z)^ctl(3))
+rnd(c^ctl(4),c^ctl(5))+rnd(src(x+val(6,-50,50),y+val(6,-50,50),z)^ctl(4),src(x+val(7,-50,50),y+val(7,-50,50),z)^ctl(5))
+a
+ShPenciX.8bf
+Andrew's Filters 27
+Sharpened PencilX...
+AB
+Freeware
+
+
+
+
+Red Shift
+Green Shift
+Blue Shift
+Red Boost
+Green Boost
+Blue Boost
+
+
+157
+144
+146
+0
+0
+0
+0
+0
+val(3,3,20)*c-src(x+val(0,-20,20),y,z)-src(x-val(0,-20,20),y,z)
+val(4,3,20)*c-src(x+val(1,-20,20),y,z)-src(x-val(1,-20,20),y,z)
+val(5,3,20)*c-src(x+val(2,-20,20),y,z)-src(x-val(2,-20,20),y,z)
+a
+SiMixn.8bf
+Andrew's Filters 27
+Sin Mixtured...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Shifter
+Divide
+85
+18
+73
+26
+33
+7
+132
+2
+((c2d(X%x,Y%y)%ctl(0)<ctl(1)?src(X%x,Y%y,z):src(X%sin(x)+val(6,-60,60),Y%sin(y)+val(6,-60,60),z))+(c2d((X-x)%x,(Y-y)%y)%ctl(0)<ctl(1)?src((X-x)%x,(Y-y)%y,z):src((X-x)%sin(x)+val(6,-60,60),(Y-y)%sin(y)+val(6,-60,60),z)))/ctl(7)
+((c2d(X%x,Y%y)%ctl(2)<ctl(3)?src(X%x,Y%y,z):src(X%sin(x)+val(6,-60,60),Y%sin(y)+val(6,-60,60),z))+(c2d((X-x)%x,(Y-y)%y)%ctl(2)<ctl(3)?src((X-x)%x,(Y-y)%y,z):src((X-x)%sin(x)+val(6,-60,60),(Y-y)%sin(y)+val(6,-60,60),z)))/ctl(7)
+((c2d(X%x,Y%y)%ctl(4)<ctl(5)?src(X%x,Y%y,z):src(X%sin(x)+val(6,-60,60),Y%sin(y)+val(6,-60,60),z))+(c2d((X-x)%x,(Y-y)%y)%ctl(4)<ctl(5)?src((X-x)%x,(Y-y)%y,z):src((X-x)%sin(x)+val(6,-60,60),(Y-y)%sin(y)+val(6,-60,60),z)))/ctl(7)
+a
+SliPiUDw.8bf
+Andrew's Filters 27
+Slices Of Pizza Up Down...
+AB
+Freeware
+
+
+
+
+Red Slice
+Red
+Green Slice
+Green
+Blue Slice
+Blue
+Shift
+Divider
+33
+13
+27
+19
+32
+26
+211
+2
+((c2d(x,y)%ctl(0)<ctl(1)?c:src(x+val(6,-60,60),y+val(6,-60,60),z))+(c2d(X-x,Y-y)%ctl(0)<ctl(1)?src(X-x,Y-y,z):src(X-x+val(6,-60,60),Y-y+val(6,-60,60),z)))/ctl(7)
+((c2d(x,y)%ctl(2)<ctl(3)?c:src(x+val(6,-60,60),y+val(6,-60,60),z))+(c2d(X-x,Y-y)%ctl(2)<ctl(3)?src(X-x,Y-y,z):src(X-x+val(6,-60,60),Y-y+val(6,-60,60),z)))/ctl(7)
+((c2d(x,y)%ctl(4)<ctl(5)?c:src(x+val(6,-60,60),y+val(6,-60,60),z))+(c2d(X-x,Y-y)%ctl(4)<ctl(5)?src(X-x,Y-y,z):src(X-x+val(6,-60,60),Y-y+val(6,-60,60),z)))/ctl(7)
+a
+SpRaCol.8bf
+Andrew's Filters 27
+Spiral Random Colour...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Mix 1
+Mix 2
+36
+26
+32
+40
+22
+76
+160
+89
+mix(rad(d,(m),rnd(0,2)),rad(abs(d)%ctl(0),(M%m)%ctl(1),rnd(0,2)),ctl(6),ctl(7))
+mix(rad(d,m,rnd(0,2)),rad(abs(d)%ctl(2),(M%m)%ctl(3),rnd(0,2)),ctl(6),ctl(7))
+mix(rad(d,m,rnd(0,2)),rad(abs(d)%ctl(4),(M%m)%ctl(5),rnd(0,2)),ctl(6),ctl(7))
+a
+SummLove.8bf
+Andrew's Filters 27
+Summer Of Love 97...
+AB
+Freeware
+
+
+
+
+Red Mix 1
+Red Mix 2
+Green Mix 1
+Green Mix 2
+Blue Mix 1
+Blue Mix 2
+Mod
+
+74
+51
+26
+28
+61
+149
+225
+0
+(x%mix(c,sin(x),ctl(0),ctl(1))+(X-x)%mix(c,sin(x),ctl(0),ctl(1)))%ctl(6)
+(x%mix(c,sin(x),ctl(2),ctl(3))+(X-x)%mix(c,sin(x),ctl(2),ctl(3)))%ctl(6)
+(x%mix(c,sin(x),ctl(4),ctl(5))+(X-x)%mix(c,sin(x),ctl(4),ctl(5)))%ctl(6)
+a
+SymbPerh.8bf
+Andrew's Filters 27
+Symbolist Perhaps...
+AB
+Freeware
+
+
+
+
+Factor 1
+Factor 2
+Factor 3
+Factor 4
+Red Sub
+Green Sub
+Blue Sub
+Mod
+202
+219
+232
+97
+157
+62
+181
+134
+(sub(c,ctl(0)&c+ctl(1)&src(X-x,Y-y,z)+ctl(2)&src(x,Y-y,z)+ctl(3)&src(X-x,y,z),val(4,-300,300)))%ctl(7)
+(sub(c,ctl(0)&c+ctl(1)&src(X-x,Y-y,z)+ctl(2)&src(x,Y-y,z)+ctl(3)&src(X-x,y,z),val(5,-300,300)))%ctl(7)
+(sub(c,ctl(0)&c+ctl(1)&src(X-x,Y-y,z)+ctl(2)&src(x,Y-y,z)+ctl(3)&src(X-x,y,z),val(6,-300,300)))%ctl(7)
+a
+TiSilenc.8bf
+Andrew's Filters 27
+Time Of Silence...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+7
+19
+20
+10
+16
+21
+0
+0
+src(x&x*val(0,0,M-m),y&y*val(1,0,M-m),0)
+src(x&x*val(2,0,M-m),y&y*val(3,0,M-m),1)
+src(x&x*val(4,0,M-m),y&y*val(5,0,M-m),2)
+a
+ToyShop.8bf
+Andrew's Filters 27
+Toy Shop...
+AB
+Freeware
+
+
+
+
+Mix 1
+Mix 2
+Mix 3
+Mix 4
+Red
+Green
+Blue
+Toys
+109
+162
+125
+67
+152
+88
+111
+30
+dif(src(x-ctl(7)%y,y-ctl(7)%x,z),ctl(4)%mix(ctl(0)%c,ctl(1)%c,ctl(2)%c,ctl(3)%c))
+dif(src(x-ctl(7)%y,y-ctl(7)%x,z),ctl(5)%mix(ctl(0)%c,ctl(1)%c,ctl(2)%c,ctl(3)%c))
+dif(src(x-ctl(7)%y,y-ctl(7)%x,z),ctl(6)%mix(ctl(0)%c,ctl(1)%c,ctl(2)%c,ctl(3)%c))
+a
+TPrintPr.8bf
+Andrew's Filters 27
+To The Printing Press Now...
+AB
+Freeware
+
+
+
+
+Pattern
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Divide
+4
+14
+10
+13
+9
+19
+15
+5
+(((x-ctl(0))+(y-ctl(0)))%ctl(1))<ctl(2)||(((X-x-ctl(0))+(y-ctl(0)))%ctl(1))<ctl(2)?c/ctl(7):c
+(((x-ctl(0))+(y-ctl(0)))%ctl(3))<ctl(4)||(((X-x-ctl(0))+(y-ctl(0)))%ctl(3))<ctl(4)?c/ctl(7):c
+(((x-ctl(0))+(y-ctl(0)))%ctl(5))<ctl(6)||(((X-x-ctl(0))+(y-ctl(0)))%ctl(5))<ctl(6)?c/ctl(7):c
+a
+TrEmboss.8bf
+Andrew's Filters 27
+Tracer To The EmBoss...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Shift
+Mod
+249
+255
+255
+250
+252
+234
+173
+190
+(255-dif(c%ctl(0),src(x+val(6,-10,10),y,z)%ctl(1)))%ctl(7)
+(255-dif(c%ctl(2),src(x+val(6,-10,10),y,z)%ctl(3)))%ctl(7)
+(255-dif(c%ctl(4),src(x+val(6,-10,10),y,z)%ctl(5)))%ctl(7)
+a
+TurALine.8bf
+Andrew's Filters 27
+Turnaround Lines...
+AB
+Freeware
+
+
+
+
+Red Sin
+Green Sin
+Blue Sin
+Red Rotate
+Green Rotate
+Blue Rotate
+
+
+16
+35
+15
+49
+40
+68
+0
+0
+rad((d+val(3,0,1024))%sin((x-y)*ctl(0)),m,0)
+rad((d+val(4,0,1024))%sin((x-y)*ctl(1)),m,0)
+rad((d+val(5,0,1024))%sin((x-y)*ctl(2)),m,0)
+a
+VillSq29.8bf
+Andrew's Filters 27
+Village Square AD2909...
+AB
+Freeware
+
+
+
+
+Bound
+Mod
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+7
+37
+73
+118
+105
+93
+123
+34
+mix(c,(x%ctl(1)<ctl(0)||(X-x)%ctl(1)<ctl(0)||y%ctl(1)<ctl(0)||(Y-y)%ctl(1)<ctl(0)?0:c),ctl(2),ctl(3))
+mix(c,(x%ctl(1)<ctl(0)||(X-x)%ctl(1)<ctl(0)||y%ctl(1)<ctl(0)||(Y-y)%ctl(1)<ctl(0)?0:c),ctl(4),ctl(5))
+mix(c,(x%ctl(1)<ctl(0)||(X-x)%ctl(1)<ctl(0)||y%ctl(1)<ctl(0)||(Y-y)%ctl(1)<ctl(0)?0:c),ctl(6),ctl(7))
+a
+WeModett.8bf
+Andrew's Filters 27
+Welcome The Modettes ...
+AB
+Freeware
+
+
+
+
+Red x
+Red Amount
+Green x
+Green Amount
+Blue x
+Blue Amount
+
+
+160
+142
+151
+34
+164
+145
+0
+0
+src(x+val(0,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(0,2))%ctl(1):src(x,y,rnd(0,2))
+src(x+val(2,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(0,2))%ctl(3):src(x,y,rnd(0,2))
+src(x+val(4,-100,100),y,rnd(0,2))>src(x,y,rnd(0,2))?src(x,y,rnd(5,2))%ctl(5):src(x,y,rnd(0,2))
+a
+WhWigs.8bf
+Andrew's Filters 27
+Spiral Patternsville...
+AB
+Freeware
+
+
+
+
+Red Mod
+Green Mod
+Blue Mod
+Red M
+Green M
+Blue M
+
+
+30
+15
+30
+103
+101
+229
+0
+0
+rad(d,m+(val(3,0,2)>0?sin((x*y)%ctl(0)):sin(((Y*X)-(x*y))%ctl(0))),0)
+rad(d,m+(val(4,0,2)>0?sin((x*y)%ctl(1)):sin(((Y*X)-(x*y))%ctl(1))),1)
+rad(d,m+(val(5,0,2)>0?sin((x*y)%ctl(2)):sin((Y*X+(x*y))%ctl(2))),2)
+a
+WouPhoto.8bf
+Andrew's Filters 27
+Would You Want Photos Like This...
+AB
+Freeware
+
+
+
+
+Mod 1
+Mod 2
+Mod 3
+Red
+Green
+Blue
+Shift X
+Shift Y
+91
+234
+229
+238
+233
+210
+138
+113
+max(((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)>ctl(2)?c:c%ctl(3),((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)>ctl(2)?c:src(x+val(6,-50,50),y+val(7,-50,50),z)%ctl(3))
+max(((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)>ctl(2)?c:c%ctl(4),((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)>ctl(2)?c:src(x+val(6,-50,50),y+val(7,-50,50),z)%ctl(4))
+max(((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)>ctl(2)?c:c%ctl(5),((x%ctl(0))*(x%ctl(0))+(y%ctl(0))*(y%ctl(0)))%ctl(1)>ctl(2)?c:src(x+val(6,-50,50),y+val(7,-50,50),z)%ctl(5))
+a
+XElect.8bf
+Andrew's Filters 27
+XElectric...
+AB
+Freeware
+
+
+
+
+Red T
+Green T
+Blue T
+Red Boost
+Green Boost
+Blue Boost
+Mod
+Dividor
+27
+33
+69
+27
+198
+210
+154
+2
+(min(x,(X/ctl(7)))<val(0,0,x)?r+val(1,-256,256):r-val(3,-256,256))%ctl(6)
+(min(x,(X/ctl(7)))<val(1,0,x)?g+val(1,-256,256):g-val(4,-256,256))%ctl(6)
+(min(x,(X/ctl(7)))<val(2,0,x)?b+val(2,-256,256):b-val(5,-256,256))%ctl(6)
+a

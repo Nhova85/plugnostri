@@ -1,0 +1,53 @@
+Filter Factory Gallery 'B'
+
+This zip file is comprised of 21 files.  20 are filters, and the remaining is this Readffb.txt file.
+
+The Filter Factory Gallery 'B' files are:
+
+
+FILENAME                    NAME OF FILTER              AUTHOR
+
+ffb01gal.8bf................Luma Greyscale..............Martin W. van der Lee
+ffb02gal.8bf................Sliding Spirals.............Sandy Blair
+ffb03gal.8bf................Accelerating Glass..........Sandy Blair
+ffb04gal.8bf................Accelerating Daisies........Sandy Blair
+ffb05gal.8bf................Zero Tolerance..............Sandy Blair
+ffb06gal.8bf................Fluttering Flag.............Sandy Blair
+ffb07gal.8bf................Bubble......................Mario Klingemann
+ffb08gal.8bf................Spinner.....................Lindon Parker
+ffb09gal.8bf................Seismic Twirl...............Kipp McMichael
+ffb10gal.8bf................Cut Glass...................Lindon Parker
+ffb11gal.8bf................X-Diffusion.................Greg Schorno
+ffb12gal.8bf................Starmaker...................Mario Klingemann
+ffb13gal.8bf................Button Deluxe...............Mario Klingemann
+ffb14gal.8bf................James Bondage...............Mario Klingemann
+ffb15gal.8bf................Gradient Window.............Alfredo Mateus & Ilyich the Toad
+ffb16gal.8bf................Circulator..................Mario Klingemann
+ffb17gal.8bf................File Size Reducer...........Werner Streidt
+ffb18gal.8bf................I Would Cut.................Ralph Nevins
+ffb19gal.8bf................Crystal Ball................Mario Klingemann
+ffb20gal.8bf................The Black Hole..............Mario Klingemann
+
+
+INSTALLATION
+
+Copy or move the *.8bf files to the directory you keep your Photoshop plug-ins at. Normally, it's c:/photoshp/plugins.  The next time you start Photoshop, it will automatically add a submenu to the Filters menu called Filter Factory Gallery A, which will have these 20 filters in it (the 'A' will change with each release of each Gallery).
+
+You should retain this Readffb.txt for future reference The 'ffb' in the filename denotes which Gallery this Readme file belongs to. If you ever want to not load the filter(s), copy them to another directory.  The filter file naming, ffb01gal.8bf,  denotes 'ff' as filter factory, the third letter is from the Gallery it's from, the number is the filter number in that Gallery from 1-20, and the next three letters indicate it's a Gallery filter.
+
+ABOUT THE FILTERS
+
+These filters have been custom made by individuals who use Filter Factory in making custom Plug-Ins for Photoshop.  Filter Factory can be found on the CD-ROM edition of Photoshop under the Goodies directory. The plug-ins have adjustable parameters when launched, and can be used like any other plug-in filter.  The filters in this Gallery have been compiled to be used with the PC version of Photoshop 3.0 or greater.  The code to compile the filters is taken from the various postings to the Filter Factory Discussion Group mailing list.  The choice of filters I compile and make available is solely my discretion, with no rhyme or reason, so I can't take requests for specific filters.
+
+COPYRIGHT NOTICE
+
+Each of the filters are copyright of their respective author.  You do not have permission to sell, repackage, distribute commercially or use these filters in a commercial way.  You can use them freely for your own personal use.  
+
+DISCLAIMER
+
+No warranties are expressed or implied.  I myself cannot answer any questions about the filters since I did not design them.  If you need more information about them, follow the appropriate links at my web site at:  http://www.netins.net/showcase/wolf359/adobepc.htm concerning Filter Factory and Plug-Ins links.
+
+
+Steve Fisher  1996
+wolf359@netins.net
+

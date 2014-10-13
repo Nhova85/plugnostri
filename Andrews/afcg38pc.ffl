@@ -1,0 +1,582 @@
+FFL1.0
+   20
+LosePlot.8bf
+Andrew's Filters 38
+Lose The Plot Somewhere...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+211
+203
+169
+114
+166
+135
+0
+0
+src(rnd(c-ctl(0),src(X-X%x,y,0)-ctl(1))+x,y,0)
+src(rnd(c-ctl(2),src(X-X%x,y,1)-ctl(3))+x,y,1)
+src(rnd(c-ctl(4),src(X-X%x,y,2)-ctl(5))+x,y,2)
+a
+MakDif.8bf
+Andrew's Filters 38
+Makes A Little Difference...
+AB
+Freeware
+
+
+
+
+x & y
+Pattern A
+Pattern B
+Red Factor
+Green Factor
+Blue Factor
+Radius
+X Drift
+19
+85
+16
+103
+127
+121
+9
+10
+dif(((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)-ctl(2)>ctl(6)?c:c^ctl(3),src(x-ctl(7),y,0))
+dif(((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)-ctl(2)>ctl(6)?c:c^ctl(4),src(x-ctl(7),y,1))
+dif(((x-ctl(0))*(x-ctl(0))+(y-ctl(0))*(y-ctl(0)))%ctl(1)-ctl(2)>ctl(6)?c:c^ctl(5),src(x-ctl(7),y,2))
+a
+MakRound.8bf
+Andrew's Filters 38
+Making Round and Round...
+AB
+Freeware
+
+
+
+
+Red d
+Green d
+Blue d
+Red m
+Green m
+Blue m
+Directional
+
+177
+180
+163
+189
+89
+104
+76
+0
+(rad(d+val(6,-1,1)*ctl(3),m,0)+(sin((d+ctl(3))*(d+ctl(3)))+cos(m*m))/val(0,0,10))/2
+(rad(d+val(6,-1,1)*ctl(4),m,1)+(sin((d+ctl(4))*(d+ctl(4)))+cos(m*m))/val(1,0,10))/2
+(rad(d+val(6,-1,1)*ctl(5),m,2)+(sin((d+ctl(5))*(d+ctl(5)))+cos(m*m))/val(2,0,10))/2
+a
+MakTwo.8bf
+Andrew's Filters 38
+Making Two And Three...
+AB
+Freeware
+
+
+
+
+Red x
+Green x
+Blue x
+Red Zap
+Green Zap
+Blue Zap
+
+
+193
+79
+145
+255
+106
+199
+0
+0
+dif(sqr(ctl(0)*c),src(x+val(3,-1,1)*src(x,y,rnd(0,2)),y,rnd(0,2)))
+dif(sqr(ctl(1)*src(x,y,0)),src(x+val(4,-1,1)*src(x,y,rnd(0,2)),y,rnd(0,2)))
+dif(sqr(ctl(2)*src(x,y,0)),src(x+val(5,-1,1)*src(x,y,rnd(0,2)),y,rnd(0,2)))
+a
+MaMinm.8bf
+Andrew's Filters 38
+MaximusAndMinimus...
+AB
+Freeware
+
+
+
+
+Red Max
+Red Min
+Green Max
+Green Min
+Blue Max
+Blue Min
+
+
+171
+69
+169
+0
+1
+2
+0
+0
+(max(max(c,src(x,y,1)),src(x,y,2))*val(0,-10,10)+val(1,-10,10)*min(min(c,src(x,y,1)),src(x,y,2)))/2
+(max(max(src(x,y,0),c),src(x,y,2))*val(2,-10,10)+val(3,-10,10)*min(min(src(x,y,0),c),src(x,y,2)))/2
+(max(max(src(x,y,0),src(x,y,1)),c)*val(4,-10,10)+val(5,-10,10)*min(min(src(x,y,0),src(x,y,1)),c))/2
+a
+ManPosWl.8bf
+Andrew's Filters 38
+Many Possible Worlds...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Factor 1
+Factor 2
+23
+21
+59
+35
+99
+168
+99
+16
+add(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),rnd(0,2)),src(x,y,rnd(0,2)),ctl(7))<ctl(3)?src(x,y,rnd(0,2)):ctl(0)
+add(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),rnd(0,2)),src(x,y,rnd(0,2)),ctl(6))<ctl(4)?src(x,y,rnd(0,2)):ctl(1)
+add(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),rnd(0,2)),src(x,y,rnd(0,2)),ctl(5))<ctl(5)?src(x,y,rnd(0,2)):ctl(2)
+a
+MaxCirc.8bf
+Andrew's Filters 38
+Max Circles...
+AB
+Freeware
+
+
+
+
+Red m
+Green m
+Blue m
+Red Source
+Green Source
+Blue Source
+Controller
+
+55
+7
+3
+0
+4
+9
+19
+0
+max(c/ctl(3),(abs(d)/ctl(6))*sqr(m%ctl(0)))
+max(c/ctl(4),(abs(d)/ctl(6))*sqr(m%ctl(1)))
+max(c/ctl(5),(abs(d)/ctl(6))*sqr(m%ctl(2)))
+a
+MaxDown.8bf
+Andrew's Filters 38
+Max Down...
+AB
+Freeware
+
+
+
+
+Red y
+Green y
+Blue y
+Down Red
+Down Green
+Down Blue
+
+
+150
+163
+216
+46
+89
+155
+0
+0
+max(max(src(x,1,0),c),src(x,val(0,0,y),0))-ctl(3)
+max(max(src(x,1,1),c),src(x,val(1,0,y),1))-ctl(4)
+max(max(src(x,1,2),c),src(x,val(2,0,y),2))-ctl(5)
+a
+MezWhip.8bf
+Andrew's Filters 38
+Mezz Whipped Up...
+AB
+Freeware
+
+
+
+
+Red
+Green 
+Blue
+x
+y
+
+
+
+142
+47
+100
+183
+126
+0
+0
+0
+src(val(3,-X,X)+sin(x*y+ctl(0))%x,val(4,-Y,Y)+y,0)
+src(val(3,-X,X)+sin(x*y+ctl(1))%x,y+val(4,-Y,Y),1)
+src(val(3,-X,X)+sin(x*y+ctl(2))%x,y+val(4,-Y,Y),2)
+a
+MezzDiff.8bf
+Andrew's Filters 38
+Mezzo Differendo...
+AB
+Freeware
+
+
+
+
+Mezz Red X
+Mezz Red Y
+Mezz Green X
+Mezz Green Y
+Mezz Blue X
+Mezz Blue Y
+
+
+80
+127
+106
+8
+123
+38
+0
+0
+dif(dif(c,rad(d%ctl(0),m%ctl(1),0)),c)
+dif(dif(c,rad(d%ctl(2),m%ctl(3),1)),c)
+dif(dif(c,rad(d%ctl(4),m%ctl(5),2)),c)
+a
+MezzSqO.8bf
+Andrew's Filters 38
+Mezz Squared Off...
+AB
+Freeware
+
+
+
+
+Red Divide
+Green Divide
+Blue Divide
+Red Drift
+Green Drift
+Blue Drift
+Directional
+
+165
+192
+154
+17
+12
+23
+0
+0
+(src(x+val(6,-1,1)*ctl(3),y,0)+(sin((x+ctl(3))*(x+ctl(3)))+cos(y*y))/val(0,0,10))/2
+(src(x+val(6,-1,1)*ctl(4),y,1)+(sin((x+ctl(4))*(x+ctl(4)))+cos(y*y))/val(1,0,10))/2
+(src(x+val(6,-1,1)*ctl(5),y,2)+(sin((x+ctl(5))*(x+ctl(5)))+cos(y*y))/val(2,0,10))/2
+a
+MichaelB.8bf
+Andrew's Filters 38
+Michael Is Behind This...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue
+Blue y
+Lower
+Upper
+6
+49
+12
+4
+16
+9
+7
+12
+src(x%ctl(0)>ctl(6)&&x%ctl(1)<ctl(7)?c:0,y,0)
+src(x%ctl(2)>ctl(6)&&x%ctl(3)<ctl(7)?c:0,y,1)
+src(x%ctl(4)>ctl(6)&&x%ctl(5)<ctl(7)?c:0,y,2)
+a
+MinWay.8bf
+Andrew's Filters 38
+Minimum Way...
+AB
+Freeware
+
+
+
+
+Red y
+Green y
+Blue y
+Red 
+Green
+Blue
+
+
+230
+197
+91
+8
+16
+34
+0
+0
+min(min(src(x,1,0),c),src(x,val(0,0,y),0))-ctl(3)
+min(min(src(x,1,1),c),src(x,val(1,0,y),1))-ctl(4)
+min(min(src(x,1,2),c),src(x,val(2,0,y),2))-ctl(5)
+a
+Miranda.8bf
+Andrew's Filters 38
+Miranda...
+AB
+Freeware
+
+
+
+
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+Factor 1
+Factor 2
+154
+184
+174
+182
+203
+106
+66
+188
+dif(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),c)<ctl(3)?c:ctl(0)
+dif(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),src(x,y,0))<ctl(4)?c:ctl(1)
+dif(src(mix(x,y,ctl(0),ctl(1))%(X-x-ctl(6)/10),mix(x,y,ctl(0),ctl(1))%(Y-y-ctl(7)/10),z),src(x,y,0))<ctl(5)?c:ctl(2)
+a
+MottledV.8bf
+Andrew's Filters 38
+Mottled View...
+AB
+Freeware
+
+
+
+
+Red x
+Red y
+Green x
+Green y
+Blue x
+Blue y
+
+
+123
+129
+120
+124
+30
+13
+0
+0
+src(x%src(x+val(0,-20,20),y+val(1,-20,20),0),y%src(x+val(0,-20,20),y+val(1,-20,20),0),0)
+src(x%src(x+val(2,-20,20),y+val(3,-20,20),0),y%src(x+val(2,-20,20),y+val(3,-20,20),0),1)
+src(x%src(x+val(4,-20,20),y+val(5,-20,20),0),y%src(x+val(4,-20,20),y+val(5,-20,20),0),2)
+a
+MulFlX.8bf
+Andrew's Filters 38
+Multi Flip x...
+AB
+Freeware
+
+
+
+
+Norm,Mix,Diff
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+255
+95
+112
+53
+140
+146
+50
+0
+val(0,1,3)==1?src(X-x,y,z):val(0,1,3)==2?mix(src(X-x,y,z),c,ctl(1),ctl(2)):dif(src(X-x,y,z),c)
+val(0,1,3)==1?src(X-x,y,z):val(0,1,3)==2?mix(src(X-x,y,z),c,ctl(3),ctl(4)):dif(src(X-x,y,z),c)
+val(0,1,3)==1?src(X-x,y,z):val(0,1,3)==2?mix(src(X-x,y,z),c,ctl(5),ctl(6)):dif(src(X-x,y,z),c)
+a
+MultFlY.8bf
+Andrew's Filters 38
+Multi Flip Y...
+AB
+Freeware
+
+
+
+
+Norm, Mix, Diff
+Red 1
+Red 2
+Green 1
+Green 2
+Blue 1
+Blue 2
+
+203
+84
+102
+7
+117
+53
+50
+0
+val(0,1,3)==1?src(x,Y-y,z):val(0,1,3)==2?mix(src(x,Y-y,z),c,ctl(1),ctl(2)):dif(src(x,Y-y,z),c)
+val(0,1,3)==1?src(x,Y-y,z):val(0,1,3)==2?mix(src(x,Y-y,z),c,ctl(3),ctl(4)):dif(src(x,Y-y,z),c)
+val(0,1,3)==1?src(x,Y-y,z):val(0,1,3)==2?mix(src(x,Y-y,z),c,ctl(5),ctl(6)):dif(src(x,Y-y,z),c)
+a
+MultLine.8bf
+Andrew's Filters 38
+Multiple Lines...
+AB
+Freeware
+
+
+
+
+Modular
+Minimum
+Maximum
+Get My Slice
+
+
+
+
+8
+4
+51
+120
+0
+0
+0
+0
+src(x%ctl(0)>ctl(1)&&x%ctl(0)<ctl(2)?x:val(3,0,X),y,0)
+src(x%ctl(0)>ctl(1)&&x%ctl(0)<ctl(2)?x:val(3,0,X),y,1)
+src(x%ctl(0)>ctl(1)&&x%ctl(0)<ctl(2)?x:val(3,0,X),y,2)
+a
+NarrBand.8bf
+Andrew's Filters 38
+Narrow Bands...
+AB
+Freeware
+
+
+
+
+Red Band
+Green Band
+Blue Band
+Red Shift
+Green Shift
+Blue Shift
+
+
+17
+12
+11
+30
+110
+221
+0
+0
+put(get(3)^ctl(0),3),src(x+val(3,-1,2)*get(3),y,0)
+put(get(3)^ctl(1),3),src(x+val(4,-1,2)*get(3),y,1)
+put(get(3)^ctl(2),3),src(x+val(5,-1,2)*get(3),y,2)
+a
+NarrowX.8bf
+Andrew's Filters 38
+Narrow Band X...
+AB
+Freeware
+
+
+
+
+Red Random
+Green Random
+Blue Random
+Intensity
+Red Effect
+Green Effect
+Blue Effect
+Narrow X
+163
+137
+143
+2
+68
+255
+134
+18
+rad(d,m,val(4,0,2))^((r*ctl(0))/(rnd(ctl(7),x))+(r*ctl(0))/(rnd(ctl(7),X-x)))/ctl(3)
+rad(d,m,val(5,0,2))^((g*ctl(1))/(rnd(ctl(7),x))+(g*ctl(1))/(rnd(ctl(7),X-x)))/ctl(3)
+rad(d,m,val(6,0,2))^((b*ctl(2))/(rnd(ctl(7),x))+(b*ctl(2))/(rnd(ctl(7),X-x)))/ctl(3)
+a

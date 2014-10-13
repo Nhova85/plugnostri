@@ -1,0 +1,25 @@
+               MuRa's Filter Meister - Perspective Tiling 1.1
+                Copyright(c)2000 by MuRa, http://mura.hey.to
+
+This is the high quality filter for Photoshop.
+This makes tiling with source image in perspective.
+
+This filter is freeware. You can use it freely and distribute it without
+modifying. But it is forbidden to sell it without permission of the author.
+
+Parameters
+
+        Perspective     Perspective ratio
+        Stretch         Stretch or shrink the source image
+        Center          Center position of perspective
+        Height          Height of output image
+        Offset X/Y      Horizontal/vertical offset of the source image
+        Crop            Crop opacity part of the source image
+        Crop Opacity    Minimum opacity for cropping
+        Crop BG Color   Crop the source image except the background color area
+
+Updates
+(Ver.1.1)
+The bug of vertical smoothing for shrinking was fixed.
+'Stretch' was added.
+
